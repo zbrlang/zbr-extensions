@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+dist/
+out/
+build/
+.DS_Store
+
+# Tree-sitter and Zed (Not ready for push)
+zed/
+tree-sitter/
+
+# Extension build artifacts
+*.vsix
+.zed/
+.vscode-test/
