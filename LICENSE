@@ -1,9 +1,19 @@
-All Rights Reserved
+Copyright © 2026 ZBRLang. All Rights Reserved.
 
-Copyright (c) 2026 zbrlang
+This repository and its contents are publicly available for educational, development, and editor integration purposes only.
 
-The ZBR extensions and their associated documentation are the property of zbrlang. No part of this project, including its design, source code, and assets, may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the owner.
+You may:
+- View and study the source code
+- Copy and install the extensions locally for personal use
+- Modify the extensions for private use or compatibility purposes
+- Submit pull requests or suggested improvements
 
-Permission is granted for personal use and installation of these extensions on local machines for the purpose of developing ZBR commands.
+You may not:
+- Redistribute, re-upload, or commercially distribute the extensions or modified versions of them
+- Rebrand or publish the extensions under another name or identity
+- Use the ZBR name, branding, assets, or visual identity without explicit written permission
+- Create competing or derivative editor extension packages based on this repository
 
-The ZBR engine and CLI are licensed under the MIT License.
+All rights to the extensions, source code, branding, assets, snippets, grammar definitions, and related materials remain exclusively owned by ZBRLang unless otherwise stated.
+
+Unauthorized redistribution, republishing, or commercial use of this repository or its contents is strictly prohibited.
