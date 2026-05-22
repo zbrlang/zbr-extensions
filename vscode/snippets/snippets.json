@@ -3037,12 +3037,19 @@
     ],
     "description": "ZBR Header: type"
   },
-  "header_author": {
-    "prefix": "#author",
+  "header_scope": {
+    "prefix": "#scope",
     "body": [
-      "#author ${1:author_name}"
+      "#scope ${1:scope}"
     ],
-    "description": "ZBR Header: author"
+    "description": "ZBR Header: scope"
+  },
+  "header_option": {
+    "prefix": "#option",
+    "body": [
+      "#option ${1:option}"
+    ],
+    "description": "ZBR Header: option"
   },
   "zbr_template": {
     "prefix": "zbr_command",

@@ -20,7 +20,7 @@ module.exports = grammar({
         field(
           "key",
           alias(
-            token(prec(1, /\#(name|trigger|description|type|author)[ \t]+/)),
+            token(prec(1, /\#(name|trigger|description|type|scope|option)[ \t]+/)),
             $.header_name,
           ),
         ),

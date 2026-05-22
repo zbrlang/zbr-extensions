@@ -23,7 +23,7 @@
       "patterns": [
         {
           "name": "keyword.control.zbr",
-          "match": "^#(name|trigger|description|type|author)\\b"
+          "match": "^#(name|trigger|description|type|scope|option)\\b"
         }
       ]
     },
@@ -109,14 +109,6 @@
         {
           "name": "keyword.other.zbr",
           "match": ";"
-        },
-        {
-          "name": "string.quoted.double.zbr",
-          "match": "[^;{}\\=\\!\\>\\<\\&\\|\\\\Z]+"
-        },
-        {
-          "name": "string.quoted.double.zbr",
-          "match": "[\\=\\!\\>\\<\\&\\|\\\\Z]"
         }
       ]
     }

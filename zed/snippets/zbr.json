@@ -2169,10 +2169,15 @@
     "body": "#type ${1|prefix,slash,sub-slash,interaction,event|}",
     "description": "ZBR Header: type"
   },
-  "header_author": {
-    "prefix": "#author",
-    "body": "#author ${1:author_name}",
-    "description": "ZBR Header: author"
+  "header_scope": {
+    "prefix": "#scope",
+    "body": "#scope ${1:scope}",
+    "description": "ZBR Header: scope"
+  },
+  "header_option": {
+    "prefix": "#option",
+    "body": "#option ${1:option}",
+    "description": "ZBR Header: option"
   },
   "zbr_template": {
     "prefix": "zbr_command",
