@@ -1,0 +1,23 @@
+name = "zbr"
+grammar = "zbr"
+scope_name = "source.zbr"
+path_suffixes = ["zbr"]
+line_comments = ["// "]
+
+[[brackets]]
+start = "{"
+end = "}"
+close = true
+newline = true
+
+[[brackets]]
+start = "["
+end = "]"
+close = true
+newline = false
+
+[[brackets]]
+start = "("
+end = ")"
+close = true
+newline = false

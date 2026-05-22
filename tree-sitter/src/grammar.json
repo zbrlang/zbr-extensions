@@ -1,0 +1,357 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/grammar.schema.json",
+  "name": "zbr",
+  "rules": {
+    "source_file": {
+      "type": "REPEAT",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "name": "header"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "function_call"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "trigger_call"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "text"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "bare_z"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "newline"
+          }
+        ]
+      }
+    },
+    "header": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "key",
+          "content": {
+            "type": "ALIAS",
+            "content": {
+              "type": "TOKEN",
+              "content": {
+                "type": "PREC",
+                "value": 1,
+                "content": {
+                  "type": "PATTERN",
+                  "value": "\\#(name|trigger|description|type|author)[ \\t]+"
+                }
+              }
+            },
+            "named": true,
+            "value": "header_name"
+          }
+        },
+        {
+          "type": "FIELD",
+          "name": "value",
+          "content": {
+            "type": "PATTERN",
+            "value": "[^\\n]*"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "newline"
+        }
+      ]
+    },
+    "newline": {
+      "type": "PATTERN",
+      "value": "\\n"
+    },
+    "comment": {
+      "type": "PATTERN",
+      "value": "\\/\\/.*"
+    },
+    "function_call": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "name",
+          "content": {
+            "type": "ALIAS",
+            "content": {
+              "type": "SYMBOL",
+              "name": "function_start"
+            },
+            "named": true,
+            "value": "function_name"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "{"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "function_call"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "trigger_call"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "braced_content"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "escape_sequence"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "operator"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "argument_separator"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "content"
+              }
+            ]
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "}"
+        }
+      ]
+    },
+    "trigger_call": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "name",
+          "content": {
+            "type": "SYMBOL",
+            "name": "trigger_name"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "{"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "function_call"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "trigger_call"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "braced_content"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "escape_sequence"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "operator"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "argument_separator"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "content"
+              }
+            ]
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "}"
+        }
+      ]
+    },
+    "braced_content": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "{"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "function_call"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "trigger_call"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "braced_content"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "escape_sequence"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "operator"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "argument_separator"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "content"
+              }
+            ]
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "}"
+        }
+      ]
+    },
+    "trigger_name": {
+      "type": "PATTERN",
+      "value": "on[a-zA-Z0-9_]+"
+    },
+    "operator": {
+      "type": "TOKEN",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "=="
+          },
+          {
+            "type": "STRING",
+            "value": "!="
+          },
+          {
+            "type": "STRING",
+            "value": ">="
+          },
+          {
+            "type": "STRING",
+            "value": "<="
+          },
+          {
+            "type": "STRING",
+            "value": ">"
+          },
+          {
+            "type": "STRING",
+            "value": "<"
+          },
+          {
+            "type": "STRING",
+            "value": "&&"
+          },
+          {
+            "type": "STRING",
+            "value": "||"
+          }
+        ]
+      }
+    },
+    "argument_separator": {
+      "type": "TOKEN",
+      "content": {
+        "type": "STRING",
+        "value": ";"
+      }
+    },
+    "escape_sequence": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PATTERN",
+        "value": "\\\\[{};\\\\]"
+      }
+    },
+    "content": {
+      "type": "PATTERN",
+      "value": "[^Z;{}\\\\\\n][^;{}\\\\\\n]*"
+    },
+    "bare_z": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": -1,
+        "content": {
+          "type": "STRING",
+          "value": "Z"
+        }
+      }
+    },
+    "text": {
+      "type": "TOKEN",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "PATTERN",
+            "value": "[^#Z\\n][^Z\\n]*"
+          },
+          {
+            "type": "PATTERN",
+            "value": "#[^(name|trigger|description|type|author)][^Z\\n]*"
+          }
+        ]
+      }
+    }
+  },
+  "extras": [
+    {
+      "type": "SYMBOL",
+      "name": "comment"
+    }
+  ],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [
+    {
+      "type": "SYMBOL",
+      "name": "function_start"
+    }
+  ],
+  "inline": [],
+  "supertypes": [],
+  "reserved": {}
+}

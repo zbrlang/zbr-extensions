@@ -12,8 +12,8 @@ This repository provides the necessary tools for developers to write ZBR command
 ## Project Structure
 
 - vscode/: Official VS Code extension providing syntax highlighting and over 400+ snippets.
-- zed/: (In Development) High-performance Zed extension powered by Tree-sitter.
-- tree-sitter/: (In Development) Tree-sitter grammar source for ZBR.
+- zed/: High-performance Zed extension powered by Tree-sitter.
+- tree-sitter/: Tree-sitter grammar source for ZBR.
 
 ## License
 

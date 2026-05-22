@@ -1,0 +1,18 @@
+{
+  "name": "tree-sitter-zbr",
+  "version": "1.0.0",
+  "description": "ZBR grammar for tree-sitter",
+  "main": "bindings/node",
+  "scripts": {
+    "install": "node-gyp-build",
+    "prebuildify": "prebuildify --napi --strip"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.2.1",
+    "node-gyp-build": "^4.8.2"
+  },
+  "devDependencies": {
+    "prebuildify": "^6.0.1",
+    "tree-sitter-cli": "^0.26.8"
+  }
+}

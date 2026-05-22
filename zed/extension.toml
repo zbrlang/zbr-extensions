@@ -1,0 +1,12 @@
+id = "zed-zbr"
+name = "zbr"
+version = "0.1.0"
+schema_version = 1
+authors = ["ZBRLang"]
+description = "Syntax highlighting and snippets for the ZBR scripting language."
+repository = "https://github.com/zbrlang/zbr-extensions"
+
+[grammars.zbr]
+repository = "https://github.com/zbrlang/zbr-extensions"
+rev = "7832514feab533990cf7f65b92e65e44d4496ff8"
+path = "tree-sitter"

@@ -5,11 +5,8 @@ out/
 build/
 .DS_Store
 
-# Tree-sitter and Zed (Not ready for push)
-zed/
-tree-sitter/
-
 # Extension build artifacts
 *.vsix
 .zed/
+zed/grammars
 .vscode-test/
