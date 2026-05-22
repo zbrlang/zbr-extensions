@@ -16,15 +16,15 @@ This extension provides everything you need to develop ZBR scripts efficiently:
    ```bash
    git clone https://github.com/zbrlang/zbr-extensions
    ```
-2. Copy the `vscode/` folder into your extensions directory:
+2. Copy the `vscode/` folder into your extensions directory using a single overwrite-safe command for your platform.
 
-   **Windows:**
-   ```bash
-   cp -r vscode %USERPROFILE%\.vscode\extensions\zbr-vscode
+   **Windows (PowerShell):**
+   ```powershell
+   robocopy .\vscode "$env:USERPROFILE\.vscode\extensions\zbr-vscode" /MIR
    ```
-   **macOS / Linux:**
+   **macOS / Linux / Git Bash / WSL:**
    ```bash
-   cp -r vscode ~/.vscode/extensions/zbr-vscode
+   rsync -a --delete ~/Downloads/Code/zbr-extensions/vscode/ ~/.vscode/extensions/zbr-vscode/
    ```
 3. Restart VS Code.
 
