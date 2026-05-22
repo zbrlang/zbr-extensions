@@ -8,5 +8,5 @@ build/
 # Extension build artifacts
 *.vsix
 .zed/
-zed/grammars
+zed/grammars/
 .vscode-test/

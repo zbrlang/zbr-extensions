@@ -1,28 +1,31 @@
 # ZBR for Zed
 
-This extension provides high-performance language support for the ZBR scripting language in the Zed editor.
+The official Zed extension for **ZBR**. This extension turns Zed into a powerful IDE for developing Discord bots with the ZBR scripting language.
 
-## Features
+## Overview
 
-- **Tree-sitter Powered Highlighting**: Precise syntax coloring using the ZBR Tree-sitter grammar.
-- **Code Folding**: Fold function blocks (`Z...{}`) and trigger blocks (`on...{}`).
-- **Snippets**: Full library of ZBR functions with completions.
-- **Smart Indentation**: Automatic indentation inside curly braces.
+This extension provides everything you need to develop ZBR scripts efficiently:
 
-## Local Development
+- **Syntax Highlighting**: Tree-sitter grammar for all ZBR functions, triggers, and operators.
+- **Snippets Library**: Quick access to ZBR functions with completions.
+- **Language Config**: Smart bracket matching and comment toggling.
 
-To test this extension locally in Zed:
+## Installation
 
-1. Open Zed.
-2. Open the Command Palette (`Ctrl+Shift+P` on Linux).
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/zbrlang/zbr-extensions
+   ```
+2. Open Zed and open the Command Palette (`Ctrl+Shift+P` on Linux/Windows, `Cmd+Shift+P` on macOS).
 3. Run **`extensions: install dev extension`**.
-4. Select this folder (`zed/`).
+4. Select the `zed/` folder from the cloned repository.
 
-### Note on Tree-sitter
-This extension depends on the compiled Tree-sitter grammar located in the sibling `tree-sitter/` directory. Zed will automatically compile it to WASM during development installation.
+## Usage
 
-## Project Structure
+1. Create or open a file with the `.zbr` extension.
+2. Start typing any ZBR function (e.g., `Zreply`) to see snippets and completions.
+3. Use `#` at the start of a line to see header options like `#name` or `#trigger`.
 
-- `languages/zbr/config.toml`: Language configuration (comments, brackets).
-- `languages/zbr/queries/highlights.scm`: Syntax highlighting queries.
-- `extension.toml`: Extension manifest and grammar registration.
+## License
+
+The ZBR Zed extension is All Rights Reserved.

@@ -8,5 +8,5 @@ repository = "https://github.com/zbrlang/zbr-extensions"
 
 [grammars.zbr]
 repository = "https://github.com/zbrlang/zbr-extensions"
-rev = "7832514feab533990cf7f65b92e65e44d4496ff8"
+rev = "5f3d375d74f55c195335d3082e2212bdf03a323c"
 path = "tree-sitter"

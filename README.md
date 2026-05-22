@@ -9,12 +9,24 @@ You write commands as plain `.zbr` files using ZBR functions, no boilerplate, no
 
 This repository provides the necessary tools for developers to write ZBR commands with full editor support, including syntax highlighting, snippets, and smart completions.
 
+## Extensions
+
+- **[vscode/](vscode/)**: Official VS Code extension providing syntax highlighting and 400+ snippets.
+- **[zed/](zed/)**: Official Zed extension powered by a Tree-sitter grammar.
+
+## Installation
+
+See the README in each extension folder for installation instructions:
+
+- [VS Code installation](vscode/README.md)
+- [Zed installation](zed/README.md)
+
 ## Project Structure
 
-- vscode/: Official VS Code extension providing syntax highlighting and over 400+ snippets.
-- zed/: High-performance Zed extension powered by Tree-sitter.
-- tree-sitter/: Tree-sitter grammar source for ZBR.
+- `vscode/`: VS Code extension, TextMate grammar, snippets, language config.
+- `zed/`: Zed extension, Tree-sitter highlights, snippets, language config.
+- `tree-sitter/`: Tree-sitter grammar source for ZBR.
 
 ## License
 
-ARR, see [LICENSE](LICENSE)
+All Rights Reserved, see [LICENSE](LICENSE).
