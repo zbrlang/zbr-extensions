@@ -81,5 +81,5 @@ contexts:
       scope: keyword.other.zbr
 
   text:
-    - match: \S+
+    - match: '[^\s;{}]+'
       scope: string.unquoted.zbr
