@@ -1,0 +1,11 @@
+[[language]]
+name = "zbr"
+scope = "source.zbr"
+file-types = ["zbr"]
+comment-token = "//"
+language-servers = []
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "zbr"
+source = { git = "https://github.com/zbrlang/zbr-extensions", subpath = "tree-sitter", rev = "17eca71fc6070e65b77d3f70d092c5f1fc4b4297" }
