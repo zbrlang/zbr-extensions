@@ -1,12 +1,26 @@
 # Dependencies
 node_modules/
+
+# Build output
 dist/
 out/
 build/
-.DS_Store
+*.wasm
+*.o
+*.so
 
-# Extension build artifacts
+# Extension packages
 *.vsix
 .zed/
 zed/grammars/
+*.jar
+*.sublime-package
+
+# IDE config
+.vscode/
 .vscode-test/
+.idea/
+*.iml
+
+# OS
+.DS_Store
