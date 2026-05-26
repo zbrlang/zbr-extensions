@@ -1,0 +1,1917 @@
+{
+  "scope": "source.zbr - comment",
+  "completions": [
+    {
+      "trigger": "Zabs\tReturns the absolute value of the given number.",
+      "contents": "Zabs{${1:value}}"
+    },
+    {
+      "trigger": "ZaddButton\tAdds a button component to the bot's response.",
+      "contents": "ZaddButton{${1:newRow};${2:customID};${3:label};${4:style};${5:disabled};${6:emoji}}"
+    },
+    {
+      "trigger": "ZaddCmdReactions\tImmediately adds one or more emoji reactions to the message that triggered the command.",
+      "contents": "ZaddCmdReactions{${1:emoji};${2:}}"
+    },
+    {
+      "trigger": "ZaddEmoji\tDownloads an image from the given URL and creates a new custom emoji in the current server, optionally returning the usable emoji string.",
+      "contents": "ZaddEmoji{${1:name};${2:imageURL};${3:returnEmoji}}"
+    },
+    {
+      "trigger": "ZaddField\tAdds a named field with a value to the specified embed slot, with an optional inline layout flag.",
+      "contents": "ZaddField{${1:name};${2:value};${3:inline};${4:index}}"
+    },
+    {
+      "trigger": "ZaddMentionableSelect\tAdds a mentionable select menu (users and roles) component to the bot's response.",
+      "contents": "ZaddMentionableSelect{${1:menuID};${2:min};${3:max};${4:placeholder}}"
+    },
+    {
+      "trigger": "ZaddMessageReactions\tAdds one or more emoji reactions to a specific message in the specified channel.",
+      "contents": "ZaddMessageReactions{${1:channelID};${2:messageID};${3:emoji};${4:}}"
+    },
+    {
+      "trigger": "ZaddReactions\tQueues one or more emoji reactions to be added to the bot's own response message after it is sent.",
+      "contents": "ZaddReactions{${1:emoji};${2:}}"
+    },
+    {
+      "trigger": "ZaddRoleSelect\tAdds a role select menu component to the bot's response.",
+      "contents": "ZaddRoleSelect{${1:menuID};${2:min};${3:max};${4:placeholder}}"
+    },
+    {
+      "trigger": "ZaddSelectMenuOption\tAdds an option to the current string select menu.",
+      "contents": "ZaddSelectMenuOption{${1:label};${2:value};${3:description};${4:default};${5:emoji}}"
+    },
+    {
+      "trigger": "ZaddTextInput\tAdds a text input field to the current modal.",
+      "contents": "ZaddTextInput{${1:fieldID};${2:label};${3:style};${4:minLength};${5:maxLength};${6:required};${7:placeholder}}"
+    },
+    {
+      "trigger": "ZaddUserSelect\tAdds a user select menu component to the bot's response.",
+      "contents": "ZaddUserSelect{${1:menuID};${2:min};${3:max};${4:placeholder}}"
+    },
+    {
+      "trigger": "ZafkChannelID\tReturns the ID of the AFK voice channel in the current guild, or an empty string if none is configured.",
+      "contents": "ZafkChannelID{}"
+    },
+    {
+      "trigger": "ZafkTimeout\tReturns the AFK timeout in seconds configured for the guild.",
+      "contents": "ZafkTimeout{${1:guildID}}"
+    },
+    {
+      "trigger": "ZallMembersCount\tReturns the total combined member count across all guilds the bot is currently in.",
+      "contents": "ZallMembersCount{}"
+    },
+    {
+      "trigger": "ZallowRoleMentions\tRestricts role pings in the bot response to only the listed role IDs; if no IDs are given, all role mentions are suppressed.",
+      "contents": "ZallowRoleMentions{${1:roleID};${2:}}"
+    },
+    {
+      "trigger": "ZallowUserMentions\tRestricts user pings in the bot response to only the listed user IDs; if no IDs are given, all user mentions are suppressed.",
+      "contents": "ZallowUserMentions{${1:userID};${2:}}"
+    },
+    {
+      "trigger": "ZappEmojiCreate\tCreates a new application emoji from an image URL. Returns the emoji ID.",
+      "contents": "ZappEmojiCreate{${1:name};${2:imageURL}}"
+    },
+    {
+      "trigger": "ZappEmojiDelete\tDeletes an application emoji by ID.",
+      "contents": "ZappEmojiDelete{${1:emojiID}}"
+    },
+    {
+      "trigger": "ZappEmojis\tLists the bot application's emojis as a JSON array.",
+      "contents": "ZappEmojis{}"
+    },
+    {
+      "trigger": "ZargCount\tReturns the number of space-separated words in the text.",
+      "contents": "ZargCount{${1:text}}"
+    },
+    {
+      "trigger": "ZargsCheck\tHalts execution with an error if the number of whitespace-separated arguments in the message is outside the allowed range.",
+      "contents": "ZargsCheck{${1:min};${2:max};${3:error}}"
+    },
+    {
+      "trigger": "Zasync\tSpawns a named background task that runs the provided code block concurrently.",
+      "contents": "Zasync{${1:name};${2:code}}"
+    },
+    {
+      "trigger": "ZauditCount\tFetches the guild audit log and returns the number of returned entries.",
+      "contents": "ZauditCount{${1:guildID};${2:limit}}"
+    },
+    {
+      "trigger": "ZauditEntries\tFetches the latest guild audit log entries and returns them as a JSON array.",
+      "contents": "ZauditEntries{${1:guildID};${2:limit}}"
+    },
+    {
+      "trigger": "ZauditEntryAction\tReturns the action name for the selected audit log entry.",
+      "contents": "ZauditEntryAction{${1:guildID};${2:entrySelector}}"
+    },
+    {
+      "trigger": "ZauditEntryChanges\tReturns the change details for the selected audit log entry as JSON.",
+      "contents": "ZauditEntryChanges{${1:guildID};${2:entrySelector}}"
+    },
+    {
+      "trigger": "ZauditEntryID\tReturns the audit log entry ID for the selected entry.",
+      "contents": "ZauditEntryID{${1:guildID};${2:entrySelector}}"
+    },
+    {
+      "trigger": "ZauditEntryReason\tReturns the reason attached to the selected audit log entry.",
+      "contents": "ZauditEntryReason{${1:guildID};${2:entrySelector}}"
+    },
+    {
+      "trigger": "ZauditEntryTarget\tReturns the target ID for the selected audit log entry.",
+      "contents": "ZauditEntryTarget{${1:guildID};${2:entrySelector}}"
+    },
+    {
+      "trigger": "ZauditEntryUser\tReturns the user ID of the actor who created the selected audit log entry.",
+      "contents": "ZauditEntryUser{${1:guildID};${2:entrySelector}}"
+    },
+    {
+      "trigger": "ZauditLatest\tFetches the most recent guild audit log entry and returns it as a JSON object.",
+      "contents": "ZauditLatest{${1:guildID}}"
+    },
+    {
+      "trigger": "Zauthor\tSets the author name on the specified embed slot.",
+      "contents": "Zauthor{${1:text};${2:index}}"
+    },
+    {
+      "trigger": "ZauthorIcon\tSets the author icon image URL on the specified embed slot, requiring an author to already be set.",
+      "contents": "ZauthorIcon{${1:url};${2:index}}"
+    },
+    {
+      "trigger": "ZauthorURL\tSets a hyperlink URL on the embed's author name, requiring an author to already be set.",
+      "contents": "ZauthorURL{${1:url};${2:index}}"
+    },
+    {
+      "trigger": "ZautomodRule\tReturns information about a specific automod rule in the guild as JSON.",
+      "contents": "ZautomodRule{${1:ruleID}}"
+    },
+    {
+      "trigger": "ZautomodRuleCreate\tCreates a new automod rule. trigger and actions are JSON strings.",
+      "contents": "ZautomodRuleCreate{${1:name};${2:trigger};${3:actions};${4:eventType};${5:enabled};${6:exemptRoles};${7:exemptChannels}}"
+    },
+    {
+      "trigger": "ZautomodRuleDelete\tDeletes an automod rule from the guild.",
+      "contents": "ZautomodRuleDelete{${1:ruleID}}"
+    },
+    {
+      "trigger": "ZautomodRuleEdit\tEdits an existing automod rule. Use !unchanged for fields to skip.",
+      "contents": "ZautomodRuleEdit{${1:ruleID};${2:name};${3:trigger};${4:actions};${5:eventType};${6:enabled};${7:exemptRoles};${8:exemptChannels}}"
+    },
+    {
+      "trigger": "ZautomodRules\tLists all automod rules in the guild as a JSON array.",
+      "contents": "ZautomodRules{}"
+    },
+    {
+      "trigger": "ZautomodRuleUpdate\tEdits an existing automod rule. Use !unchanged for fields to skip.",
+      "contents": "ZautomodRuleUpdate{${1:ruleID};${2:name};${3:trigger};${4:actions};${5:eventType};${6:enabled};${7:exemptRoles};${8:exemptChannels}}"
+    },
+    {
+      "trigger": "Zawait\tBlocks execution until the specified background task completes and returns its output.",
+      "contents": "Zawait{${1:name}}"
+    },
+    {
+      "trigger": "Zban\tBans a user from the guild with an optional reason and optional number of days of messages to delete.",
+      "contents": "Zban{${1:userID};${2:reason};${3:deleteMessageDays}}"
+    },
+    {
+      "trigger": "Zbase64Decode\tDecodes a base64-encoded string and returns the decoded text.",
+      "contents": "Zbase64Decode{${1:data}}"
+    },
+    {
+      "trigger": "Zbase64Encode\tEncodes text to base64.",
+      "contents": "Zbase64Encode{${1:text}}"
+    },
+    {
+      "trigger": "ZblackListIDs\tHalts command execution if the triggering user's ID matches any of the provided user IDs.",
+      "contents": "ZblackListIDs{${1:userID};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZblackListRoles\tHalts command execution if the triggering user holds any role matching the provided role names.",
+      "contents": "ZblackListRoles{${1:roleName};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZblackListRolesIDs\tHalts command execution if the triggering user holds any role matching the provided role IDs.",
+      "contents": "ZblackListRolesIDs{${1:roleID};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZblackListServers\tHalts command execution if the current server's guild ID matches any of the provided guild IDs.",
+      "contents": "ZblackListServers{${1:guildID};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZblackListUsers\tHalts command execution if the triggering user's username matches any of the provided usernames.",
+      "contents": "ZblackListUsers{${1:username};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZboostCount\tReturns the number of active Nitro boosts the guild has received.",
+      "contents": "ZboostCount{${1:guildID}}"
+    },
+    {
+      "trigger": "ZboostLevel\tReturns the current Nitro boost tier of the current guild as a number from 0 to 3.",
+      "contents": "ZboostLevel{}"
+    },
+    {
+      "trigger": "ZbotCommands\tReturns an alphabetically sorted list of all loaded command triggers, joined by the specified separator.",
+      "contents": "ZbotCommands{${1:separator}}"
+    },
+    {
+      "trigger": "ZbotID\tReturns the bot's own user ID.",
+      "contents": "ZbotID{}"
+    },
+    {
+      "trigger": "ZbotOwnerID\tReturns the user ID of the bot application's owner.",
+      "contents": "ZbotOwnerID{}"
+    },
+    {
+      "trigger": "ZbotTyping\tBroadcasts a typing indicator in the current channel.",
+      "contents": "ZbotTyping{}"
+    },
+    {
+      "trigger": "ZbyteCount\tReturns the number of UTF-8 bytes in the text.",
+      "contents": "ZbyteCount{${1:text}}"
+    },
+    {
+      "trigger": "Zcalculate\tEvaluates a mathematical expression supporting +, -, *, /, %, and ** operators with parentheses and correct operator precedence.",
+      "contents": "Zcalculate{${1:expression}}"
+    },
+    {
+      "trigger": "ZcategoryChannels\tReturns the channels inside a category sorted by position, formatted as names, IDs, mentions, or a count, joined by the specified separator.",
+      "contents": "ZcategoryChannels{${1:categoryID};${2:separator};${3:returnType}}"
+    },
+    {
+      "trigger": "ZcategoryCount\tReturns the number of category channels in the guild.",
+      "contents": "ZcategoryCount{${1:guildID}}"
+    },
+    {
+      "trigger": "ZcategoryID\tReturns the snowflake ID of a category channel in the current guild matched by name.",
+      "contents": "ZcategoryID{${1:name}}"
+    },
+    {
+      "trigger": "Zceil\tReturns the smallest integer greater than or equal to the given number.",
+      "contents": "Zceil{${1:number}}"
+    },
+    {
+      "trigger": "ZchangeCooldownTime\tOverrides the label words used when formatting remaining cooldown times.",
+      "contents": "ZchangeCooldownTime{${1:days};${2:hours};${3:minutes};${4:seconds}}"
+    },
+    {
+      "trigger": "ZchangeNickname\tChanges the guild nickname of the command author or specified user; supports the %username% placeholder in the nickname string.",
+      "contents": "ZchangeNickname{${1:nickname};${2:userID}}"
+    },
+    {
+      "trigger": "ZchannelCount\tReturns the total number of channels in the current guild.",
+      "contents": "ZchannelCount{}"
+    },
+    {
+      "trigger": "ZchannelCreated\tReturns the Unix timestamp in seconds at which the channel was created, extracted from its snowflake ID.",
+      "contents": "ZchannelCreated{${1:channelID}}"
+    },
+    {
+      "trigger": "ZchannelExists\tReturns true if a channel with the given ID exists, or false otherwise.",
+      "contents": "ZchannelExists{${1:channelID}}"
+    },
+    {
+      "trigger": "ZchannelID\tReturns the current channel's ID, or searches for and returns the ID of a guild channel matching the given name.",
+      "contents": "ZchannelID{${1:name}}"
+    },
+    {
+      "trigger": "ZchannelInvites\tReturns a space-separated list of invite codes for the given channel.",
+      "contents": "ZchannelInvites{${1:channelID}}"
+    },
+    {
+      "trigger": "ZchannelName\tReturns the name of a Discord channel by its ID, falling back to the current channel if no ID is provided.",
+      "contents": "ZchannelName{${1:channelID}}"
+    },
+    {
+      "trigger": "ZchannelNames\tReturns a sorted list of all channel names in the guild joined by the specified separator.",
+      "contents": "ZchannelNames{${1:separator};${2:guildID}}"
+    },
+    {
+      "trigger": "ZchannelPosition\tReturns the position index of a channel within the guild's channel list.",
+      "contents": "ZchannelPosition{${1:channelID}}"
+    },
+    {
+      "trigger": "ZchannelTopic\tReturns the topic of a Discord text channel, or an empty string if none is set.",
+      "contents": "ZchannelTopic{${1:channelID}}"
+    },
+    {
+      "trigger": "ZchannelType\tReturns the type of a channel as a string such as text, voice, category, announcement, stage, forum, thread, or dm.",
+      "contents": "ZchannelType{${1:channelID}}"
+    },
+    {
+      "trigger": "ZchannelWebhooks\tReturns a space-separated list of webhook URLs configured for the given channel.",
+      "contents": "ZchannelWebhooks{${1:channelID}}"
+    },
+    {
+      "trigger": "ZcharCount\tReturns the number of Unicode characters in the text.",
+      "contents": "ZcharCount{${1:text}}"
+    },
+    {
+      "trigger": "ZcheckCondition\tEvaluates a condition expression and returns true or false.",
+      "contents": "ZcheckCondition{${1:condition}}"
+    },
+    {
+      "trigger": "ZcheckContains\tReturns true if the text contains any of the provided words, using a case-insensitive comparison.",
+      "contents": "ZcheckContains{${1:text};${2:word};${3:}}"
+    },
+    {
+      "trigger": "ZcheckUserPerms\tReturns true if the specified user has all of the given guild permissions.",
+      "contents": "ZcheckUserPerms{${1:userID};${2:permission};${3:}}"
+    },
+    {
+      "trigger": "Zclear\tBulk-deletes up to 100 recent messages in the current channel, with an optional user filter and configurable handling of pinned messages.",
+      "contents": "Zclear{${1:amount};${2:userID};${3:removePinned}}"
+    },
+    {
+      "trigger": "ZclearReactions\tRemoves a specific emoji reaction from a message, or clears all reactions when !all is passed as the emoji.",
+      "contents": "ZclearReactions{${1:channelID};${2:messageID};${3:emoji}}"
+    },
+    {
+      "trigger": "Zcolor\tSets the accent color of the specified embed slot using a hex color code.",
+      "contents": "Zcolor{${1:hex};${2:index}}"
+    },
+    {
+      "trigger": "ZcolorRole\tSets the color of an existing role to the specified hex color code.",
+      "contents": "ZcolorRole{${1:roleID};${2:color}}"
+    },
+    {
+      "trigger": "ZcommandName\tReturns the name of the currently executing command, falling back to the trigger string if no command name is set.",
+      "contents": "ZcommandName{}"
+    },
+    {
+      "trigger": "ZcommandsCount\tReturns the total number of commands loaded from the commands directory.",
+      "contents": "ZcommandsCount{}"
+    },
+    {
+      "trigger": "ZcommandTrigger\tReturns the trigger string of the currently executing command.",
+      "contents": "ZcommandTrigger{}"
+    },
+    {
+      "trigger": "Zcooldown\tApplies a per-user per-server cooldown that blocks re-use of the current command until the duration expires.",
+      "contents": "Zcooldown{${1:duration};${2:errorMessage}}"
+    },
+    {
+      "trigger": "ZcreateChannel\tCreates a new channel in the current guild with the specified name, type, and optional parent category.",
+      "contents": "ZcreateChannel{${1:name};${2:type};${3:categoryID}}"
+    },
+    {
+      "trigger": "ZcreateEvent\tCreates a new scheduled voice event in the server and returns its event ID.",
+      "contents": "ZcreateEvent{${1:name};${2:channelID};${3:startTime};${4:description}}"
+    },
+    {
+      "trigger": "ZcreateForumTag\tAdds a new available tag to a forum channel with an optional emoji and moderation flag.",
+      "contents": "ZcreateForumTag{${1:channelID};${2:name};${3:emoji};${4:moderated}}"
+    },
+    {
+      "trigger": "ZcreateInvite\tCreates an invite for the specified channel and returns its code.",
+      "contents": "ZcreateInvite{${1:channelID};${2:maxUses};${3:maxAge}}"
+    },
+    {
+      "trigger": "ZcreatePost\tCreates a new forum post in a forum channel and returns its thread ID.",
+      "contents": "ZcreatePost{${1:channelID};${2:title};${3:content};${4:tagIDs}}"
+    },
+    {
+      "trigger": "ZcreateRole\tCreates a new role in the guild with the specified name and optional color, hoist, and mentionable settings.",
+      "contents": "ZcreateRole{${1:name};${2:color};${3:hoisted};${4:mentionable}}"
+    },
+    {
+      "trigger": "ZcreationDate\tReturns the creation date derived from any Discord snowflake ID, formatted according to the optional format string.",
+      "contents": "ZcreationDate{${1:id};${2:format}}"
+    },
+    {
+      "trigger": "ZcropText\tCrops text to a maximum number of characters and appends an ending string if the text was truncated.",
+      "contents": "ZcropText{${1:text};${2:maxChars};${3:ending}}"
+    },
+    {
+      "trigger": "ZcustomEmoji\tReturns the usable Discord emoji string for a server custom emoji looked up by name.",
+      "contents": "ZcustomEmoji{${1:name}}"
+    },
+    {
+      "trigger": "ZcustomID\tReturns the custom ID of the current interaction.",
+      "contents": "ZcustomID{}"
+    },
+    {
+      "trigger": "Zdate\tReturns the current date in YYYY-MM-DD format using the active timezone.",
+      "contents": "Zdate{}"
+    },
+    {
+      "trigger": "Zday\tReturns the current day of the month using the active timezone.",
+      "contents": "Zday{}"
+    },
+    {
+      "trigger": "Zdeafen\tServer-deafens the specified user so they cannot hear any audio in voice channels.",
+      "contents": "Zdeafen{${1:userID}}"
+    },
+    {
+      "trigger": "Zdefer\tDefers the interaction response, showing a thinking indicator and extending the response window to 15 minutes.",
+      "contents": "Zdefer{}"
+    },
+    {
+      "trigger": "Zdelay\tExecutes a block of code after a specified duration (e.g., 10s, 1m).",
+      "contents": "Zdelay{${1:duration};${2:code}}"
+    },
+    {
+      "trigger": "ZdeleteChannels\tDeletes one or more channels by their IDs.",
+      "contents": "ZdeleteChannels{${1:channelID};${2:}}"
+    },
+    {
+      "trigger": "ZdeleteChannelsByName\tDeletes all channels in the current guild whose names match any of the provided names.",
+      "contents": "ZdeleteChannelsByName{${1:name};${2:}}"
+    },
+    {
+      "trigger": "ZdeleteEvent\tDeletes a scheduled event from the current server by its event ID.",
+      "contents": "ZdeleteEvent{${1:eventID}}"
+    },
+    {
+      "trigger": "ZdeleteForumTag\tRemoves an available tag from a forum channel by its tag ID.",
+      "contents": "ZdeleteForumTag{${1:channelID};${2:tagID}}"
+    },
+    {
+      "trigger": "ZdeleteInvite\tDeletes a Discord invite by its code.",
+      "contents": "ZdeleteInvite{${1:code}}"
+    },
+    {
+      "trigger": "ZdeleteMessage\tDeletes the specified message from a channel.",
+      "contents": "ZdeleteMessage{${1:channelID};${2:messageID}}"
+    },
+    {
+      "trigger": "ZdeleteRole\tPermanently deletes the specified role from the guild.",
+      "contents": "ZdeleteRole{${1:roleID}}"
+    },
+    {
+      "trigger": "ZdeleteSticker\tDeletes a guild sticker from the current server by its sticker ID.",
+      "contents": "ZdeleteSticker{${1:stickerID}}"
+    },
+    {
+      "trigger": "Zdescription\tSets the description text on the specified embed slot.",
+      "contents": "Zdescription{${1:text};${2:index}}"
+    },
+    {
+      "trigger": "ZdisplayName\tReturns the display name of the command author or specified user; use server for the guild nickname or global for the Discord global name.",
+      "contents": "ZdisplayName{${1:userID};${2:type}}"
+    },
+    {
+      "trigger": "Zdiv\tDivides the first value by each subsequent divisor in sequence and returns the result.",
+      "contents": "Zdiv{${1:value};${2:divisor};${3:}}"
+    },
+    {
+      "trigger": "Zdm\tSends a direct message with the specified content to the given user.",
+      "contents": "Zdm{${1:userID};${2:content}}"
+    },
+    {
+      "trigger": "ZdmChannelID\tReturns the ID of the DM channel between the bot and a user, creating it if it does not yet exist.",
+      "contents": "ZdmChannelID{${1:userID}}"
+    },
+    {
+      "trigger": "Zduration\tConverts a duration string (e.g. 1h, 30m, 5d) into seconds.",
+      "contents": "Zduration{${1:duration}}"
+    },
+    {
+      "trigger": "ZeditButton\tEdits a button on an existing message by its custom ID.",
+      "contents": "ZeditButton{${1:customID};${2:label};${3:style};${4:disabled};${5:emoji};${6:messageID}}"
+    },
+    {
+      "trigger": "ZeditChannelPerms\tEdits permission overwrites for a user or role on a channel, using + to allow, - to deny, and / to neutralize each named permission.",
+      "contents": "ZeditChannelPerms{${1:channelID};${2:userOrRoleID};${3:permission};${4:}}"
+    },
+    {
+      "trigger": "ZeditEvent\tEdits one or more fields of an existing scheduled event by its ID.",
+      "contents": "ZeditEvent{${1:eventID};${2:name};${3:description};${4:startTime}}"
+    },
+    {
+      "trigger": "ZeditForumTag\tEdits the name or moderation flag of an existing forum tag by its ID.",
+      "contents": "ZeditForumTag{${1:channelID};${2:tagID};${3:name};${4:moderated}}"
+    },
+    {
+      "trigger": "ZeditMessage\tReplaces the text content of an existing message in a channel.",
+      "contents": "ZeditMessage{${1:channelID};${2:messageID};${3:content}}"
+    },
+    {
+      "trigger": "ZeditSelectMenu\tEdits the properties of a string select menu on an existing message.",
+      "contents": "ZeditSelectMenu{${1:menuID};${2:min};${3:max};${4:placeholder};${5:messageID}}"
+    },
+    {
+      "trigger": "ZeditSelectMenuOption\tReplaces the options on an existing select menu with a single updated option.",
+      "contents": "ZeditSelectMenuOption{${1:menuID};${2:label};${3:value};${4:description};${5:default};${6:emoji};${7:messageID}}"
+    },
+    {
+      "trigger": "ZeditSplitText\tReplaces the element at the given 1-based index in the current split text with a new value.",
+      "contents": "ZeditSplitText{${1:index};${2:value}}"
+    },
+    {
+      "trigger": "ZeditThread\tEdits one or more properties of an existing thread such as name, archived state, archive duration, lock status, and slowmode.",
+      "contents": "ZeditThread{${1:threadID};${2:name};${3:archived};${4:archiveDuration};${5:locked};${6:slowmode}}"
+    },
+    {
+      "trigger": "ZeditWelcomeScreen\tEdits the guild's welcome screen settings.",
+      "contents": "ZeditWelcomeScreen{${1:guildID};${2:enabled};${3:description};${4:welcomeChannelsJSON}}"
+    },
+    {
+      "trigger": "ZemojiExists\tReturns true if a custom emoji with the given ID exists in the current server, or false otherwise.",
+      "contents": "ZemojiExists{${1:id}}"
+    },
+    {
+      "trigger": "ZemojiName\tReturns the name of a custom emoji in the current server looked up by its ID.",
+      "contents": "ZemojiName{${1:id}}"
+    },
+    {
+      "trigger": "ZemoteCount\tReturns the total number of custom emojis in the current server.",
+      "contents": "ZemoteCount{}"
+    },
+    {
+      "trigger": "Zenabled\tHalts command execution with an optional error message when the condition is false, or continues silently when it is true.",
+      "contents": "Zenabled{${1:condition};${2:errorMessage}}"
+    },
+    {
+      "trigger": "ZendsWith\tReturns true if the text ends with the specified suffix.",
+      "contents": "ZendsWith{${1:text};${2:suffix}}"
+    },
+    {
+      "trigger": "Zentitlements\tReturns the bot application's entitlements as a JSON array.",
+      "contents": "Zentitlements{}"
+    },
+    {
+      "trigger": "Zephemeral\tMarks the current slash command response as ephemeral so it is only visible to the invoking user.",
+      "contents": "Zephemeral{}"
+    },
+    {
+      "trigger": "Zerror\tHalts execution and displays a custom user-facing error message.",
+      "contents": "Zerror{${1:message}}"
+    },
+    {
+      "trigger": "Zeval\tParses and executes a ZBR code string at runtime, returning the concatenated text output.",
+      "contents": "Zeval{${1:code}}"
+    },
+    {
+      "trigger": "ZeventChannel\tReturns the channel ID associated with a scheduled event, or an empty string for external events.",
+      "contents": "ZeventChannel{${1:eventID}}"
+    },
+    {
+      "trigger": "ZeventCount\tReturns the total number of scheduled events in the current server.",
+      "contents": "ZeventCount{}"
+    },
+    {
+      "trigger": "ZeventDescription\tReturns the description of a scheduled event by its event ID, or an empty string if no description is set.",
+      "contents": "ZeventDescription{${1:eventID}}"
+    },
+    {
+      "trigger": "ZeventEnd\tReturns the end time of a scheduled event as a Unix timestamp string, or an empty string if no end time is set.",
+      "contents": "ZeventEnd{${1:eventID}}"
+    },
+    {
+      "trigger": "ZeventName\tReturns the name of a scheduled event by its event ID.",
+      "contents": "ZeventName{${1:eventID}}"
+    },
+    {
+      "trigger": "ZeventStart\tReturns the start time of a scheduled event as a Unix timestamp string.",
+      "contents": "ZeventStart{${1:eventID}}"
+    },
+    {
+      "trigger": "ZeventStatus\tReturns the current status of a scheduled event as one of: scheduled, active, completed, or cancelled.",
+      "contents": "ZeventStatus{${1:eventID}}"
+    },
+    {
+      "trigger": "ZeventSubscribers\tReturns the number of users subscribed to a scheduled event.",
+      "contents": "ZeventSubscribers{${1:eventID}}"
+    },
+    {
+      "trigger": "ZexecutionTime\tReturns the number of milliseconds elapsed since the current command began executing.",
+      "contents": "ZexecutionTime{}"
+    },
+    {
+      "trigger": "Zfloor\tReturns the largest integer less than or equal to the given number.",
+      "contents": "Zfloor{${1:number}}"
+    },
+    {
+      "trigger": "Zfooter\tSets the footer text on the specified embed slot.",
+      "contents": "Zfooter{${1:text};${2:index}}"
+    },
+    {
+      "trigger": "ZfooterIcon\tSets the footer icon image URL on the specified embed slot, requiring a footer to already be set.",
+      "contents": "ZfooterIcon{${1:url};${2:index}}"
+    },
+    {
+      "trigger": "ZforJson\tIterates over a JSON array at the given key path within the current parsed JSON object, executing the code block for each element.",
+      "contents": "ZforJson{${1:key};${2:};${3:code}}"
+    },
+    {
+      "trigger": "ZforSplit\tIterates over the elements produced by a prior ZtextSplit call, executing the code block for each element with ZloopIndex and ZloopValue populated.",
+      "contents": "ZforSplit{${1:code}}"
+    },
+    {
+      "trigger": "ZforumPostCount\tReturns the number of currently active posts in a forum channel.",
+      "contents": "ZforumPostCount{${1:channelID}}"
+    },
+    {
+      "trigger": "ZforumPostLock\tLocks a forum post, preventing new replies.",
+      "contents": "ZforumPostLock{${1:postID}}"
+    },
+    {
+      "trigger": "ZforumPostPin\tPins a forum post to the top of the forum channel.",
+      "contents": "ZforumPostPin{${1:postID}}"
+    },
+    {
+      "trigger": "ZforumPosts\tReturns a space-separated list of active post IDs in a forum channel.",
+      "contents": "ZforumPosts{${1:channelID}}"
+    },
+    {
+      "trigger": "ZforumTagEmoji\tReturns the emoji associated with a forum tag.",
+      "contents": "ZforumTagEmoji{${1:channelID};${2:tagID}}"
+    },
+    {
+      "trigger": "ZforumTagID\tReturns the ID of a forum tag matching the given name, or an empty string if not found.",
+      "contents": "ZforumTagID{${1:channelID};${2:tagName}}"
+    },
+    {
+      "trigger": "ZforumTagModerated\tReturns true if the specified forum tag is restricted to moderators, or false otherwise.",
+      "contents": "ZforumTagModerated{${1:channelID};${2:tagID}}"
+    },
+    {
+      "trigger": "ZforumTags\tReturns a space-separated list of available tag names in a forum channel.",
+      "contents": "ZforumTags{${1:channelID}}"
+    },
+    {
+      "trigger": "ZfromTimestamp\tFormats a Unix timestamp into a human-readable date/time string using the active timezone and the specified format.",
+      "contents": "ZfromTimestamp{${1:unix};${2:format}}"
+    },
+    {
+      "trigger": "ZgetAttachments\tReturns attachment URLs from the triggering message joined by newlines, or the single URL at the specified 1-based index.",
+      "contents": "ZgetAttachments{${1:index}}"
+    },
+    {
+      "trigger": "ZgetBanReason\tReturns the ban reason for the specified user, optionally checked against a different guild.",
+      "contents": "ZgetBanReason{${1:userID};${2:guildID}}"
+    },
+    {
+      "trigger": "ZgetChannelVar\tReturns the value of a channel-scoped variable, defaulting to the current channel if not specified.",
+      "contents": "ZgetChannelVar{${1:name};${2:channelID}}"
+    },
+    {
+      "trigger": "ZgetCooldown\tReturns the remaining cooldown time in seconds for the current user and command.",
+      "contents": "ZgetCooldown{${1:type}}"
+    },
+    {
+      "trigger": "ZgetEmbedData\tFetches the specified field from an embed on an existing Discord message, where type is one of title, description, footer, color, image, or timestamp.",
+      "contents": "ZgetEmbedData{${1:channelID};${2:messageID};${3:embedIndex};${4:type}}"
+    },
+    {
+      "trigger": "ZgetMentionableSelectUserCount\tReturns the number of users and roles selected in a mentionable select menu interaction.",
+      "contents": "ZgetMentionableSelectUserCount{}"
+    },
+    {
+      "trigger": "ZgetMentionableSelectUserID\tReturns the selected user or role ID at the given 1-based index from a mentionable select menu interaction.",
+      "contents": "ZgetMentionableSelectUserID{${1:index}}"
+    },
+    {
+      "trigger": "ZgetMentionableSelectUserIDs\tReturns all selected user and role IDs from a mentionable select menu interaction joined by the given separator.",
+      "contents": "ZgetMentionableSelectUserIDs{${1:separator};${2:limit}}"
+    },
+    {
+      "trigger": "ZgetMessage\tFetches the specified field from a Discord message, where type is one of content, authorID, username, or avatar.",
+      "contents": "ZgetMessage{${1:channelID};${2:messageID};${3:type}}"
+    },
+    {
+      "trigger": "ZgetReactions\tReturns a separator-joined list of usernames of users who reacted to a specific message with the given emoji.",
+      "contents": "ZgetReactions{${1:channelID};${2:messageID};${3:separator};${4:emoji}}"
+    },
+    {
+      "trigger": "ZgetRoleSelectRoleCount\tReturns the number of roles selected in a role select menu interaction.",
+      "contents": "ZgetRoleSelectRoleCount{}"
+    },
+    {
+      "trigger": "ZgetRoleSelectRoleID\tReturns the selected role ID at the given 1-based index from a role select menu interaction.",
+      "contents": "ZgetRoleSelectRoleID{${1:index}}"
+    },
+    {
+      "trigger": "ZgetRoleSelectRoleIDs\tReturns all selected role IDs from a role select menu interaction joined by the given separator.",
+      "contents": "ZgetRoleSelectRoleIDs{${1:separator};${2:limit}}"
+    },
+    {
+      "trigger": "ZgetServerVar\tReturns the value of a server-scoped variable, defaulting to the current server if not specified.",
+      "contents": "ZgetServerVar{${1:name};${2:guildID}}"
+    },
+    {
+      "trigger": "ZgetSlowmode\tReturns the slowmode rate limit in seconds for the given channel, or 0 if no slowmode is set.",
+      "contents": "ZgetSlowmode{${1:channelID}}"
+    },
+    {
+      "trigger": "ZgetTextSplitIndex\tReturns the 1-based index of the first element in the split that matches the given value, or -1 if not found.",
+      "contents": "ZgetTextSplitIndex{${1:value}}"
+    },
+    {
+      "trigger": "ZgetTextSplitLength\tReturns the number of elements in the current split text.",
+      "contents": "ZgetTextSplitLength{}"
+    },
+    {
+      "trigger": "ZgetTimestamp\tReturns the current Unix timestamp in the specified unit: seconds (s), milliseconds (ms), or nanoseconds (ns).",
+      "contents": "ZgetTimestamp{${1:unit}}"
+    },
+    {
+      "trigger": "ZgetUserSelectUserCount\tReturns the number of users selected in a user select menu interaction.",
+      "contents": "ZgetUserSelectUserCount{}"
+    },
+    {
+      "trigger": "ZgetUserSelectUserID\tReturns the selected user ID at the given 1-based index from a user select menu interaction.",
+      "contents": "ZgetUserSelectUserID{${1:index}}"
+    },
+    {
+      "trigger": "ZgetUserSelectUserIDs\tReturns all selected user IDs from a user select menu interaction joined by the given separator.",
+      "contents": "ZgetUserSelectUserIDs{${1:separator};${2:limit}}"
+    },
+    {
+      "trigger": "ZgetUserVar\tReturns the value of a user-scoped variable, defaulting to the current user and server if not specified.",
+      "contents": "ZgetUserVar{${1:name};${2:userID};${3:guildID}}"
+    },
+    {
+      "trigger": "ZgetVar\tReturns the value of a global bot-wide variable by name.",
+      "contents": "ZgetVar{${1:name}}"
+    },
+    {
+      "trigger": "ZglobalCooldown\tApplies a per-user global cooldown across all servers, preventing the user from running the command until the duration expires.",
+      "contents": "ZglobalCooldown{${1:duration};${2:errorMessage}}"
+    },
+    {
+      "trigger": "ZguildBanner\tReturns the banner URL of the guild, or an empty string if no banner is set.",
+      "contents": "ZguildBanner{${1:guildID}}"
+    },
+    {
+      "trigger": "ZguildExists\tReturns true if a guild with the given ID is accessible by the bot, or false otherwise.",
+      "contents": "ZguildExists{${1:guildID}}"
+    },
+    {
+      "trigger": "ZguildID\tReturns the ID of the current guild.",
+      "contents": "ZguildID{}"
+    },
+    {
+      "trigger": "ZhasRole\tReturns true if the specified user currently has the given role.",
+      "contents": "ZhasRole{${1:userID};${2:roleID}}"
+    },
+    {
+      "trigger": "ZhighestRole\tReturns the ID of the highest-position role held by the specified user, defaulting to the author.",
+      "contents": "ZhighestRole{${1:userID}}"
+    },
+    {
+      "trigger": "ZhighestRoleWithPerms\tReturns the ID of the highest-position role in the guild that has all of the specified permissions.",
+      "contents": "ZhighestRoleWithPerms{${1:permission};${2:}}"
+    },
+    {
+      "trigger": "Zhour\tReturns the current hour using the active timezone.",
+      "contents": "Zhour{}"
+    },
+    {
+      "trigger": "ZhttpAddHeader\tAdds a custom HTTP header by name and value that will be sent with all subsequent HTTP requests in the current execution.",
+      "contents": "ZhttpAddHeader{${1:name};${2:value}}"
+    },
+    {
+      "trigger": "ZhttpDelete\tSends an HTTP DELETE request to the specified URL with an optional request body and stores the response.",
+      "contents": "ZhttpDelete{${1:url};${2:body}}"
+    },
+    {
+      "trigger": "ZhttpGet\tSends an HTTP GET request to the specified URL and stores the response for access via ZhttpStatus and ZhttpResult.",
+      "contents": "ZhttpGet{${1:url}}"
+    },
+    {
+      "trigger": "ZhttpGetHeader\tReturns the value of a custom HTTP header previously registered via ZhttpAddHeader, or an empty string if it does not exist.",
+      "contents": "ZhttpGetHeader{${1:name}}"
+    },
+    {
+      "trigger": "ZhttpPatch\tSends an HTTP PATCH request to the specified URL with an optional request body and stores the response.",
+      "contents": "ZhttpPatch{${1:url};${2:body}}"
+    },
+    {
+      "trigger": "ZhttpPost\tSends an HTTP POST request to the specified URL with an optional request body and stores the response.",
+      "contents": "ZhttpPost{${1:url};${2:body}}"
+    },
+    {
+      "trigger": "ZhttpPut\tSends an HTTP PUT request to the specified URL with an optional request body and stores the response.",
+      "contents": "ZhttpPut{${1:url};${2:body}}"
+    },
+    {
+      "trigger": "ZhttpRemoveHeader\tRemoves a custom HTTP header previously set via ZhttpAddHeader so it is no longer sent with subsequent requests.",
+      "contents": "ZhttpRemoveHeader{${1:name}}"
+    },
+    {
+      "trigger": "ZhttpResult\tReturns the response body of the last HTTP request, optionally navigating into it as a JSON path where each argument is one level deeper.",
+      "contents": "ZhttpResult{${1:key};${2:}}"
+    },
+    {
+      "trigger": "ZhttpStatus\tReturns the HTTP status code of the last HTTP request made in the current execution.",
+      "contents": "ZhttpStatus{}"
+    },
+    {
+      "trigger": "Zif\tEvaluates a condition and returns the then-branch value if true, or the optional else-branch value if false.",
+      "contents": "Zif{${1:condition};${2:then};${3:else}}"
+    },
+    {
+      "trigger": "ZignoreChannels\tHalts execution if the current channel matches any of the provided channel IDs.",
+      "contents": "ZignoreChannels{${1:channelID};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "Zimage\tSets the large image URL on the specified embed slot.",
+      "contents": "Zimage{${1:url};${2:index}}"
+    },
+    {
+      "trigger": "ZindexOf\tReturns the 1-based character position of the first occurrence of a search string in the text, or 0 if not found.",
+      "contents": "ZindexOf{${1:text};${2:search}}"
+    },
+    {
+      "trigger": "ZinputValue\tReturns the submitted value of a modal text input field by its field ID.",
+      "contents": "ZinputValue{${1:fieldID}}"
+    },
+    {
+      "trigger": "ZinviteInfo\tReturns a specific field of a Discord invite by its code, where type is one of uses, channel, creationDate, inviter, or isTemporary.",
+      "contents": "ZinviteInfo{${1:code};${2:type}}"
+    },
+    {
+      "trigger": "ZisAdmin\tReturns true if the command author or specified user has the Administrator permission in the current guild, otherwise false.",
+      "contents": "ZisAdmin{${1:userID}}"
+    },
+    {
+      "trigger": "ZisBanned\tReturns true if the specified user is currently banned from the guild.",
+      "contents": "ZisBanned{${1:userID};${2:guildID}}"
+    },
+    {
+      "trigger": "ZisBoolean\tReturns true if the value is exactly the string true or false, otherwise returns false.",
+      "contents": "ZisBoolean{${1:value}}"
+    },
+    {
+      "trigger": "ZisBooster\tReturns true if the command author or specified user is currently boosting the current guild, otherwise false.",
+      "contents": "ZisBooster{${1:userID}}"
+    },
+    {
+      "trigger": "ZisBot\tReturns true if the command author or specified user is a bot account, otherwise false.",
+      "contents": "ZisBot{${1:userID}}"
+    },
+    {
+      "trigger": "ZisEmojiAnimated\tReturns true if the custom emoji with the given ID is animated, or false if it is static.",
+      "contents": "ZisEmojiAnimated{${1:id}}"
+    },
+    {
+      "trigger": "ZisHoisted\tReturns true if the given role is displayed separately in the member list, defaulting to the author's top role if no ID is provided.",
+      "contents": "ZisHoisted{${1:roleID}}"
+    },
+    {
+      "trigger": "ZisInteger\tReturns true if the value parses as a whole number with no decimal point, otherwise returns false.",
+      "contents": "ZisInteger{${1:value}}"
+    },
+    {
+      "trigger": "ZisInVoice\tReturns true if the specified user is currently connected to a voice channel, defaulting to the author.",
+      "contents": "ZisInVoice{${1:userID}}"
+    },
+    {
+      "trigger": "ZisMentionable\tReturns true if the given role can be mentioned by all users, defaulting to the author's top role if no ID is provided.",
+      "contents": "ZisMentionable{${1:roleID}}"
+    },
+    {
+      "trigger": "ZisMentioned\tReturns true if the specified user is mentioned in the triggering message, defaulting to the command author.",
+      "contents": "ZisMentioned{${1:userID}}"
+    },
+    {
+      "trigger": "ZisMessageEdited\tReturns true or false for whether a message has been edited, or returns its edit timestamp when type is timestamp.",
+      "contents": "ZisMessageEdited{${1:channelID};${2:messageID};${3:type}}"
+    },
+    {
+      "trigger": "ZisModerator\tReturns true if the command author or specified user has the Moderate Members permission in the current guild, otherwise false.",
+      "contents": "ZisModerator{${1:userID}}"
+    },
+    {
+      "trigger": "ZisNSFW\tReturns true if the given channel is marked as NSFW, or false otherwise.",
+      "contents": "ZisNSFW{${1:channelID}}"
+    },
+    {
+      "trigger": "ZisNumber\tReturns true if the value parses as any numeric value including decimals, otherwise returns false.",
+      "contents": "ZisNumber{${1:value}}"
+    },
+    {
+      "trigger": "ZisSlash\tReturns true if the current command was triggered as a slash command, otherwise returns false.",
+      "contents": "ZisSlash{}"
+    },
+    {
+      "trigger": "ZisTimedOut\tReturns true if the specified user currently has an active communication timeout.",
+      "contents": "ZisTimedOut{${1:userID}}"
+    },
+    {
+      "trigger": "ZisUserDMEnabled\tReturns true if a DM channel can be successfully opened with the command author or specified user, otherwise false.",
+      "contents": "ZisUserDMEnabled{${1:userID}}"
+    },
+    {
+      "trigger": "ZisValidHex\tReturns true if the value is a valid six-digit hex color code, otherwise returns false.",
+      "contents": "ZisValidHex{${1:value}}"
+    },
+    {
+      "trigger": "ZjoinSplitText\tJoins all elements in the current split text into a single string using the given separator.",
+      "contents": "ZjoinSplitText{${1:separator}}"
+    },
+    {
+      "trigger": "ZjsonArray\tCreates an empty JSON array at the specified key path in the working JSON object.",
+      "contents": "ZjsonArray{${1:key};${2:}}"
+    },
+    {
+      "trigger": "ZjsonArrayAppend\tAppends a value to the end of the array at the specified key path in the working JSON object.",
+      "contents": "ZjsonArrayAppend{${1:key};${2:};${3:value}}"
+    },
+    {
+      "trigger": "ZjsonArrayCount\tReturns the number of elements in the array at the specified key path in the working JSON object.",
+      "contents": "ZjsonArrayCount{${1:key};${2:}}"
+    },
+    {
+      "trigger": "ZjsonArrayIndex\tReturns the 0-based index of the first occurrence of a value in the array at the specified key path, or -1 if not found.",
+      "contents": "ZjsonArrayIndex{${1:key};${2:};${3:value}}"
+    },
+    {
+      "trigger": "ZjsonArrayPop\tRemoves and returns the last element of the array at the specified key path in the working JSON object.",
+      "contents": "ZjsonArrayPop{${1:key};${2:}}"
+    },
+    {
+      "trigger": "ZjsonArrayReverse\tReverses the array at the specified key path in the working JSON object in place.",
+      "contents": "ZjsonArrayReverse{${1:key};${2:}}"
+    },
+    {
+      "trigger": "ZjsonArrayShift\tRemoves and returns the first element of the array at the specified key path in the working JSON object.",
+      "contents": "ZjsonArrayShift{${1:key};${2:}}"
+    },
+    {
+      "trigger": "ZjsonArraySort\tSorts the array at the specified key path in ascending order, comparing numbers numerically and other values lexicographically.",
+      "contents": "ZjsonArraySort{${1:key};${2:}}"
+    },
+    {
+      "trigger": "ZjsonArrayUnshift\tInserts a value at the beginning of the array at the specified key path in the working JSON object.",
+      "contents": "ZjsonArrayUnshift{${1:key};${2:};${3:value}}"
+    },
+    {
+      "trigger": "ZjsonClear\tClears the working JSON object, discarding all stored data for the current execution.",
+      "contents": "ZjsonClear{}"
+    },
+    {
+      "trigger": "ZjsonExists\tReturns true if the specified key path exists in the working JSON object, or false otherwise.",
+      "contents": "ZjsonExists{${1:key};${2:}}"
+    },
+    {
+      "trigger": "ZjsonGet\tReturns the value at the specified key path in the working JSON object, returning an empty string if the path does not exist.",
+      "contents": "ZjsonGet{${1:key};${2:}}"
+    },
+    {
+      "trigger": "ZjsonJoinArray\tJoins all elements of the array at the specified key path into a single string using the provided separator.",
+      "contents": "ZjsonJoinArray{${1:key};${2:};${3:separator}}"
+    },
+    {
+      "trigger": "ZjsonParse\tParses a JSON string and stores it as the working JSON object for the current execution.",
+      "contents": "ZjsonParse{${1:jsonString}}"
+    },
+    {
+      "trigger": "ZjsonPretty\tSerializes the working JSON object to a pretty-printed JSON string using the specified number of spaces for indentation.",
+      "contents": "ZjsonPretty{${1:indent}}"
+    },
+    {
+      "trigger": "ZjsonSet\tSets a value at the specified key path in the working JSON object, automatically inferring the value type.",
+      "contents": "ZjsonSet{${1:key};${2:};${3:value}}"
+    },
+    {
+      "trigger": "ZjsonStringify\tSerializes the working JSON object to a compact JSON string.",
+      "contents": "ZjsonStringify{}"
+    },
+    {
+      "trigger": "ZjsonUnset\tRemoves the key at the specified path from the working JSON object.",
+      "contents": "ZjsonUnset{${1:key};${2:}}"
+    },
+    {
+      "trigger": "Zkick\tKicks a user from the guild with an optional reason.",
+      "contents": "Zkick{${1:userID};${2:reason}}"
+    },
+    {
+      "trigger": "ZlastMessageID\tReturns the ID of the last message sent in the given channel, or an empty string if none exists.",
+      "contents": "ZlastMessageID{${1:channelID}}"
+    },
+    {
+      "trigger": "ZlastPinTimestamp\tReturns the date of the most recently pinned message in the channel formatted as YYYY-MM-DD, or an empty string if no pins exist.",
+      "contents": "ZlastPinTimestamp{${1:channelID}}"
+    },
+    {
+      "trigger": "ZlinesCount\tReturns the number of lines in the text, returning zero for an empty string.",
+      "contents": "ZlinesCount{${1:text}}"
+    },
+    {
+      "trigger": "ZlistVar\tReturns all global variable names joined by the given separator.",
+      "contents": "ZlistVar{${1:separator}}"
+    },
+    {
+      "trigger": "ZloopIndex\tReturns the current 1-based iteration index of the active loop, or 0 if called outside a loop.",
+      "contents": "ZloopIndex{}"
+    },
+    {
+      "trigger": "ZloopValue\tReturns the current element value of the active loop, or an empty string if called outside a loop.",
+      "contents": "ZloopValue{}"
+    },
+    {
+      "trigger": "Zlowercase\tConverts all characters in the text to lowercase.",
+      "contents": "Zlowercase{${1:text}}"
+    },
+    {
+      "trigger": "ZlowestRole\tReturns the ID of the lowest-position non-everyone role held by the specified user, defaulting to the author.",
+      "contents": "ZlowestRole{${1:userID}}"
+    },
+    {
+      "trigger": "ZlowestRoleWithPerms\tReturns the ID of the lowest-position role in the guild that has all of the specified permissions.",
+      "contents": "ZlowestRoleWithPerms{${1:permission};${2:}}"
+    },
+    {
+      "trigger": "Zmax\tReturns the largest value among all provided numbers.",
+      "contents": "Zmax{${1:number};${2:}}"
+    },
+    {
+      "trigger": "Zmd5\tReturns the MD5 hash of the input text in hexadecimal.",
+      "contents": "Zmd5{${1:text}}"
+    },
+    {
+      "trigger": "ZmembersCount\tReturns the total number of members in the guild, or the count filtered by presence status.",
+      "contents": "ZmembersCount{${1:status}}"
+    },
+    {
+      "trigger": "Zmentioned\tReturns the user ID of the Nth mentioned user in the triggering message, optionally falling back to the author ID.",
+      "contents": "Zmentioned{${1:index};${2:fallbackToAuthor}}"
+    },
+    {
+      "trigger": "Zmessage\tReturns the full message content after the command trigger, or the Nth space-separated word when an index is provided.",
+      "contents": "Zmessage{${1:index}}"
+    },
+    {
+      "trigger": "ZmessageID\tReturns the ID of the message that triggered the current command execution.",
+      "contents": "ZmessageID{}"
+    },
+    {
+      "trigger": "ZmessageLink\tBuilds and returns a Discord jump URL for the specified message, using the current channel if no channel ID is provided.",
+      "contents": "ZmessageLink{${1:messageID};${2:channelID}}"
+    },
+    {
+      "trigger": "Zmin\tReturns the smallest value among all provided numbers.",
+      "contents": "Zmin{${1:number};${2:}}"
+    },
+    {
+      "trigger": "Zminute\tReturns the current minute using the active timezone.",
+      "contents": "Zminute{}"
+    },
+    {
+      "trigger": "ZmodifyChannel\tModifies one or more properties of an existing channel such as its name, topic, NSFW flag, position, and parent category.",
+      "contents": "ZmodifyChannel{${1:channelID};${2:name};${3:topic};${4:nsfw};${5:position};${6:categoryID}}"
+    },
+    {
+      "trigger": "ZmodifyRole\tModifies the name, color, hoist, and mentionable settings of an existing role, leaving any unspecified fields unchanged.",
+      "contents": "ZmodifyRole{${1:roleID};${2:name};${3:color};${4:hoisted};${5:mentionable}}"
+    },
+    {
+      "trigger": "ZmodifyRolePerms\tAdds or removes permissions from a role using prefixed operations where + grants, - denies, and / resets a permission.",
+      "contents": "ZmodifyRolePerms{${1:roleID};${2:operation};${3:}}"
+    },
+    {
+      "trigger": "Zmodulo\tReturns the remainder of dividing the dividend by the divisor.",
+      "contents": "Zmodulo{${1:dividend};${2:divisor}}"
+    },
+    {
+      "trigger": "Zmonth\tReturns the current month number using the active timezone.",
+      "contents": "Zmonth{}"
+    },
+    {
+      "trigger": "Zmulti\tReturns the product of all provided numbers.",
+      "contents": "Zmulti{${1:number};${2:}}"
+    },
+    {
+      "trigger": "Zmute\tServer-mutes the specified user in all voice channels.",
+      "contents": "Zmute{${1:userID}}"
+    },
+    {
+      "trigger": "ZnewModal\tCreates a modal dialog to collect text input from the user.",
+      "contents": "ZnewModal{${1:modalID};${2:title}}"
+    },
+    {
+      "trigger": "ZnewSelectMenu\tCreates a string select menu on the bot's response.",
+      "contents": "ZnewSelectMenu{${1:menuID};${2:min};${3:max};${4:placeholder}}"
+    },
+    {
+      "trigger": "Znot\tInverts a boolean value, returning false for true or 1, and true for anything else.",
+      "contents": "Znot{${1:value}}"
+    },
+    {
+      "trigger": "ZnumberSeparator\tFormats a number string by inserting thousands separators, defaulting to a comma.",
+      "contents": "ZnumberSeparator{${1:number};${2:separator}}"
+    },
+    {
+      "trigger": "ZonlyAdmin\tHalts execution unless the author has the Administrator permission in the guild.",
+      "contents": "ZonlyAdmin{${1:errorMessage}}"
+    },
+    {
+      "trigger": "ZonlyBotChannelPerms\tHalts execution unless the bot has all of the specified permissions in the given channel.",
+      "contents": "ZonlyBotChannelPerms{${1:channelID};${2:permission};${3:};${4:errorMessage}}"
+    },
+    {
+      "trigger": "ZonlyBotPerms\tHalts execution unless the bot has all of the specified guild permissions.",
+      "contents": "ZonlyBotPerms{${1:permission};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZonlyForCategories\tHalts execution unless the current channel belongs to one of the specified category IDs.",
+      "contents": "ZonlyForCategories{${1:categoryID};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZonlyForChannels\tHalts execution unless the current channel matches one of the specified channel IDs.",
+      "contents": "ZonlyForChannels{${1:channelID};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZonlyForIDs\tHalts execution unless the author's user ID matches one of the specified IDs.",
+      "contents": "ZonlyForIDs{${1:userID};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZonlyForRoleIDs\tHalts execution unless the author has at least one of the specified role IDs.",
+      "contents": "ZonlyForRoleIDs{${1:roleID};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZonlyForRoles\tHalts execution unless the author has at least one of the specified roles matched by name.",
+      "contents": "ZonlyForRoles{${1:roleName};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZonlyForServers\tHalts execution unless the current guild ID matches one of the specified server IDs.",
+      "contents": "ZonlyForServers{${1:guildID};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZonlyForUsers\tHalts execution unless the author's username matches one of the specified usernames.",
+      "contents": "ZonlyForUsers{${1:username};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "ZonlyIf\tHalts execution with a custom error message if the given condition evaluates to false.",
+      "contents": "ZonlyIf{${1:condition};${2:error}}"
+    },
+    {
+      "trigger": "ZonlyIfMessageContains\tHalts execution with an error message unless the provided message text contains all of the specified words.",
+      "contents": "ZonlyIfMessageContains{${1:message};${2:word};${3:};${4:errorMessage}}"
+    },
+    {
+      "trigger": "ZonlyNSFW\tHalts execution unless the current channel is marked as NSFW.",
+      "contents": "ZonlyNSFW{${1:errorMessage}}"
+    },
+    {
+      "trigger": "ZonlyPerms\tHalts execution unless the author has all of the specified guild permissions.",
+      "contents": "ZonlyPerms{${1:permission};${2:};${3:errorMessage}}"
+    },
+    {
+      "trigger": "Zoption\tReturns the value of a named slash command option by its key.",
+      "contents": "Zoption{${1:key}}"
+    },
+    {
+      "trigger": "ZpadLeft\tPads the text on the left with a repeated character until it reaches the specified width, defaulting to a space.",
+      "contents": "ZpadLeft{${1:text};${2:width};${3:char}}"
+    },
+    {
+      "trigger": "ZpadRight\tPads the text on the right with a repeated character until it reaches the specified width, defaulting to a space.",
+      "contents": "ZpadRight{${1:text};${2:width};${3:char}}"
+    },
+    {
+      "trigger": "ZparentID\tReturns the ID of the parent category of the given channel, or an empty string if the channel has no parent.",
+      "contents": "ZparentID{${1:channelID}}"
+    },
+    {
+      "trigger": "Zping\tReturns the bot's gateway latency in milliseconds.",
+      "contents": "Zping{}"
+    },
+    {
+      "trigger": "ZpinList\tReturns a space-separated list of pinned message IDs in a channel.",
+      "contents": "ZpinList{${1:channelID}}"
+    },
+    {
+      "trigger": "ZpinMessage\tPins the specified message in a channel, defaulting to the current channel if no channel ID is provided.",
+      "contents": "ZpinMessage{${1:channelID};${2:messageID}}"
+    },
+    {
+      "trigger": "ZpollAddAnswer\tAdds an answer option to the poll being created.",
+      "contents": "ZpollAddAnswer{${1:text};${2:emoji}}"
+    },
+    {
+      "trigger": "ZpollAllowMultiselect\tAllows voting for multiple answers in the poll being created.",
+      "contents": "ZpollAllowMultiselect{${1:true/false}}"
+    },
+    {
+      "trigger": "ZpollAnswerVoters\tReturns a list of users who voted for a specific poll answer.",
+      "contents": "ZpollAnswerVoters{${1:messageID};${2:answerID};${3:channelID}}"
+    },
+    {
+      "trigger": "ZpollAnswerVotes\tReturns the vote count for a specific poll answer.",
+      "contents": "ZpollAnswerVotes{${1:messageID};${2:answerID};${3:channelID}}"
+    },
+    {
+      "trigger": "ZpollCreate\tStarts creating a poll with the given question and duration in hours.",
+      "contents": "ZpollCreate{${1:question};${2:duration}}"
+    },
+    {
+      "trigger": "ZpollEnd\tEnds a poll early by message ID.",
+      "contents": "ZpollEnd{${1:messageID};${2:channelID}}"
+    },
+    {
+      "trigger": "ZpollGet\tGets poll details and current results for a message.",
+      "contents": "ZpollGet{${1:messageID};${2:channelID}}"
+    },
+    {
+      "trigger": "ZpollSend\tSends the configured poll to the specified channel.",
+      "contents": "ZpollSend{${1:channelID};${2:returnID}}"
+    },
+    {
+      "trigger": "ZpostTags\tReturns a space-separated list of tag IDs currently applied to a forum post thread.",
+      "contents": "ZpostTags{${1:threadID}}"
+    },
+    {
+      "trigger": "Zpow\tReturns the base raised to the power of the exponent.",
+      "contents": "Zpow{${1:base};${2:exponent}}"
+    },
+    {
+      "trigger": "ZpublishMessage\tCrossposts a message from an announcement channel to all subscribed channels.",
+      "contents": "ZpublishMessage{${1:channelID};${2:messageID}}"
+    },
+    {
+      "trigger": "Zrandom\tReturns a random integer between min and max (inclusive).",
+      "contents": "Zrandom{${1:min};${2:max}}"
+    },
+    {
+      "trigger": "ZrandomCategoryID\tReturns the ID of a randomly selected category channel in the current server.",
+      "contents": "ZrandomCategoryID{}"
+    },
+    {
+      "trigger": "ZrandomChannelID\tReturns the ID of a randomly selected text channel in the current server.",
+      "contents": "ZrandomChannelID{}"
+    },
+    {
+      "trigger": "ZrandomGuildID\tReturns the ID of a randomly selected guild that the bot is a member of.",
+      "contents": "ZrandomGuildID{}"
+    },
+    {
+      "trigger": "ZrandomMention\tReturns a formatted mention string for a randomly selected member in the current server.",
+      "contents": "ZrandomMention{}"
+    },
+    {
+      "trigger": "ZrandomRoleID\tReturns the ID of a randomly selected role in the current server.",
+      "contents": "ZrandomRoleID{}"
+    },
+    {
+      "trigger": "ZrandomString\tReturns a random alphanumeric string of the specified length.",
+      "contents": "ZrandomString{${1:length}}"
+    },
+    {
+      "trigger": "ZrandomText\tReturns one of the provided text values chosen at random.",
+      "contents": "ZrandomText{${1:text};${2:}}"
+    },
+    {
+      "trigger": "ZrandomUser\tReturns the display name of a randomly selected member in the current server.",
+      "contents": "ZrandomUser{}"
+    },
+    {
+      "trigger": "ZrandomUserID\tReturns the user ID of a randomly selected member in the current server.",
+      "contents": "ZrandomUserID{}"
+    },
+    {
+      "trigger": "ZregexMatch\tReturns true if the text matches the given regular expression pattern.",
+      "contents": "ZregexMatch{${1:text};${2:pattern}}"
+    },
+    {
+      "trigger": "ZregexReplace\tReplaces all substrings in the text that match the regular expression pattern with the specified replacement.",
+      "contents": "ZregexReplace{${1:text};${2:pattern};${3:replacement}}"
+    },
+    {
+      "trigger": "ZremoveAllComponents\tRemoves all components from a message, defaulting to the triggering message.",
+      "contents": "ZremoveAllComponents{${1:messageID}}"
+    },
+    {
+      "trigger": "ZremoveButtons\tRemoves all buttons from a message by clearing all its components, defaulting to the triggering message.",
+      "contents": "ZremoveButtons{${1:messageID}}"
+    },
+    {
+      "trigger": "ZremoveComponent\tRemoves a specific component by its custom ID from a message, defaulting to the triggering message.",
+      "contents": "ZremoveComponent{${1:customID};${2:messageID}}"
+    },
+    {
+      "trigger": "ZremoveEmoji\tDeletes a custom emoji from the current server by its ID.",
+      "contents": "ZremoveEmoji{${1:id}}"
+    },
+    {
+      "trigger": "ZremoveLinks\tRemoves all whitespace-delimited tokens beginning with http:// or https:// from the text.",
+      "contents": "ZremoveLinks{${1:text}}"
+    },
+    {
+      "trigger": "ZremoveSplitTextElement\tRemoves the element at the given 1-based index from the current split text.",
+      "contents": "ZremoveSplitTextElement{${1:index}}"
+    },
+    {
+      "trigger": "Zrepeat\tExecutes the given code block N times and returns each non-empty output joined by newlines.",
+      "contents": "Zrepeat{${1:N};${2:code}}"
+    },
+    {
+      "trigger": "ZreplaceText\tReplaces occurrences of a sample substring in text with a new string, with an optional limit on the number of replacements.",
+      "contents": "ZreplaceText{${1:text};${2:sample};${3:new};${4:amount}}"
+    },
+    {
+      "trigger": "ZrepliedMessageID\tReturns the ID of the message that the specified or triggering message is replying to.",
+      "contents": "ZrepliedMessageID{${1:channelID};${2:messageID}}"
+    },
+    {
+      "trigger": "Zreply\tSignals that the bot's response should be sent as a reply to the triggering message.",
+      "contents": "Zreply{}"
+    },
+    {
+      "trigger": "ZreplyIn\tSchedules a reply to the triggering message after the specified duration has elapsed.",
+      "contents": "ZreplyIn{${1:duration};${2:content}}"
+    },
+    {
+      "trigger": "ZresetChannelVar\tDeletes the given channel variable across every channel.",
+      "contents": "ZresetChannelVar{${1:name}}"
+    },
+    {
+      "trigger": "ZresetServerVar\tDeletes the given server variable across every server.",
+      "contents": "ZresetServerVar{${1:name}}"
+    },
+    {
+      "trigger": "ZresetUserVar\tDeletes the given user variable for every user in the current server.",
+      "contents": "ZresetUserVar{${1:name}}"
+    },
+    {
+      "trigger": "ZroleColor\tReturns the hex color code of a role, defaulting to the author's top role if no ID is provided.",
+      "contents": "ZroleColor{${1:roleID}}"
+    },
+    {
+      "trigger": "ZroleCount\tReturns the total number of roles in the current guild.",
+      "contents": "ZroleCount{}"
+    },
+    {
+      "trigger": "ZroleExists\tReturns true if the given role ID exists in the guild, defaulting to the author's top role if no ID is provided.",
+      "contents": "ZroleExists{${1:roleID}}"
+    },
+    {
+      "trigger": "ZroleGrant\tGrants or removes one or more roles from a user using prefixed operations where + adds and - removes a role.",
+      "contents": "ZroleGrant{${1:userID};${2:operation};${3:}}"
+    },
+    {
+      "trigger": "ZroleID\tReturns the command author's top role ID, or searches for and returns the ID of a guild role matching the given name.",
+      "contents": "ZroleID{${1:name}}"
+    },
+    {
+      "trigger": "ZroleMemberCount\tReturns the number of members who have the given role, defaulting to the author's highest role.",
+      "contents": "ZroleMemberCount{${1:roleID}}"
+    },
+    {
+      "trigger": "ZroleMembers\tReturns a space-separated list of user IDs for all members who have the given role, defaulting to the author's highest role.",
+      "contents": "ZroleMembers{${1:roleID}}"
+    },
+    {
+      "trigger": "ZroleName\tReturns the name of a role by its ID, defaulting to the author's top role if no ID is provided.",
+      "contents": "ZroleName{${1:roleID}}"
+    },
+    {
+      "trigger": "ZroleNames\tReturns all role names in the guild sorted by position from highest to lowest, joined by the given separator.",
+      "contents": "ZroleNames{${1:separator}}"
+    },
+    {
+      "trigger": "ZrolePerms\tReturns the permission names granted to a role joined by the given separator, defaulting to the author's top role if no ID is provided.",
+      "contents": "ZrolePerms{${1:roleID};${2:separator}}"
+    },
+    {
+      "trigger": "ZrolePosition\tReturns the hierarchy position of a role, defaulting to the author's top role if no ID is provided.",
+      "contents": "ZrolePosition{${1:roleID}}"
+    },
+    {
+      "trigger": "Zround\tRounds a number to the specified number of decimal places, defaulting to zero decimal places.",
+      "contents": "Zround{${1:value};${2:decimals}}"
+    },
+    {
+      "trigger": "ZrulesChannelID\tReturns the ID of the rules channel in the guild, or an empty string if none is configured.",
+      "contents": "ZrulesChannelID{${1:guildID}}"
+    },
+    {
+      "trigger": "Zsecond\tReturns the current second using the active timezone.",
+      "contents": "Zsecond{}"
+    },
+    {
+      "trigger": "ZsendEmbed\tSends the embed at the specified slot index to a Discord channel, optionally returning the sent message ID.",
+      "contents": "ZsendEmbed{${1:channelID};${2:index};${3:returnID}}"
+    },
+    {
+      "trigger": "ZsendMessage\tSends a message to the specified channel (or the current channel if omitted), and optionally returns the sent message's ID.",
+      "contents": "ZsendMessage{${1:channelID};${2:content};${3:returnID}}"
+    },
+    {
+      "trigger": "ZsendWebhook\tSends the embed at the specified slot index via a Discord webhook URL, optionally returning the message ID.",
+      "contents": "ZsendWebhook{${1:webhookURL};${2:index};${3:returnID}}"
+    },
+    {
+      "trigger": "ZserverChannels\tReturns a separator-joined list of channel IDs for the specified server.",
+      "contents": "ZserverChannels{${1:separator};${2:guildID}}"
+    },
+    {
+      "trigger": "ZserverCooldown\tApplies a server-wide cooldown that prevents anyone in the server from running the command until the duration expires.",
+      "contents": "ZserverCooldown{${1:duration};${2:errorMessage}}"
+    },
+    {
+      "trigger": "ZserverCount\tReturns the number of guilds the bot is currently in.",
+      "contents": "ZserverCount{}"
+    },
+    {
+      "trigger": "ZserverDescription\tReturns the description of the guild, or an empty string if none is set.",
+      "contents": "ZserverDescription{${1:guildID}}"
+    },
+    {
+      "trigger": "ZserverEmojis\tReturns the custom emojis of the guild as formatted emoji strings joined by the specified separator.",
+      "contents": "ZserverEmojis{${1:guildID};${2:separator}}"
+    },
+    {
+      "trigger": "ZserverEvents\tReturns a space-separated list of all scheduled event IDs in the current server.",
+      "contents": "ZserverEvents{}"
+    },
+    {
+      "trigger": "ZserverIcon\tReturns the icon URL of the guild, or an empty string if no icon is set.",
+      "contents": "ZserverIcon{${1:guildID}}"
+    },
+    {
+      "trigger": "ZserverInvite\tReturns the URL of the first available invite for the guild, or an empty string if none exist.",
+      "contents": "ZserverInvite{${1:guildID}}"
+    },
+    {
+      "trigger": "ZserverLockdown\tEnables or disables guild raid protection (incident actions) with an optional duration.",
+      "contents": "ZserverLockdown{${1:enabled};${2:duration}}"
+    },
+    {
+      "trigger": "ZserverModify\tEdits guild settings such as name, icon, banner, splash, description, and verification level.",
+      "contents": "ZserverModify{${1:guildID};${2:name};${3:icon};${4:banner};${5:splash};${6:description};${7:afkChannelID};${8:afkTimeout};${9:systemChannelID};${10:verificationLevel}}"
+    },
+    {
+      "trigger": "ZserverName\tReturns the name of the guild.",
+      "contents": "ZserverName{${1:guildID}}"
+    },
+    {
+      "trigger": "ZserverNames\tReturns a list of the names of all guilds the bot is in, optionally limited to a count and joined by the separator.",
+      "contents": "ZserverNames{${1:amount};${2:separator}}"
+    },
+    {
+      "trigger": "ZserverOwner\tReturns the user ID of the guild owner.",
+      "contents": "ZserverOwner{${1:guildID}}"
+    },
+    {
+      "trigger": "ZserverRoles\tReturns a separator-joined list of role IDs for the specified server.",
+      "contents": "ZserverRoles{${1:separator};${2:guildID}}"
+    },
+    {
+      "trigger": "ZserverStickers\tReturns a space-separated list of all sticker IDs in the current server.",
+      "contents": "ZserverStickers{}"
+    },
+    {
+      "trigger": "ZserverVerificationLevel\tReturns the verification level of the current guild as a string such as none, low, medium, high, or very_high.",
+      "contents": "ZserverVerificationLevel{}"
+    },
+    {
+      "trigger": "ZsetChannelVar\tSets the value of a channel-scoped variable, defaulting to the current channel if not specified.",
+      "contents": "ZsetChannelVar{${1:name};${2:value};${3:channelID}}"
+    },
+    {
+      "trigger": "ZsetPostTags\tReplaces all applied tags on a forum post thread with the specified tag IDs.",
+      "contents": "ZsetPostTags{${1:threadID};${2:tagID};${3:}}"
+    },
+    {
+      "trigger": "ZsetServerVar\tSets the value of a server-scoped variable, defaulting to the current server if not specified.",
+      "contents": "ZsetServerVar{${1:name};${2:value};${3:guildID}}"
+    },
+    {
+      "trigger": "ZsetUserRoles\tReplaces all roles of the specified user with exactly the provided list of role IDs.",
+      "contents": "ZsetUserRoles{${1:userID};${2:roleID};${3:}}"
+    },
+    {
+      "trigger": "ZsetUserVar\tSets the value of a user-scoped variable, defaulting to the current user and server if not specified.",
+      "contents": "ZsetUserVar{${1:name};${2:value};${3:userID};${4:guildID}}"
+    },
+    {
+      "trigger": "ZsetVar\tSets the value of a global bot-wide variable by name.",
+      "contents": "ZsetVar{${1:name};${2:value}}"
+    },
+    {
+      "trigger": "Zsha256\tReturns the SHA-256 hash of the input text as a hex string.",
+      "contents": "Zsha256{${1:text}}"
+    },
+    {
+      "trigger": "Zskus\tReturns the bot application's SKUs as a JSON array.",
+      "contents": "Zskus{}"
+    },
+    {
+      "trigger": "ZslashCommandsCount\tReturns the number of slash-type commands loaded from the commands directory.",
+      "contents": "ZslashCommandsCount{}"
+    },
+    {
+      "trigger": "ZslashID\tReturns the Discord application command ID for the specified slash command name, or for the currently executing slash command if no name is provided.",
+      "contents": "ZslashID{${1:name}}"
+    },
+    {
+      "trigger": "ZslowMode\tSets the slowmode rate limit on a channel to the specified duration (0 or 0s disables it).",
+      "contents": "ZslowMode{${1:channelID};${2:duration}}"
+    },
+    {
+      "trigger": "Zsort\tSorts a variadic list of numbers in ascending or descending order and returns up to a specified count joined by a separator.",
+      "contents": "Zsort{${1:number};${2:};${3:direction};${4:return_amount};${5:separator}}"
+    },
+    {
+      "trigger": "ZsoundboardCreate\tUploads a new sound to the server soundboard from a file URL.",
+      "contents": "ZsoundboardCreate{${1:name};${2:fileUrl}}"
+    },
+    {
+      "trigger": "ZsoundboardDefaultSounds\tLists Discord's default soundboard sounds.",
+      "contents": "ZsoundboardDefaultSounds{}"
+    },
+    {
+      "trigger": "ZsoundboardDelete\tDeletes a sound from the server soundboard.",
+      "contents": "ZsoundboardDelete{${1:soundId}}"
+    },
+    {
+      "trigger": "ZsoundboardEdit\tEdits a soundboard sound's name, volume, or emoji.",
+      "contents": "ZsoundboardEdit{${1:soundId};${2:name};${3:volume};${4:emoji}}"
+    },
+    {
+      "trigger": "ZsoundboardPlay\tPlays a soundboard sound in a voice channel.",
+      "contents": "ZsoundboardPlay{${1:soundId};${2:voiceChannelId}}"
+    },
+    {
+      "trigger": "ZsoundboardSound\tGets details of a specific soundboard sound.",
+      "contents": "ZsoundboardSound{${1:soundId}}"
+    },
+    {
+      "trigger": "ZsoundboardSounds\tLists all soundboard sounds in the server.",
+      "contents": "ZsoundboardSounds{}"
+    },
+    {
+      "trigger": "ZsplitText\tReturns a single element from the stored split text by 1-based index, or use < for the first or > for the last element.",
+      "contents": "ZsplitText{${1:index}}"
+    },
+    {
+      "trigger": "Zsqrt\tReturns the square root of the given non-negative number.",
+      "contents": "Zsqrt{${1:number}}"
+    },
+    {
+      "trigger": "ZstageCreate\tCreates a new stage instance in the specified stage channel with the given topic.",
+      "contents": "ZstageCreate{${1:channelID};${2:topic}}"
+    },
+    {
+      "trigger": "ZstageDelete\tEnds and deletes the stage instance associated with the specified stage channel.",
+      "contents": "ZstageDelete{${1:channelID}}"
+    },
+    {
+      "trigger": "ZstageEdit\tEdits the topic of an existing stage instance in the specified stage channel.",
+      "contents": "ZstageEdit{${1:channelID};${2:topic}}"
+    },
+    {
+      "trigger": "ZstageTopic\tReturns the current topic of the stage instance in the specified stage channel.",
+      "contents": "ZstageTopic{${1:channelID}}"
+    },
+    {
+      "trigger": "ZstartsWith\tReturns true if the text begins with the specified prefix.",
+      "contents": "ZstartsWith{${1:text};${2:prefix}}"
+    },
+    {
+      "trigger": "ZstartThread\tCreates a new thread in the specified channel, optionally attaching it to an existing message, and returns the thread ID if requested.",
+      "contents": "ZstartThread{${1:name};${2:channelID};${3:messageID};${4:archiveDuration};${5:returnID};${6:private}}"
+    },
+    {
+      "trigger": "ZstickerCount\tReturns the total number of stickers in the current server.",
+      "contents": "ZstickerCount{}"
+    },
+    {
+      "trigger": "ZstickerCreate\tCreates a new guild sticker from a file URL.",
+      "contents": "ZstickerCreate{${1:name};${2:fileUrl};${3:tags};${4:description}}"
+    },
+    {
+      "trigger": "ZstickerDescription\tReturns the description of a guild sticker by its sticker ID, or an empty string if no description is set.",
+      "contents": "ZstickerDescription{${1:stickerID}}"
+    },
+    {
+      "trigger": "ZstickerEdit\tEdits a guild sticker's metadata. Use !unchanged for fields to skip.",
+      "contents": "ZstickerEdit{${1:stickerID};${2:name};${3:tags};${4:description}}"
+    },
+    {
+      "trigger": "ZstickerEmoji\tReturns the related emoji tag for a guild sticker as a string.",
+      "contents": "ZstickerEmoji{${1:stickerID}}"
+    },
+    {
+      "trigger": "ZstickerExists\tReturns true if a sticker with the given ID exists in the current server, or false otherwise.",
+      "contents": "ZstickerExists{${1:stickerID}}"
+    },
+    {
+      "trigger": "ZstickerID\tReturns the ID of a guild sticker matching the given name, or an empty string if not found.",
+      "contents": "ZstickerID{${1:name}}"
+    },
+    {
+      "trigger": "ZstickerName\tReturns the name of a guild sticker by its sticker ID.",
+      "contents": "ZstickerName{${1:stickerID}}"
+    },
+    {
+      "trigger": "Zstop\tHalts execution silently without producing any output or error message.",
+      "contents": "Zstop{}"
+    },
+    {
+      "trigger": "Zsub\tSubtracts each subsequent number from the first value and returns the result.",
+      "contents": "Zsub{${1:value};${2:number};${3:}}"
+    },
+    {
+      "trigger": "Zsubstring\tReturns a portion of the text starting at a 1-based character position, optionally limited to a specified length.",
+      "contents": "Zsubstring{${1:text};${2:start};${3:length}}"
+    },
+    {
+      "trigger": "Zsum\tReturns the sum of all provided numbers.",
+      "contents": "Zsum{${1:number};${2:}}"
+    },
+    {
+      "trigger": "ZsuppressErrors\tActivates error suppression for the current execution, optionally showing a custom message or a specific embed slot instead of the real error.",
+      "contents": "ZsuppressErrors{${1:errorText};${2:embedIndex}}"
+    },
+    {
+      "trigger": "ZsyncPerms\tSyncs a channel's permissions with its parent category.",
+      "contents": "ZsyncPerms{${1:channelID}}"
+    },
+    {
+      "trigger": "ZsystemChannelID\tReturns the ID of the system messages channel in the current guild, or an empty string if none is configured.",
+      "contents": "ZsystemChannelID{}"
+    },
+    {
+      "trigger": "ZtextSplit\tSplits a string by a separator and stores the resulting elements for use with other split functions.",
+      "contents": "ZtextSplit{${1:text};${2:separator}}"
+    },
+    {
+      "trigger": "ZthreadAddMember\tAdds a user to the specified thread by their user ID.",
+      "contents": "ZthreadAddMember{${1:threadID};${2:userID}}"
+    },
+    {
+      "trigger": "ZthreadArchive\tArchives a thread by its ID.",
+      "contents": "ZthreadArchive{${1:threadID}}"
+    },
+    {
+      "trigger": "ZthreadArchived\tReturns true if the thread is archived.",
+      "contents": "ZthreadArchived{${1:threadID}}"
+    },
+    {
+      "trigger": "ZthreadList\tLists threads in a channel. active: true/false. private: true=private archived, false=public archived.",
+      "contents": "ZthreadList{${1:channelID};${2:active};${3:private}}"
+    },
+    {
+      "trigger": "ZthreadLocked\tReturns true if the thread is locked.",
+      "contents": "ZthreadLocked{${1:threadID}}"
+    },
+    {
+      "trigger": "ZthreadMessageCount\tReturns the number of messages in the specified thread.",
+      "contents": "ZthreadMessageCount{${1:threadID}}"
+    },
+    {
+      "trigger": "ZthreadMetadata\tReturns JSON metadata for a thread including owner, creation date, and flags.",
+      "contents": "ZthreadMetadata{${1:threadID}}"
+    },
+    {
+      "trigger": "ZthreadParentID\tReturns the parent channel ID of the thread, or empty string.",
+      "contents": "ZthreadParentID{${1:threadID}}"
+    },
+    {
+      "trigger": "ZthreadPin\tPins a thread to the top of its parent channel.",
+      "contents": "ZthreadPin{${1:threadID}}"
+    },
+    {
+      "trigger": "ZthreadRemoveMember\tRemoves a user from the specified thread by their user ID.",
+      "contents": "ZthreadRemoveMember{${1:threadID};${2:userID}}"
+    },
+    {
+      "trigger": "ZthreadUnarchive\tUnarchives a thread by its ID.",
+      "contents": "ZthreadUnarchive{${1:threadID}}"
+    },
+    {
+      "trigger": "ZthreadUserCount\tReturns the total number of members currently in the specified thread.",
+      "contents": "ZthreadUserCount{${1:threadID}}"
+    },
+    {
+      "trigger": "Zthumbnail\tSets the thumbnail image URL on the specified embed slot.",
+      "contents": "Zthumbnail{${1:url};${2:index}}"
+    },
+    {
+      "trigger": "Ztime\tSets the active timezone for all subsequent date/time functions, or returns the current timezone name when called with no argument.",
+      "contents": "Ztime{${1:timezone}}"
+    },
+    {
+      "trigger": "ZtimeDiff\tReturns the absolute difference between two Unix timestamps in the specified unit such as seconds, minutes, hours, or days.",
+      "contents": "ZtimeDiff{${1:timestamp1};${2:timestamp2};${3:unit}}"
+    },
+    {
+      "trigger": "Ztimeout\tApplies a communication timeout to a user for the specified duration, up to a maximum of 28 days.",
+      "contents": "Ztimeout{${1:userID};${2:duration}}"
+    },
+    {
+      "trigger": "Ztimestamp\tEnables the current UTC timestamp display on the specified embed slot.",
+      "contents": "Ztimestamp{${1:index}}"
+    },
+    {
+      "trigger": "Ztitle\tSets the title text on the specified embed slot.",
+      "contents": "Ztitle{${1:text};${2:index}}"
+    },
+    {
+      "trigger": "Ztitlecase\tConverts the first letter of each word to uppercase and all remaining letters to lowercase.",
+      "contents": "Ztitlecase{${1:text}}"
+    },
+    {
+      "trigger": "ZtitleURL\tSets a hyperlink URL on the embed's title, requiring a title to already be set on that slot.",
+      "contents": "ZtitleURL{${1:url};${2:index}}"
+    },
+    {
+      "trigger": "ZtrimContent\tCollapses multiple consecutive spaces into a single space and trims leading and trailing whitespace.",
+      "contents": "ZtrimContent{${1:text}}"
+    },
+    {
+      "trigger": "ZtrimSpace\tRemoves leading and trailing whitespace from the text.",
+      "contents": "ZtrimSpace{${1:text}}"
+    },
+    {
+      "trigger": "ZtryRun\tEvaluates the code block and falls back to the fallback block if any error occurs.",
+      "contents": "ZtryRun{${1:code};${2:fallback}}"
+    },
+    {
+      "trigger": "Zunban\tRemoves the ban for the specified user from the guild.",
+      "contents": "Zunban{${1:userID}}"
+    },
+    {
+      "trigger": "Zundeafen\tRemoves the server deafen from the specified user so they can hear audio in voice channels again.",
+      "contents": "Zundeafen{${1:userID}}"
+    },
+    {
+      "trigger": "Zunmute\tRemoves the server mute from the specified user in all voice channels.",
+      "contents": "Zunmute{${1:userID}}"
+    },
+    {
+      "trigger": "ZunpinMessage\tUnpins the specified message in a channel, defaulting to the current channel if no channel ID is provided.",
+      "contents": "ZunpinMessage{${1:channelID};${2:messageID}}"
+    },
+    {
+      "trigger": "ZuntimeOut\tRemoves the active communication timeout from a user, restoring their ability to send messages.",
+      "contents": "ZuntimeOut{${1:userID}}"
+    },
+    {
+      "trigger": "Zuppercase\tConverts all characters in the text to uppercase.",
+      "contents": "Zuppercase{${1:text}}"
+    },
+    {
+      "trigger": "Zuptime\tReturns the bot's uptime since startup, formatted as a human-readable string of days, hours, minutes, and seconds.",
+      "contents": "Zuptime{}"
+    },
+    {
+      "trigger": "Zurl\tEncodes or decodes a string using URL percent-encoding based on the specified mode.",
+      "contents": "Zurl{${1:mode};${2:text}}"
+    },
+    {
+      "trigger": "ZuseChannel\tRedirects all bot output for the current command execution to the specified channel.",
+      "contents": "ZuseChannel{${1:channelID}}"
+    },
+    {
+      "trigger": "ZuserAvatar\tReturns the avatar URL of the command author, or of the specified user if a user ID is provided.",
+      "contents": "ZuserAvatar{${1:userID}}"
+    },
+    {
+      "trigger": "ZuserBadge\tReturns the public profile badges of the command author or specified user as a separated list.",
+      "contents": "ZuserBadge{${1:userID};${2:separator}}"
+    },
+    {
+      "trigger": "ZuserBanner\tReturns the banner URL of the command author or specified user, or an empty string if no banner is set.",
+      "contents": "ZuserBanner{${1:userID}}"
+    },
+    {
+      "trigger": "ZuserBannerColor\tReturns the banner accent color of the command author or specified user as a hex string, or an empty string if none is set.",
+      "contents": "ZuserBannerColor{${1:userID}}"
+    },
+    {
+      "trigger": "ZuserExists\tReturns true if the given user ID resolves to a valid Discord user, or false otherwise.",
+      "contents": "ZuserExists{${1:userID}}"
+    },
+    {
+      "trigger": "ZuserID\tReturns the command author's user ID, or searches for and returns the user ID of a guild member matching the given name.",
+      "contents": "ZuserID{${1:name}}"
+    },
+    {
+      "trigger": "ZuserJoined\tReturns the date when the command author or specified user joined the current guild, formatted according to the optional format string.",
+      "contents": "ZuserJoined{${1:userID};${2:format}}"
+    },
+    {
+      "trigger": "Zusername\tReturns the username of the command author, or of the specified user if a user ID is provided.",
+      "contents": "Zusername{${1:userID}}"
+    },
+    {
+      "trigger": "ZuserPerms\tReturns the guild permissions held by the command author or specified user, up to the given amount, joined by the separator.",
+      "contents": "ZuserPerms{${1:userID};${2:amount};${3:separator}}"
+    },
+    {
+      "trigger": "ZuserReacted\tReturns true if the specified user reacted to a message with the given emoji, or false otherwise.",
+      "contents": "ZuserReacted{${1:channelID};${2:messageID};${3:userID};${4:emoji}}"
+    },
+    {
+      "trigger": "ZuserRoles\tReturns a list of the specified user's roles joined by the given separator, with output format controlled by returnType.",
+      "contents": "ZuserRoles{${1:userID};${2:returnType};${3:separator}}"
+    },
+    {
+      "trigger": "ZuserSelfDeafened\tReturns true if the specified user has deafened themselves in voice, defaulting to the author.",
+      "contents": "ZuserSelfDeafened{${1:userID}}"
+    },
+    {
+      "trigger": "ZuserSelfMuted\tReturns true if the specified user has muted themselves in voice, defaulting to the author.",
+      "contents": "ZuserSelfMuted{${1:userID}}"
+    },
+    {
+      "trigger": "ZuserServerAvatar\tReturns the guild-specific avatar URL of the command author or specified user, falling back to their global avatar or default avatar if none is set.",
+      "contents": "ZuserServerAvatar{${1:userID}}"
+    },
+    {
+      "trigger": "ZuserServerDeafened\tReturns true if the specified user has been server-deafened by a moderator, defaulting to the author.",
+      "contents": "ZuserServerDeafened{${1:userID}}"
+    },
+    {
+      "trigger": "ZuserServerMuted\tReturns true if the specified user has been server-muted by a moderator, defaulting to the author.",
+      "contents": "ZuserServerMuted{${1:userID}}"
+    },
+    {
+      "trigger": "ZuserStatus\tReturns the online status of the command author or specified user, or their custom status text if customStatus is true.",
+      "contents": "ZuserStatus{${1:userID};${2:customStatus}}"
+    },
+    {
+      "trigger": "ZuserStreaming\tReturns true if the specified user is currently streaming in a voice channel, defaulting to the author.",
+      "contents": "ZuserStreaming{${1:userID}}"
+    },
+    {
+      "trigger": "ZuserVoiceChannel\tReturns the ID of the voice channel the specified user is in, or an empty string if they are not in voice.",
+      "contents": "ZuserVoiceChannel{${1:userID}}"
+    },
+    {
+      "trigger": "Zvar\tGets or sets a temporary in-memory variable that persists only for the duration of the current command execution.",
+      "contents": "Zvar{${1:name};${2:value}}"
+    },
+    {
+      "trigger": "ZvarExistError\tHalts execution with a custom error message if the specified global variable does not exist.",
+      "contents": "ZvarExistError{${1:name};${2:error}}"
+    },
+    {
+      "trigger": "ZvarExists\tReturns true if a global variable with the given name exists, otherwise returns false.",
+      "contents": "ZvarExists{${1:name}}"
+    },
+    {
+      "trigger": "ZvoiceBitrate\tReturns the bitrate in kbps of the specified voice channel, defaulting to the author's current voice channel.",
+      "contents": "ZvoiceBitrate{${1:channelID}}"
+    },
+    {
+      "trigger": "ZvoiceEmpty\tReturns true if the specified voice channel has zero members; defaults to the author's current voice channel.",
+      "contents": "ZvoiceEmpty{${1:channelID}}"
+    },
+    {
+      "trigger": "ZvoiceFull\tReturns true if the specified voice channel's member count equals its user limit; defaults to the author's current voice channel.",
+      "contents": "ZvoiceFull{${1:channelID}}"
+    },
+    {
+      "trigger": "ZvoiceKick\tDisconnects the specified user from their current voice channel.",
+      "contents": "ZvoiceKick{${1:userID}}"
+    },
+    {
+      "trigger": "ZvoiceMemberCount\tReturns the number of users currently in the specified voice channel, defaulting to the author's current voice channel.",
+      "contents": "ZvoiceMemberCount{${1:channelID}}"
+    },
+    {
+      "trigger": "ZvoiceMembers\tReturns a space-separated list of user IDs currently in the specified voice channel, defaulting to the author's current voice channel.",
+      "contents": "ZvoiceMembers{${1:channelID}}"
+    },
+    {
+      "trigger": "ZvoiceMove\tMoves a user from their current voice channel to the specified target voice channel.",
+      "contents": "ZvoiceMove{${1:userID};${2:channelID}}"
+    },
+    {
+      "trigger": "ZvoiceNew\tReturns the new voice channel ID from the onVoiceStateUpdate event context (the channel the user moved to).",
+      "contents": "ZvoiceNew{}"
+    },
+    {
+      "trigger": "ZvoiceOld\tReturns the previous voice channel ID from the onVoiceStateUpdate event context (the channel the user was in before).",
+      "contents": "ZvoiceOld{}"
+    },
+    {
+      "trigger": "ZvoiceRequestToSpeak\tRequests to speak in a stage channel, or cancels the request if cancel=true.",
+      "contents": "ZvoiceRequestToSpeak{${1:channelID};${2:cancel}}"
+    },
+    {
+      "trigger": "ZvoiceStatus\tGets or sets the status of a voice channel. Returns the current status if no status arg is given.",
+      "contents": "ZvoiceStatus{${1:channelID};${2:status}}"
+    },
+    {
+      "trigger": "ZvoiceSuppress\tSuppress or unsuppress a user in a stage channel.",
+      "contents": "ZvoiceSuppress{${1:userID};${2:suppress};${3:channelID}}"
+    },
+    {
+      "trigger": "ZvoiceUserLimit\tReturns the maximum number of users allowed in a voice or stage channel, or 0 if there is no limit.",
+      "contents": "ZvoiceUserLimit{${1:channelID}}"
+    },
+    {
+      "trigger": "ZwebhookCreate\tCreates a webhook in the specified channel and returns its full URL.",
+      "contents": "ZwebhookCreate{${1:channelID};${2:name}}"
+    },
+    {
+      "trigger": "ZwebhookDelete\tDeletes a webhook identified by its full Discord webhook URL.",
+      "contents": "ZwebhookDelete{${1:webhookURL}}"
+    },
+    {
+      "trigger": "ZwelcomeScreen\tReturns the guild's welcome screen as a JSON object.",
+      "contents": "ZwelcomeScreen{${1:guildID}}"
+    },
+    {
+      "trigger": "Zyear\tReturns the current four-digit year using the active timezone.",
+      "contents": "Zyear{}"
+    }
+  ]
+}

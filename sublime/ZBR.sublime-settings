@@ -1,0 +1,7 @@
+{
+  "comment": "//",
+  "word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "auto_complete_selector": "meta.block - comment"
+}
