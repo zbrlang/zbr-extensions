@@ -94,6 +94,21 @@
     "body": ["ZallowUserMentions{${1:userID};${2:}}"],
     "description": "Restricts user pings in the bot response to only the listed user IDs; if no IDs are given, all user mentions are suppressed."
   },
+  "ZappEmojiCreate": {
+    "prefix": "ZappEmojiCreate",
+    "body": ["ZappEmojiCreate{${1:name};${2:imageURL}}"],
+    "description": "Creates a new application emoji from an image URL. Returns the emoji ID."
+  },
+  "ZappEmojiDelete": {
+    "prefix": "ZappEmojiDelete",
+    "body": ["ZappEmojiDelete{${1:emojiID}}"],
+    "description": "Deletes an application emoji by ID."
+  },
+  "ZappEmojis": {
+    "prefix": "ZappEmojis",
+    "body": ["ZappEmojis{}"],
+    "description": "Lists the bot application's emojis as a JSON array."
+  },
   "ZargCount": {
     "prefix": "ZargCount",
     "body": ["ZargCount{${1:text}}"],
@@ -169,6 +184,42 @@
     "body": ["ZauthorURL{${1:url};${2:index}}"],
     "description": "Sets a hyperlink URL on the embed's author name, requiring an author to already be set."
   },
+  "ZautomodRule": {
+    "prefix": "ZautomodRule",
+    "body": ["ZautomodRule{${1:ruleID}}"],
+    "description": "Returns information about a specific automod rule in the guild as JSON."
+  },
+  "ZautomodRuleCreate": {
+    "prefix": "ZautomodRuleCreate",
+    "body": [
+      "ZautomodRuleCreate{${1:name};${2:trigger};${3:actions};${4:eventType};${5:enabled};${6:exemptRoles};${7:exemptChannels}}"
+    ],
+    "description": "Creates a new automod rule. trigger and actions are JSON strings."
+  },
+  "ZautomodRuleDelete": {
+    "prefix": "ZautomodRuleDelete",
+    "body": ["ZautomodRuleDelete{${1:ruleID}}"],
+    "description": "Deletes an automod rule from the guild."
+  },
+  "ZautomodRuleEdit": {
+    "prefix": "ZautomodRuleEdit",
+    "body": [
+      "ZautomodRuleEdit{${1:ruleID};${2:name};${3:trigger};${4:actions};${5:eventType};${6:enabled};${7:exemptRoles};${8:exemptChannels}}"
+    ],
+    "description": "Edits an existing automod rule. Use !unchanged for fields to skip."
+  },
+  "ZautomodRules": {
+    "prefix": "ZautomodRules",
+    "body": ["ZautomodRules{}"],
+    "description": "Lists all automod rules in the guild as a JSON array."
+  },
+  "ZautomodRuleUpdate": {
+    "prefix": "ZautomodRuleUpdate",
+    "body": [
+      "ZautomodRuleUpdate{${1:ruleID};${2:name};${3:trigger};${4:actions};${5:eventType};${6:enabled};${7:exemptRoles};${8:exemptChannels}}"
+    ],
+    "description": "Edits an existing automod rule. Use !unchanged for fields to skip."
+  },
   "Zawait": {
     "prefix": "Zawait",
     "body": ["Zawait{${1:name}}"],
@@ -178,6 +229,16 @@
     "prefix": "Zban",
     "body": ["Zban{${1:userID};${2:reason};${3:deleteMessageDays}}"],
     "description": "Bans a user from the guild with an optional reason and optional number of days of messages to delete."
+  },
+  "Zbase64Decode": {
+    "prefix": "Zbase64Decode",
+    "body": ["Zbase64Decode{${1:data}}"],
+    "description": "Decodes a base64-encoded string and returns the decoded text."
+  },
+  "Zbase64Encode": {
+    "prefix": "Zbase64Encode",
+    "body": ["Zbase64Encode{${1:text}}"],
+    "description": "Encodes text to base64."
   },
   "ZblackListIDs": {
     "prefix": "ZblackListIDs",
@@ -537,6 +598,11 @@
     "body": ["ZdmChannelID{${1:userID}}"],
     "description": "Returns the ID of the DM channel between the bot and a user, creating it if it does not yet exist."
   },
+  "Zduration": {
+    "prefix": "Zduration",
+    "body": ["Zduration{${1:duration}}"],
+    "description": "Converts a duration string (e.g. 1h, 30m, 5d) into seconds."
+  },
   "ZeditButton": {
     "prefix": "ZeditButton",
     "body": [
@@ -596,6 +662,13 @@
     ],
     "description": "Edits one or more properties of an existing thread such as name, archived state, archive duration, lock status, and slowmode."
   },
+  "ZeditWelcomeScreen": {
+    "prefix": "ZeditWelcomeScreen",
+    "body": [
+      "ZeditWelcomeScreen{${1:guildID};${2:enabled};${3:description};${4:welcomeChannelsJSON}}"
+    ],
+    "description": "Edits the guild's welcome screen settings."
+  },
   "ZemojiExists": {
     "prefix": "ZemojiExists",
     "body": ["ZemojiExists{${1:id}}"],
@@ -620,6 +693,11 @@
     "prefix": "ZendsWith",
     "body": ["ZendsWith{${1:text};${2:suffix}}"],
     "description": "Returns true if the text ends with the specified suffix."
+  },
+  "Zentitlements": {
+    "prefix": "Zentitlements",
+    "body": ["Zentitlements{}"],
+    "description": "Returns the bot application's entitlements as a JSON array."
   },
   "Zephemeral": {
     "prefix": "Zephemeral",
@@ -710,6 +788,16 @@
     "prefix": "ZforumPostCount",
     "body": ["ZforumPostCount{${1:channelID}}"],
     "description": "Returns the number of currently active posts in a forum channel."
+  },
+  "ZforumPostLock": {
+    "prefix": "ZforumPostLock",
+    "body": ["ZforumPostLock{${1:postID}}"],
+    "description": "Locks a forum post, preventing new replies."
+  },
+  "ZforumPostPin": {
+    "prefix": "ZforumPostPin",
+    "body": ["ZforumPostPin{${1:postID}}"],
+    "description": "Pins a forum post to the top of the forum channel."
   },
   "ZforumPosts": {
     "prefix": "ZforumPosts",
@@ -1225,6 +1313,11 @@
     "body": ["Zmax{${1:number};${2:}}"],
     "description": "Returns the largest value among all provided numbers."
   },
+  "Zmd5": {
+    "prefix": "Zmd5",
+    "body": ["Zmd5{${1:text}}"],
+    "description": "Returns the MD5 hash of the input text in hexadecimal."
+  },
   "ZmembersCount": {
     "prefix": "ZmembersCount",
     "body": ["ZmembersCount{${1:status}}"],
@@ -1418,10 +1511,55 @@
     "body": ["Zping{}"],
     "description": "Returns the bot's gateway latency in milliseconds."
   },
+  "ZpinList": {
+    "prefix": "ZpinList",
+    "body": ["ZpinList{${1:channelID}}"],
+    "description": "Returns a space-separated list of pinned message IDs in a channel."
+  },
   "ZpinMessage": {
     "prefix": "ZpinMessage",
     "body": ["ZpinMessage{${1:channelID};${2:messageID}}"],
     "description": "Pins the specified message in a channel, defaulting to the current channel if no channel ID is provided."
+  },
+  "ZpollAddAnswer": {
+    "prefix": "ZpollAddAnswer",
+    "body": ["ZpollAddAnswer{${1:text};${2:emoji}}"],
+    "description": "Adds an answer option to the poll being created."
+  },
+  "ZpollAllowMultiselect": {
+    "prefix": "ZpollAllowMultiselect",
+    "body": ["ZpollAllowMultiselect{${1:true/false}}"],
+    "description": "Allows voting for multiple answers in the poll being created."
+  },
+  "ZpollAnswerVoters": {
+    "prefix": "ZpollAnswerVoters",
+    "body": ["ZpollAnswerVoters{${1:messageID};${2:answerID};${3:channelID}}"],
+    "description": "Returns a list of users who voted for a specific poll answer."
+  },
+  "ZpollAnswerVotes": {
+    "prefix": "ZpollAnswerVotes",
+    "body": ["ZpollAnswerVotes{${1:messageID};${2:answerID};${3:channelID}}"],
+    "description": "Returns the vote count for a specific poll answer."
+  },
+  "ZpollCreate": {
+    "prefix": "ZpollCreate",
+    "body": ["ZpollCreate{${1:question};${2:duration}}"],
+    "description": "Starts creating a poll with the given question and duration in hours."
+  },
+  "ZpollEnd": {
+    "prefix": "ZpollEnd",
+    "body": ["ZpollEnd{${1:messageID};${2:channelID}}"],
+    "description": "Ends a poll early by message ID."
+  },
+  "ZpollGet": {
+    "prefix": "ZpollGet",
+    "body": ["ZpollGet{${1:messageID};${2:channelID}}"],
+    "description": "Gets poll details and current results for a message."
+  },
+  "ZpollSend": {
+    "prefix": "ZpollSend",
+    "body": ["ZpollSend{${1:channelID};${2:returnID}}"],
+    "description": "Sends the configured poll to the specified channel."
   },
   "ZpostTags": {
     "prefix": "ZpostTags",
@@ -1693,6 +1831,18 @@
     "body": ["ZserverInvite{${1:guildID}}"],
     "description": "Returns the URL of the first available invite for the guild, or an empty string if none exist."
   },
+  "ZserverLockdown": {
+    "prefix": "ZserverLockdown",
+    "body": ["ZserverLockdown{${1:enabled};${2:duration}}"],
+    "description": "Enables or disables guild raid protection (incident actions) with an optional duration."
+  },
+  "ZserverModify": {
+    "prefix": "ZserverModify",
+    "body": [
+      "ZserverModify{${1:guildID};${2:name};${3:icon};${4:banner};${5:splash};${6:description};${7:afkChannelID};${8:afkTimeout};${9:systemChannelID};${10:verificationLevel}}"
+    ],
+    "description": "Edits guild settings such as name, icon, banner, splash, description, and verification level."
+  },
   "ZserverName": {
     "prefix": "ZserverName",
     "body": ["ZserverName{${1:guildID}}"],
@@ -1753,6 +1903,16 @@
     "body": ["ZsetVar{${1:name};${2:value}}"],
     "description": "Sets the value of a global bot-wide variable by name."
   },
+  "Zsha256": {
+    "prefix": "Zsha256",
+    "body": ["Zsha256{${1:text}}"],
+    "description": "Returns the SHA-256 hash of the input text as a hex string."
+  },
+  "Zskus": {
+    "prefix": "Zskus",
+    "body": ["Zskus{}"],
+    "description": "Returns the bot application's SKUs as a JSON array."
+  },
   "ZslashCommandsCount": {
     "prefix": "ZslashCommandsCount",
     "body": ["ZslashCommandsCount{}"],
@@ -1774,6 +1934,41 @@
       "Zsort{${1:number};${2:};${3:direction};${4:return_amount};${5:separator}}"
     ],
     "description": "Sorts a variadic list of numbers in ascending or descending order and returns up to a specified count joined by a separator."
+  },
+  "ZsoundboardCreate": {
+    "prefix": "ZsoundboardCreate",
+    "body": ["ZsoundboardCreate{${1:name};${2:fileUrl}}"],
+    "description": "Uploads a new sound to the server soundboard from a file URL."
+  },
+  "ZsoundboardDefaultSounds": {
+    "prefix": "ZsoundboardDefaultSounds",
+    "body": ["ZsoundboardDefaultSounds{}"],
+    "description": "Lists Discord's default soundboard sounds."
+  },
+  "ZsoundboardDelete": {
+    "prefix": "ZsoundboardDelete",
+    "body": ["ZsoundboardDelete{${1:soundId}}"],
+    "description": "Deletes a sound from the server soundboard."
+  },
+  "ZsoundboardEdit": {
+    "prefix": "ZsoundboardEdit",
+    "body": ["ZsoundboardEdit{${1:soundId};${2:name};${3:volume};${4:emoji}}"],
+    "description": "Edits a soundboard sound's name, volume, or emoji."
+  },
+  "ZsoundboardPlay": {
+    "prefix": "ZsoundboardPlay",
+    "body": ["ZsoundboardPlay{${1:soundId};${2:voiceChannelId}}"],
+    "description": "Plays a soundboard sound in a voice channel."
+  },
+  "ZsoundboardSound": {
+    "prefix": "ZsoundboardSound",
+    "body": ["ZsoundboardSound{${1:soundId}}"],
+    "description": "Gets details of a specific soundboard sound."
+  },
+  "ZsoundboardSounds": {
+    "prefix": "ZsoundboardSounds",
+    "body": ["ZsoundboardSounds{}"],
+    "description": "Lists all soundboard sounds in the server."
   },
   "ZsplitText": {
     "prefix": "ZsplitText",
@@ -1813,7 +2008,7 @@
   "ZstartThread": {
     "prefix": "ZstartThread",
     "body": [
-      "ZstartThread{${1:name};${2:channelID};${3:messageID};${4:archiveDuration};${5:returnID}}"
+      "ZstartThread{${1:name};${2:channelID};${3:messageID};${4:archiveDuration};${5:returnID};${6:private}}"
     ],
     "description": "Creates a new thread in the specified channel, optionally attaching it to an existing message, and returns the thread ID if requested."
   },
@@ -1822,10 +2017,24 @@
     "body": ["ZstickerCount{}"],
     "description": "Returns the total number of stickers in the current server."
   },
+  "ZstickerCreate": {
+    "prefix": "ZstickerCreate",
+    "body": [
+      "ZstickerCreate{${1:name};${2:fileUrl};${3:tags};${4:description}}"
+    ],
+    "description": "Creates a new guild sticker from a file URL."
+  },
   "ZstickerDescription": {
     "prefix": "ZstickerDescription",
     "body": ["ZstickerDescription{${1:stickerID}}"],
     "description": "Returns the description of a guild sticker by its sticker ID, or an empty string if no description is set."
+  },
+  "ZstickerEdit": {
+    "prefix": "ZstickerEdit",
+    "body": [
+      "ZstickerEdit{${1:stickerID};${2:name};${3:tags};${4:description}}"
+    ],
+    "description": "Edits a guild sticker's metadata. Use !unchanged for fields to skip."
   },
   "ZstickerEmoji": {
     "prefix": "ZstickerEmoji",
@@ -1872,6 +2081,11 @@
     "body": ["ZsuppressErrors{${1:errorText};${2:embedIndex}}"],
     "description": "Activates error suppression for the current execution, optionally showing a custom message or a specific embed slot instead of the real error."
   },
+  "ZsyncPerms": {
+    "prefix": "ZsyncPerms",
+    "body": ["ZsyncPerms{${1:channelID}}"],
+    "description": "Syncs a channel's permissions with its parent category."
+  },
   "ZsystemChannelID": {
     "prefix": "ZsystemChannelID",
     "body": ["ZsystemChannelID{}"],
@@ -1887,10 +2101,20 @@
     "body": ["ZthreadAddMember{${1:threadID};${2:userID}}"],
     "description": "Adds a user to the specified thread by their user ID."
   },
+  "ZthreadArchive": {
+    "prefix": "ZthreadArchive",
+    "body": ["ZthreadArchive{${1:threadID}}"],
+    "description": "Archives a thread by its ID."
+  },
   "ZthreadArchived": {
     "prefix": "ZthreadArchived",
     "body": ["ZthreadArchived{${1:threadID}}"],
     "description": "Returns true if the thread is archived."
+  },
+  "ZthreadList": {
+    "prefix": "ZthreadList",
+    "body": ["ZthreadList{${1:channelID};${2:active};${3:private}}"],
+    "description": "Lists threads in a channel. active: true/false. private: true=private archived, false=public archived."
   },
   "ZthreadLocked": {
     "prefix": "ZthreadLocked",
@@ -1902,15 +2126,30 @@
     "body": ["ZthreadMessageCount{${1:threadID}}"],
     "description": "Returns the number of messages in the specified thread."
   },
+  "ZthreadMetadata": {
+    "prefix": "ZthreadMetadata",
+    "body": ["ZthreadMetadata{${1:threadID}}"],
+    "description": "Returns JSON metadata for a thread including owner, creation date, and flags."
+  },
   "ZthreadParentID": {
     "prefix": "ZthreadParentID",
     "body": ["ZthreadParentID{${1:threadID}}"],
     "description": "Returns the parent channel ID of the thread, or empty string."
   },
+  "ZthreadPin": {
+    "prefix": "ZthreadPin",
+    "body": ["ZthreadPin{${1:threadID}}"],
+    "description": "Pins a thread to the top of its parent channel."
+  },
   "ZthreadRemoveMember": {
     "prefix": "ZthreadRemoveMember",
     "body": ["ZthreadRemoveMember{${1:threadID};${2:userID}}"],
     "description": "Removes a user from the specified thread by their user ID."
+  },
+  "ZthreadUnarchive": {
+    "prefix": "ZthreadUnarchive",
+    "body": ["ZthreadUnarchive{${1:threadID}}"],
+    "description": "Unarchives a thread by its ID."
   },
   "ZthreadUserCount": {
     "prefix": "ZthreadUserCount",
@@ -2174,6 +2413,21 @@
     "body": ["ZvoiceOld{}"],
     "description": "Returns the previous voice channel ID from the onVoiceStateUpdate event context (the channel the user was in before)."
   },
+  "ZvoiceRequestToSpeak": {
+    "prefix": "ZvoiceRequestToSpeak",
+    "body": ["ZvoiceRequestToSpeak{${1:channelID};${2:cancel}}"],
+    "description": "Requests to speak in a stage channel, or cancels the request if cancel=true."
+  },
+  "ZvoiceStatus": {
+    "prefix": "ZvoiceStatus",
+    "body": ["ZvoiceStatus{${1:channelID};${2:status}}"],
+    "description": "Gets or sets the status of a voice channel. Returns the current status if no status arg is given."
+  },
+  "ZvoiceSuppress": {
+    "prefix": "ZvoiceSuppress",
+    "body": ["ZvoiceSuppress{${1:userID};${2:suppress};${3:channelID}}"],
+    "description": "Suppress or unsuppress a user in a stage channel."
+  },
   "ZvoiceUserLimit": {
     "prefix": "ZvoiceUserLimit",
     "body": ["ZvoiceUserLimit{${1:channelID}}"],
@@ -2188,6 +2442,11 @@
     "prefix": "ZwebhookDelete",
     "body": ["ZwebhookDelete{${1:webhookURL}}"],
     "description": "Deletes a webhook identified by its full Discord webhook URL."
+  },
+  "ZwelcomeScreen": {
+    "prefix": "ZwelcomeScreen",
+    "body": ["ZwelcomeScreen{${1:guildID}}"],
+    "description": "Returns the guild's welcome screen as a JSON object."
   },
   "Zyear": {
     "prefix": "Zyear",
