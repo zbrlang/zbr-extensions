@@ -1,0 +1,2393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="ZBR">
+  <template name="Zabs" value="Zabs{$END$}" description="Returns the absolute value of the given number." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaddButton" value="ZaddButton{$END$}" description="Adds a button component to the bot's response." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaddCmdReactions" value="ZaddCmdReactions{$END$}" description="Immediately adds one or more emoji reactions to the message that triggered the command." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaddEmoji" value="ZaddEmoji{$END$}" description="Downloads an image from the given URL and creates a new custom emoji in the current server, optionally returning the usable emoji string." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaddField" value="ZaddField{$END$}" description="Adds a named field with a value to the specified embed slot, with an optional inline layout flag." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaddMentionableSelect" value="ZaddMentionableSelect{$END$}" description="Adds a mentionable select menu (users and roles) component to the bot's response." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaddMessageReactions" value="ZaddMessageReactions{$END$}" description="Adds one or more emoji reactions to a specific message in the specified channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaddReactions" value="ZaddReactions{$END$}" description="Queues one or more emoji reactions to be added to the bot's own response message after it is sent." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaddRoleSelect" value="ZaddRoleSelect{$END$}" description="Adds a role select menu component to the bot's response." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaddSelectMenuOption" value="ZaddSelectMenuOption{$END$}" description="Adds an option to the current string select menu." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaddTextInput" value="ZaddTextInput{$END$}" description="Adds a text input field to the current modal." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaddUserSelect" value="ZaddUserSelect{$END$}" description="Adds a user select menu component to the bot's response." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZafkChannelID" value="ZafkChannelID{$END$}" description="Returns the ID of the AFK voice channel in the current guild, or an empty string if none is configured." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZafkTimeout" value="ZafkTimeout{$END$}" description="Returns the AFK timeout in seconds configured for the guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZallMembersCount" value="ZallMembersCount{$END$}" description="Returns the total combined member count across all guilds the bot is currently in." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZallowRoleMentions" value="ZallowRoleMentions{$END$}" description="Restricts role pings in the bot response to only the listed role IDs; if no IDs are given, all role mentions are suppressed." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZallowUserMentions" value="ZallowUserMentions{$END$}" description="Restricts user pings in the bot response to only the listed user IDs; if no IDs are given, all user mentions are suppressed." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZappEmojiCreate" value="ZappEmojiCreate{$END$}" description="Creates a new application emoji from an image URL. Returns the emoji ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZappEmojiDelete" value="ZappEmojiDelete{$END$}" description="Deletes an application emoji by ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZappEmojis" value="ZappEmojis{$END$}" description="Lists the bot application's emojis as a JSON array." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZargCount" value="ZargCount{$END$}" description="Returns the number of space-separated words in the text." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZargsCheck" value="ZargsCheck{$END$}" description="Halts execution with an error if the number of whitespace-separated arguments in the message is outside the allowed range." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zasync" value="Zasync{$END$}" description="Spawns a named background task that runs the provided code block concurrently." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZauditCount" value="ZauditCount{$END$}" description="Fetches the guild audit log and returns the number of returned entries." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZauditEntries" value="ZauditEntries{$END$}" description="Fetches the latest guild audit log entries and returns them as a JSON array." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZauditEntryAction" value="ZauditEntryAction{$END$}" description="Returns the action name for the selected audit log entry." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZauditEntryChanges" value="ZauditEntryChanges{$END$}" description="Returns the change details for the selected audit log entry as JSON." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZauditEntryID" value="ZauditEntryID{$END$}" description="Returns the audit log entry ID for the selected entry." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZauditEntryReason" value="ZauditEntryReason{$END$}" description="Returns the reason attached to the selected audit log entry." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZauditEntryTarget" value="ZauditEntryTarget{$END$}" description="Returns the target ID for the selected audit log entry." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZauditEntryUser" value="ZauditEntryUser{$END$}" description="Returns the user ID of the actor who created the selected audit log entry." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZauditLatest" value="ZauditLatest{$END$}" description="Fetches the most recent guild audit log entry and returns it as a JSON object." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zauthor" value="Zauthor{$END$}" description="Sets the author name on the specified embed slot." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZauthorIcon" value="ZauthorIcon{$END$}" description="Sets the author icon image URL on the specified embed slot, requiring an author to already be set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZauthorURL" value="ZauthorURL{$END$}" description="Sets a hyperlink URL on the embed's author name, requiring an author to already be set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZautomodRule" value="ZautomodRule{$END$}" description="Returns information about a specific automod rule in the guild as JSON." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZautomodRuleCreate" value="ZautomodRuleCreate{$END$}" description="Creates a new automod rule. trigger and actions are JSON strings." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZautomodRuleDelete" value="ZautomodRuleDelete{$END$}" description="Deletes an automod rule from the guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZautomodRuleEdit" value="ZautomodRuleEdit{$END$}" description="Edits an existing automod rule. Use !unchanged for fields to skip." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZautomodRules" value="ZautomodRules{$END$}" description="Lists all automod rules in the guild as a JSON array." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZautomodRuleUpdate" value="ZautomodRuleUpdate{$END$}" description="Edits an existing automod rule. Use !unchanged for fields to skip." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zawait" value="Zawait{$END$}" description="Blocks execution until the specified background task completes and returns its output." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zban" value="Zban{$END$}" description="Bans a user from the guild with an optional reason and optional number of days of messages to delete." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zbase64Decode" value="Zbase64Decode{$END$}" description="Decodes a base64-encoded string and returns the decoded text." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zbase64Encode" value="Zbase64Encode{$END$}" description="Encodes text to base64." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZblackListIDs" value="ZblackListIDs{$END$}" description="Halts command execution if the triggering user's ID matches any of the provided user IDs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZblackListRoles" value="ZblackListRoles{$END$}" description="Halts command execution if the triggering user holds any role matching the provided role names." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZblackListRolesIDs" value="ZblackListRolesIDs{$END$}" description="Halts command execution if the triggering user holds any role matching the provided role IDs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZblackListServers" value="ZblackListServers{$END$}" description="Halts command execution if the current server's guild ID matches any of the provided guild IDs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZblackListUsers" value="ZblackListUsers{$END$}" description="Halts command execution if the triggering user's username matches any of the provided usernames." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZboostCount" value="ZboostCount{$END$}" description="Returns the number of active Nitro boosts the guild has received." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZboostLevel" value="ZboostLevel{$END$}" description="Returns the current Nitro boost tier of the current guild as a number from 0 to 3." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZbotCommands" value="ZbotCommands{$END$}" description="Returns an alphabetically sorted list of all loaded command triggers, joined by the specified separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZbotID" value="ZbotID{$END$}" description="Returns the bot's own user ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZbotOwnerID" value="ZbotOwnerID{$END$}" description="Returns the user ID of the bot application's owner." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZbotTyping" value="ZbotTyping{$END$}" description="Broadcasts a typing indicator in the current channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZbyteCount" value="ZbyteCount{$END$}" description="Returns the number of UTF-8 bytes in the text." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zcalculate" value="Zcalculate{$END$}" description="Evaluates a mathematical expression supporting +, -, *, /, %, and ** operators with parentheses and correct operator precedence." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcategoryChannels" value="ZcategoryChannels{$END$}" description="Returns the channels inside a category sorted by position, formatted as names, IDs, mentions, or a count, joined by the specified separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcategoryCount" value="ZcategoryCount{$END$}" description="Returns the number of category channels in the guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcategoryID" value="ZcategoryID{$END$}" description="Returns the snowflake ID of a category channel in the current guild matched by name." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zceil" value="Zceil{$END$}" description="Returns the smallest integer greater than or equal to the given number." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchangeCooldownTime" value="ZchangeCooldownTime{$END$}" description="Overrides the label words used when formatting remaining cooldown times." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchangeNickname" value="ZchangeNickname{$END$}" description="Changes the guild nickname of the command author or specified user; supports the %username% placeholder in the nickname string." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchannelCount" value="ZchannelCount{$END$}" description="Returns the total number of channels in the current guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchannelCreated" value="ZchannelCreated{$END$}" description="Returns the Unix timestamp in seconds at which the channel was created, extracted from its snowflake ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchannelExists" value="ZchannelExists{$END$}" description="Returns true if a channel with the given ID exists, or false otherwise." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchannelID" value="ZchannelID{$END$}" description="Returns the current channel's ID, or searches for and returns the ID of a guild channel matching the given name." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchannelInvites" value="ZchannelInvites{$END$}" description="Returns a space-separated list of invite codes for the given channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchannelName" value="ZchannelName{$END$}" description="Returns the name of a Discord channel by its ID, falling back to the current channel if no ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchannelNames" value="ZchannelNames{$END$}" description="Returns a sorted list of all channel names in the guild joined by the specified separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchannelPosition" value="ZchannelPosition{$END$}" description="Returns the position index of a channel within the guild's channel list." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchannelTopic" value="ZchannelTopic{$END$}" description="Returns the topic of a Discord text channel, or an empty string if none is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchannelType" value="ZchannelType{$END$}" description="Returns the type of a channel as a string such as text, voice, category, announcement, stage, forum, thread, or dm." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZchannelWebhooks" value="ZchannelWebhooks{$END$}" description="Returns a space-separated list of webhook URLs configured for the given channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcharCount" value="ZcharCount{$END$}" description="Returns the number of Unicode characters in the text." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcheckCondition" value="ZcheckCondition{$END$}" description="Evaluates a condition expression and returns true or false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcheckContains" value="ZcheckContains{$END$}" description="Returns true if the text contains any of the provided words, using a case-insensitive comparison." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcheckUserPerms" value="ZcheckUserPerms{$END$}" description="Returns true if the specified user has all of the given guild permissions." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zclear" value="Zclear{$END$}" description="Bulk-deletes up to 100 recent messages in the current channel, with an optional user filter and configurable handling of pinned messages." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZclearReactions" value="ZclearReactions{$END$}" description="Removes a specific emoji reaction from a message, or clears all reactions when !all is passed as the emoji." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zcolor" value="Zcolor{$END$}" description="Sets the accent color of the specified embed slot using a hex color code." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcolorRole" value="ZcolorRole{$END$}" description="Sets the color of an existing role to the specified hex color code." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcommandName" value="ZcommandName{$END$}" description="Returns the name of the currently executing command, falling back to the trigger string if no command name is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcommandsCount" value="ZcommandsCount{$END$}" description="Returns the total number of commands loaded from the commands directory." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcommandTrigger" value="ZcommandTrigger{$END$}" description="Returns the trigger string of the currently executing command." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zcooldown" value="Zcooldown{$END$}" description="Applies a per-user per-server cooldown that blocks re-use of the current command until the duration expires." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcreateChannel" value="ZcreateChannel{$END$}" description="Creates a new channel in the current guild with the specified name, type, and optional parent category." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcreateEvent" value="ZcreateEvent{$END$}" description="Creates a new scheduled voice event in the server and returns its event ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcreateForumTag" value="ZcreateForumTag{$END$}" description="Adds a new available tag to a forum channel with an optional emoji and moderation flag." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcreateInvite" value="ZcreateInvite{$END$}" description="Creates an invite for the specified channel and returns its code." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcreatePost" value="ZcreatePost{$END$}" description="Creates a new forum post in a forum channel and returns its thread ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcreateRole" value="ZcreateRole{$END$}" description="Creates a new role in the guild with the specified name and optional color, hoist, and mentionable settings." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcreationDate" value="ZcreationDate{$END$}" description="Returns the creation date derived from any Discord snowflake ID, formatted according to the optional format string." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcropText" value="ZcropText{$END$}" description="Crops text to a maximum number of characters and appends an ending string if the text was truncated." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcustomEmoji" value="ZcustomEmoji{$END$}" description="Returns the usable Discord emoji string for a server custom emoji looked up by name." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcustomID" value="ZcustomID{$END$}" description="Returns the custom ID of the current interaction." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zdate" value="Zdate{$END$}" description="Returns the current date in YYYY-MM-DD format using the active timezone." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zday" value="Zday{$END$}" description="Returns the current day of the month using the active timezone." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zdeafen" value="Zdeafen{$END$}" description="Server-deafens the specified user so they cannot hear any audio in voice channels." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zdefer" value="Zdefer{$END$}" description="Defers the interaction response, showing a thinking indicator and extending the response window to 15 minutes." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zdelay" value="Zdelay{$END$}" description="Executes a block of code after a specified duration (e.g., 10s, 1m)." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZdeleteChannels" value="ZdeleteChannels{$END$}" description="Deletes one or more channels by their IDs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZdeleteChannelsByName" value="ZdeleteChannelsByName{$END$}" description="Deletes all channels in the current guild whose names match any of the provided names." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZdeleteEvent" value="ZdeleteEvent{$END$}" description="Deletes a scheduled event from the current server by its event ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZdeleteForumTag" value="ZdeleteForumTag{$END$}" description="Removes an available tag from a forum channel by its tag ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZdeleteInvite" value="ZdeleteInvite{$END$}" description="Deletes a Discord invite by its code." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZdeleteMessage" value="ZdeleteMessage{$END$}" description="Deletes the specified message from a channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZdeleteRole" value="ZdeleteRole{$END$}" description="Permanently deletes the specified role from the guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZdeleteSticker" value="ZdeleteSticker{$END$}" description="Deletes a guild sticker from the current server by its sticker ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zdescription" value="Zdescription{$END$}" description="Sets the description text on the specified embed slot." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZdisplayName" value="ZdisplayName{$END$}" description="Returns the display name of the command author or specified user; use server for the guild nickname or global for the Discord global name." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zdiv" value="Zdiv{$END$}" description="Divides the first value by each subsequent divisor in sequence and returns the result." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zdm" value="Zdm{$END$}" description="Sends a direct message with the specified content to the given user." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZdmChannelID" value="ZdmChannelID{$END$}" description="Returns the ID of the DM channel between the bot and a user, creating it if it does not yet exist." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zduration" value="Zduration{$END$}" description="Converts a duration string (e.g. 1h, 30m, 5d) into seconds." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeditButton" value="ZeditButton{$END$}" description="Edits a button on an existing message by its custom ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeditChannelPerms" value="ZeditChannelPerms{$END$}" description="Edits permission overwrites for a user or role on a channel, using + to allow, - to deny, and / to neutralize each named permission." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeditEvent" value="ZeditEvent{$END$}" description="Edits one or more fields of an existing scheduled event by its ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeditForumTag" value="ZeditForumTag{$END$}" description="Edits the name or moderation flag of an existing forum tag by its ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeditMessage" value="ZeditMessage{$END$}" description="Replaces the text content of an existing message in a channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeditSelectMenu" value="ZeditSelectMenu{$END$}" description="Edits the properties of a string select menu on an existing message." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeditSelectMenuOption" value="ZeditSelectMenuOption{$END$}" description="Replaces the options on an existing select menu with a single updated option." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeditSplitText" value="ZeditSplitText{$END$}" description="Replaces the element at the given 1-based index in the current split text with a new value." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeditThread" value="ZeditThread{$END$}" description="Edits one or more properties of an existing thread such as name, archived state, archive duration, lock status, and slowmode." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeditWelcomeScreen" value="ZeditWelcomeScreen{$END$}" description="Edits the guild's welcome screen settings." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZemojiExists" value="ZemojiExists{$END$}" description="Returns true if a custom emoji with the given ID exists in the current server, or false otherwise." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZemojiName" value="ZemojiName{$END$}" description="Returns the name of a custom emoji in the current server looked up by its ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZemoteCount" value="ZemoteCount{$END$}" description="Returns the total number of custom emojis in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zenabled" value="Zenabled{$END$}" description="Halts command execution with an optional error message when the condition is false, or continues silently when it is true." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZendsWith" value="ZendsWith{$END$}" description="Returns true if the text ends with the specified suffix." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zentitlements" value="Zentitlements{$END$}" description="Returns the bot application's entitlements as a JSON array." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zephemeral" value="Zephemeral{$END$}" description="Marks the current slash command response as ephemeral so it is only visible to the invoking user." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zerror" value="Zerror{$END$}" description="Halts execution and displays a custom user-facing error message." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zeval" value="Zeval{$END$}" description="Parses and executes a ZBR code string at runtime, returning the concatenated text output." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeventChannel" value="ZeventChannel{$END$}" description="Returns the channel ID associated with a scheduled event, or an empty string for external events." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeventCount" value="ZeventCount{$END$}" description="Returns the total number of scheduled events in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeventDescription" value="ZeventDescription{$END$}" description="Returns the description of a scheduled event by its event ID, or an empty string if no description is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeventEnd" value="ZeventEnd{$END$}" description="Returns the end time of a scheduled event as a Unix timestamp string, or an empty string if no end time is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeventName" value="ZeventName{$END$}" description="Returns the name of a scheduled event by its event ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeventStart" value="ZeventStart{$END$}" description="Returns the start time of a scheduled event as a Unix timestamp string." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeventStatus" value="ZeventStatus{$END$}" description="Returns the current status of a scheduled event as one of: scheduled, active, completed, or cancelled." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeventSubscribers" value="ZeventSubscribers{$END$}" description="Returns the number of users subscribed to a scheduled event." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZexecutionTime" value="ZexecutionTime{$END$}" description="Returns the number of milliseconds elapsed since the current command began executing." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zfloor" value="Zfloor{$END$}" description="Returns the largest integer less than or equal to the given number." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zfooter" value="Zfooter{$END$}" description="Sets the footer text on the specified embed slot." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZfooterIcon" value="ZfooterIcon{$END$}" description="Sets the footer icon image URL on the specified embed slot, requiring a footer to already be set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZforJson" value="ZforJson{$END$}" description="Iterates over a JSON array at the given key path within the current parsed JSON object, executing the code block for each element." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZforSplit" value="ZforSplit{$END$}" description="Iterates over the elements produced by a prior ZtextSplit call, executing the code block for each element with ZloopIndex and ZloopValue populated." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZforumPostCount" value="ZforumPostCount{$END$}" description="Returns the number of currently active posts in a forum channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZforumPostLock" value="ZforumPostLock{$END$}" description="Locks a forum post, preventing new replies." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZforumPostPin" value="ZforumPostPin{$END$}" description="Pins a forum post to the top of the forum channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZforumPosts" value="ZforumPosts{$END$}" description="Returns a space-separated list of active post IDs in a forum channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZforumTagEmoji" value="ZforumTagEmoji{$END$}" description="Returns the emoji associated with a forum tag." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZforumTagID" value="ZforumTagID{$END$}" description="Returns the ID of a forum tag matching the given name, or an empty string if not found." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZforumTagModerated" value="ZforumTagModerated{$END$}" description="Returns true if the specified forum tag is restricted to moderators, or false otherwise." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZforumTags" value="ZforumTags{$END$}" description="Returns a space-separated list of available tag names in a forum channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZfromTimestamp" value="ZfromTimestamp{$END$}" description="Formats a Unix timestamp into a human-readable date/time string using the active timezone and the specified format." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetAttachments" value="ZgetAttachments{$END$}" description="Returns attachment URLs from the triggering message joined by newlines, or the single URL at the specified 1-based index." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetBanReason" value="ZgetBanReason{$END$}" description="Returns the ban reason for the specified user, optionally checked against a different guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetChannelVar" value="ZgetChannelVar{$END$}" description="Returns the value of a channel-scoped variable, defaulting to the current channel if not specified." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetCooldown" value="ZgetCooldown{$END$}" description="Returns the remaining cooldown time in seconds for the current user and command." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetEmbedData" value="ZgetEmbedData{$END$}" description="Fetches the specified field from an embed on an existing Discord message, where type is one of title, description, footer, color, image, or timestamp." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetMentionableSelectUserCount" value="ZgetMentionableSelectUserCount{$END$}" description="Returns the number of users and roles selected in a mentionable select menu interaction." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetMentionableSelectUserID" value="ZgetMentionableSelectUserID{$END$}" description="Returns the selected user or role ID at the given 1-based index from a mentionable select menu interaction." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetMentionableSelectUserIDs" value="ZgetMentionableSelectUserIDs{$END$}" description="Returns all selected user and role IDs from a mentionable select menu interaction joined by the given separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetMessage" value="ZgetMessage{$END$}" description="Fetches the specified field from a Discord message, where type is one of content, authorID, username, or avatar." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetReactions" value="ZgetReactions{$END$}" description="Returns a separator-joined list of usernames of users who reacted to a specific message with the given emoji." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetRoleSelectRoleCount" value="ZgetRoleSelectRoleCount{$END$}" description="Returns the number of roles selected in a role select menu interaction." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetRoleSelectRoleID" value="ZgetRoleSelectRoleID{$END$}" description="Returns the selected role ID at the given 1-based index from a role select menu interaction." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetRoleSelectRoleIDs" value="ZgetRoleSelectRoleIDs{$END$}" description="Returns all selected role IDs from a role select menu interaction joined by the given separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetServerVar" value="ZgetServerVar{$END$}" description="Returns the value of a server-scoped variable, defaulting to the current server if not specified." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetSlowmode" value="ZgetSlowmode{$END$}" description="Returns the slowmode rate limit in seconds for the given channel, or 0 if no slowmode is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetTextSplitIndex" value="ZgetTextSplitIndex{$END$}" description="Returns the 1-based index of the first element in the split that matches the given value, or -1 if not found." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetTextSplitLength" value="ZgetTextSplitLength{$END$}" description="Returns the number of elements in the current split text." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetTimestamp" value="ZgetTimestamp{$END$}" description="Returns the current Unix timestamp in the specified unit: seconds (s), milliseconds (ms), or nanoseconds (ns)." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetUserSelectUserCount" value="ZgetUserSelectUserCount{$END$}" description="Returns the number of users selected in a user select menu interaction." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetUserSelectUserID" value="ZgetUserSelectUserID{$END$}" description="Returns the selected user ID at the given 1-based index from a user select menu interaction." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetUserSelectUserIDs" value="ZgetUserSelectUserIDs{$END$}" description="Returns all selected user IDs from a user select menu interaction joined by the given separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetUserVar" value="ZgetUserVar{$END$}" description="Returns the value of a user-scoped variable, defaulting to the current user and server if not specified." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZgetVar" value="ZgetVar{$END$}" description="Returns the value of a global bot-wide variable by name." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZglobalCooldown" value="ZglobalCooldown{$END$}" description="Applies a per-user global cooldown across all servers, preventing the user from running the command until the duration expires." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZguildBanner" value="ZguildBanner{$END$}" description="Returns the banner URL of the guild, or an empty string if no banner is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZguildExists" value="ZguildExists{$END$}" description="Returns true if a guild with the given ID is accessible by the bot, or false otherwise." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZguildID" value="ZguildID{$END$}" description="Returns the ID of the current guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhasRole" value="ZhasRole{$END$}" description="Returns true if the specified user currently has the given role." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhighestRole" value="ZhighestRole{$END$}" description="Returns the ID of the highest-position role held by the specified user, defaulting to the author." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhighestRoleWithPerms" value="ZhighestRoleWithPerms{$END$}" description="Returns the ID of the highest-position role in the guild that has all of the specified permissions." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zhour" value="Zhour{$END$}" description="Returns the current hour using the active timezone." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhttpAddHeader" value="ZhttpAddHeader{$END$}" description="Adds a custom HTTP header by name and value that will be sent with all subsequent HTTP requests in the current execution." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhttpDelete" value="ZhttpDelete{$END$}" description="Sends an HTTP DELETE request to the specified URL with an optional request body and stores the response." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhttpGet" value="ZhttpGet{$END$}" description="Sends an HTTP GET request to the specified URL and stores the response for access via ZhttpStatus and ZhttpResult." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhttpGetHeader" value="ZhttpGetHeader{$END$}" description="Returns the value of a custom HTTP header previously registered via ZhttpAddHeader, or an empty string if it does not exist." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhttpPatch" value="ZhttpPatch{$END$}" description="Sends an HTTP PATCH request to the specified URL with an optional request body and stores the response." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhttpPost" value="ZhttpPost{$END$}" description="Sends an HTTP POST request to the specified URL with an optional request body and stores the response." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhttpPut" value="ZhttpPut{$END$}" description="Sends an HTTP PUT request to the specified URL with an optional request body and stores the response." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhttpRemoveHeader" value="ZhttpRemoveHeader{$END$}" description="Removes a custom HTTP header previously set via ZhttpAddHeader so it is no longer sent with subsequent requests." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhttpResult" value="ZhttpResult{$END$}" description="Returns the response body of the last HTTP request, optionally navigating into it as a JSON path where each argument is one level deeper." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhttpStatus" value="ZhttpStatus{$END$}" description="Returns the HTTP status code of the last HTTP request made in the current execution." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zif" value="Zif{$END$}" description="Evaluates a condition and returns the then-branch value if true, or the optional else-branch value if false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZignoreChannels" value="ZignoreChannels{$END$}" description="Halts execution if the current channel matches any of the provided channel IDs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zimage" value="Zimage{$END$}" description="Sets the large image URL on the specified embed slot." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZindexOf" value="ZindexOf{$END$}" description="Returns the 1-based character position of the first occurrence of a search string in the text, or 0 if not found." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZinputValue" value="ZinputValue{$END$}" description="Returns the submitted value of a modal text input field by its field ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZinviteInfo" value="ZinviteInfo{$END$}" description="Returns a specific field of a Discord invite by its code, where type is one of uses, channel, creationDate, inviter, or isTemporary." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisAdmin" value="ZisAdmin{$END$}" description="Returns true if the command author or specified user has the Administrator permission in the current guild, otherwise false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisBanned" value="ZisBanned{$END$}" description="Returns true if the specified user is currently banned from the guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisBoolean" value="ZisBoolean{$END$}" description="Returns true if the value is exactly the string true or false, otherwise returns false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisBooster" value="ZisBooster{$END$}" description="Returns true if the command author or specified user is currently boosting the current guild, otherwise false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisBot" value="ZisBot{$END$}" description="Returns true if the command author or specified user is a bot account, otherwise false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisEmojiAnimated" value="ZisEmojiAnimated{$END$}" description="Returns true if the custom emoji with the given ID is animated, or false if it is static." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisHoisted" value="ZisHoisted{$END$}" description="Returns true if the given role is displayed separately in the member list, defaulting to the author's top role if no ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisInteger" value="ZisInteger{$END$}" description="Returns true if the value parses as a whole number with no decimal point, otherwise returns false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisInVoice" value="ZisInVoice{$END$}" description="Returns true if the specified user is currently connected to a voice channel, defaulting to the author." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisMentionable" value="ZisMentionable{$END$}" description="Returns true if the given role can be mentioned by all users, defaulting to the author's top role if no ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisMentioned" value="ZisMentioned{$END$}" description="Returns true if the specified user is mentioned in the triggering message, defaulting to the command author." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisMessageEdited" value="ZisMessageEdited{$END$}" description="Returns true or false for whether a message has been edited, or returns its edit timestamp when type is timestamp." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisModerator" value="ZisModerator{$END$}" description="Returns true if the command author or specified user has the Moderate Members permission in the current guild, otherwise false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisNSFW" value="ZisNSFW{$END$}" description="Returns true if the given channel is marked as NSFW, or false otherwise." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisNumber" value="ZisNumber{$END$}" description="Returns true if the value parses as any numeric value including decimals, otherwise returns false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisSlash" value="ZisSlash{$END$}" description="Returns true if the current command was triggered as a slash command, otherwise returns false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisTimedOut" value="ZisTimedOut{$END$}" description="Returns true if the specified user currently has an active communication timeout." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisUserDMEnabled" value="ZisUserDMEnabled{$END$}" description="Returns true if a DM channel can be successfully opened with the command author or specified user, otherwise false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisValidHex" value="ZisValidHex{$END$}" description="Returns true if the value is a valid six-digit hex color code, otherwise returns false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjoinSplitText" value="ZjoinSplitText{$END$}" description="Joins all elements in the current split text into a single string using the given separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonArray" value="ZjsonArray{$END$}" description="Creates an empty JSON array at the specified key path in the working JSON object." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonArrayAppend" value="ZjsonArrayAppend{$END$}" description="Appends a value to the end of the array at the specified key path in the working JSON object." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonArrayCount" value="ZjsonArrayCount{$END$}" description="Returns the number of elements in the array at the specified key path in the working JSON object." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonArrayIndex" value="ZjsonArrayIndex{$END$}" description="Returns the 0-based index of the first occurrence of a value in the array at the specified key path, or -1 if not found." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonArrayPop" value="ZjsonArrayPop{$END$}" description="Removes and returns the last element of the array at the specified key path in the working JSON object." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonArrayReverse" value="ZjsonArrayReverse{$END$}" description="Reverses the array at the specified key path in the working JSON object in place." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonArrayShift" value="ZjsonArrayShift{$END$}" description="Removes and returns the first element of the array at the specified key path in the working JSON object." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonArraySort" value="ZjsonArraySort{$END$}" description="Sorts the array at the specified key path in ascending order, comparing numbers numerically and other values lexicographically." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonArrayUnshift" value="ZjsonArrayUnshift{$END$}" description="Inserts a value at the beginning of the array at the specified key path in the working JSON object." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonClear" value="ZjsonClear{$END$}" description="Clears the working JSON object, discarding all stored data for the current execution." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonExists" value="ZjsonExists{$END$}" description="Returns true if the specified key path exists in the working JSON object, or false otherwise." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonGet" value="ZjsonGet{$END$}" description="Returns the value at the specified key path in the working JSON object, returning an empty string if the path does not exist." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonJoinArray" value="ZjsonJoinArray{$END$}" description="Joins all elements of the array at the specified key path into a single string using the provided separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonParse" value="ZjsonParse{$END$}" description="Parses a JSON string and stores it as the working JSON object for the current execution." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonPretty" value="ZjsonPretty{$END$}" description="Serializes the working JSON object to a pretty-printed JSON string using the specified number of spaces for indentation." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonSet" value="ZjsonSet{$END$}" description="Sets a value at the specified key path in the working JSON object, automatically inferring the value type." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonStringify" value="ZjsonStringify{$END$}" description="Serializes the working JSON object to a compact JSON string." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonUnset" value="ZjsonUnset{$END$}" description="Removes the key at the specified path from the working JSON object." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zkick" value="Zkick{$END$}" description="Kicks a user from the guild with an optional reason." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZlastMessageID" value="ZlastMessageID{$END$}" description="Returns the ID of the last message sent in the given channel, or an empty string if none exists." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZlastPinTimestamp" value="ZlastPinTimestamp{$END$}" description="Returns the date of the most recently pinned message in the channel formatted as YYYY-MM-DD, or an empty string if no pins exist." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZlinesCount" value="ZlinesCount{$END$}" description="Returns the number of lines in the text, returning zero for an empty string." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZlistVar" value="ZlistVar{$END$}" description="Returns all global variable names joined by the given separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZloopIndex" value="ZloopIndex{$END$}" description="Returns the current 1-based iteration index of the active loop, or 0 if called outside a loop." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZloopValue" value="ZloopValue{$END$}" description="Returns the current element value of the active loop, or an empty string if called outside a loop." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zlowercase" value="Zlowercase{$END$}" description="Converts all characters in the text to lowercase." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZlowestRole" value="ZlowestRole{$END$}" description="Returns the ID of the lowest-position non-everyone role held by the specified user, defaulting to the author." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZlowestRoleWithPerms" value="ZlowestRoleWithPerms{$END$}" description="Returns the ID of the lowest-position role in the guild that has all of the specified permissions." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zmax" value="Zmax{$END$}" description="Returns the largest value among all provided numbers." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zmd5" value="Zmd5{$END$}" description="Returns the MD5 hash of the input text in hexadecimal." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZmembersCount" value="ZmembersCount{$END$}" description="Returns the total number of members in the guild, or the count filtered by presence status." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zmentioned" value="Zmentioned{$END$}" description="Returns the user ID of the Nth mentioned user in the triggering message, optionally falling back to the author ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zmessage" value="Zmessage{$END$}" description="Returns the full message content after the command trigger, or the Nth space-separated word when an index is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZmessageID" value="ZmessageID{$END$}" description="Returns the ID of the message that triggered the current command execution." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZmessageLink" value="ZmessageLink{$END$}" description="Builds and returns a Discord jump URL for the specified message, using the current channel if no channel ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zmin" value="Zmin{$END$}" description="Returns the smallest value among all provided numbers." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zminute" value="Zminute{$END$}" description="Returns the current minute using the active timezone." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZmodifyChannel" value="ZmodifyChannel{$END$}" description="Modifies one or more properties of an existing channel such as its name, topic, NSFW flag, position, and parent category." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZmodifyRole" value="ZmodifyRole{$END$}" description="Modifies the name, color, hoist, and mentionable settings of an existing role, leaving any unspecified fields unchanged." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZmodifyRolePerms" value="ZmodifyRolePerms{$END$}" description="Adds or removes permissions from a role using prefixed operations where + grants, - denies, and / resets a permission." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zmodulo" value="Zmodulo{$END$}" description="Returns the remainder of dividing the dividend by the divisor." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zmonth" value="Zmonth{$END$}" description="Returns the current month number using the active timezone." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zmulti" value="Zmulti{$END$}" description="Returns the product of all provided numbers." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zmute" value="Zmute{$END$}" description="Server-mutes the specified user in all voice channels." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZnewModal" value="ZnewModal{$END$}" description="Creates a modal dialog to collect text input from the user." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZnewSelectMenu" value="ZnewSelectMenu{$END$}" description="Creates a string select menu on the bot's response." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Znot" value="Znot{$END$}" description="Inverts a boolean value, returning false for true or 1, and true for anything else." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZnumberSeparator" value="ZnumberSeparator{$END$}" description="Formats a number string by inserting thousands separators, defaulting to a comma." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyAdmin" value="ZonlyAdmin{$END$}" description="Halts execution unless the author has the Administrator permission in the guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyBotChannelPerms" value="ZonlyBotChannelPerms{$END$}" description="Halts execution unless the bot has all of the specified permissions in the given channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyBotPerms" value="ZonlyBotPerms{$END$}" description="Halts execution unless the bot has all of the specified guild permissions." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyForCategories" value="ZonlyForCategories{$END$}" description="Halts execution unless the current channel belongs to one of the specified category IDs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyForChannels" value="ZonlyForChannels{$END$}" description="Halts execution unless the current channel matches one of the specified channel IDs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyForIDs" value="ZonlyForIDs{$END$}" description="Halts execution unless the author's user ID matches one of the specified IDs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyForRoleIDs" value="ZonlyForRoleIDs{$END$}" description="Halts execution unless the author has at least one of the specified role IDs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyForRoles" value="ZonlyForRoles{$END$}" description="Halts execution unless the author has at least one of the specified roles matched by name." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyForServers" value="ZonlyForServers{$END$}" description="Halts execution unless the current guild ID matches one of the specified server IDs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyForUsers" value="ZonlyForUsers{$END$}" description="Halts execution unless the author's username matches one of the specified usernames." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyIf" value="ZonlyIf{$END$}" description="Halts execution with a custom error message if the given condition evaluates to false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyIfMessageContains" value="ZonlyIfMessageContains{$END$}" description="Halts execution with an error message unless the provided message text contains all of the specified words." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyNSFW" value="ZonlyNSFW{$END$}" description="Halts execution unless the current channel is marked as NSFW." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonlyPerms" value="ZonlyPerms{$END$}" description="Halts execution unless the author has all of the specified guild permissions." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zoption" value="Zoption{$END$}" description="Returns the value of a named slash command option by its key." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpadLeft" value="ZpadLeft{$END$}" description="Pads the text on the left with a repeated character until it reaches the specified width, defaulting to a space." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpadRight" value="ZpadRight{$END$}" description="Pads the text on the right with a repeated character until it reaches the specified width, defaulting to a space." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZparentID" value="ZparentID{$END$}" description="Returns the ID of the parent category of the given channel, or an empty string if the channel has no parent." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zping" value="Zping{$END$}" description="Returns the bot's gateway latency in milliseconds." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpinList" value="ZpinList{$END$}" description="Returns a space-separated list of pinned message IDs in a channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpinMessage" value="ZpinMessage{$END$}" description="Pins the specified message in a channel, defaulting to the current channel if no channel ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpollAddAnswer" value="ZpollAddAnswer{$END$}" description="Adds an answer option to the poll being created." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpollAllowMultiselect" value="ZpollAllowMultiselect{$END$}" description="Allows voting for multiple answers in the poll being created." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpollAnswerVoters" value="ZpollAnswerVoters{$END$}" description="Returns a list of users who voted for a specific poll answer." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpollAnswerVotes" value="ZpollAnswerVotes{$END$}" description="Returns the vote count for a specific poll answer." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpollCreate" value="ZpollCreate{$END$}" description="Starts creating a poll with the given question and duration in hours." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpollEnd" value="ZpollEnd{$END$}" description="Ends a poll early by message ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpollGet" value="ZpollGet{$END$}" description="Gets poll details and current results for a message." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpollSend" value="ZpollSend{$END$}" description="Sends the configured poll to the specified channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpostTags" value="ZpostTags{$END$}" description="Returns a space-separated list of tag IDs currently applied to a forum post thread." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zpow" value="Zpow{$END$}" description="Returns the base raised to the power of the exponent." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpublishMessage" value="ZpublishMessage{$END$}" description="Crossposts a message from an announcement channel to all subscribed channels." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zrandom" value="Zrandom{$END$}" description="Returns a random integer between min and max (inclusive)." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrandomCategoryID" value="ZrandomCategoryID{$END$}" description="Returns the ID of a randomly selected category channel in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrandomChannelID" value="ZrandomChannelID{$END$}" description="Returns the ID of a randomly selected text channel in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrandomGuildID" value="ZrandomGuildID{$END$}" description="Returns the ID of a randomly selected guild that the bot is a member of." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrandomMention" value="ZrandomMention{$END$}" description="Returns a formatted mention string for a randomly selected member in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrandomRoleID" value="ZrandomRoleID{$END$}" description="Returns the ID of a randomly selected role in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrandomString" value="ZrandomString{$END$}" description="Returns a random alphanumeric string of the specified length." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrandomText" value="ZrandomText{$END$}" description="Returns one of the provided text values chosen at random." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrandomUser" value="ZrandomUser{$END$}" description="Returns the display name of a randomly selected member in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrandomUserID" value="ZrandomUserID{$END$}" description="Returns the user ID of a randomly selected member in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZregexMatch" value="ZregexMatch{$END$}" description="Returns true if the text matches the given regular expression pattern." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZregexReplace" value="ZregexReplace{$END$}" description="Replaces all substrings in the text that match the regular expression pattern with the specified replacement." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZremoveAllComponents" value="ZremoveAllComponents{$END$}" description="Removes all components from a message, defaulting to the triggering message." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZremoveButtons" value="ZremoveButtons{$END$}" description="Removes all buttons from a message by clearing all its components, defaulting to the triggering message." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZremoveComponent" value="ZremoveComponent{$END$}" description="Removes a specific component by its custom ID from a message, defaulting to the triggering message." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZremoveEmoji" value="ZremoveEmoji{$END$}" description="Deletes a custom emoji from the current server by its ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZremoveLinks" value="ZremoveLinks{$END$}" description="Removes all whitespace-delimited tokens beginning with http:// or https:// from the text." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZremoveSplitTextElement" value="ZremoveSplitTextElement{$END$}" description="Removes the element at the given 1-based index from the current split text." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zrepeat" value="Zrepeat{$END$}" description="Executes the given code block N times and returns each non-empty output joined by newlines." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZreplaceText" value="ZreplaceText{$END$}" description="Replaces occurrences of a sample substring in text with a new string, with an optional limit on the number of replacements." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrepliedMessageID" value="ZrepliedMessageID{$END$}" description="Returns the ID of the message that the specified or triggering message is replying to." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zreply" value="Zreply{$END$}" description="Signals that the bot's response should be sent as a reply to the triggering message." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZreplyIn" value="ZreplyIn{$END$}" description="Schedules a reply to the triggering message after the specified duration has elapsed." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZresetChannelVar" value="ZresetChannelVar{$END$}" description="Deletes the given channel variable across every channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZresetServerVar" value="ZresetServerVar{$END$}" description="Deletes the given server variable across every server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZresetUserVar" value="ZresetUserVar{$END$}" description="Deletes the given user variable for every user in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZroleColor" value="ZroleColor{$END$}" description="Returns the hex color code of a role, defaulting to the author's top role if no ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZroleCount" value="ZroleCount{$END$}" description="Returns the total number of roles in the current guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZroleExists" value="ZroleExists{$END$}" description="Returns true if the given role ID exists in the guild, defaulting to the author's top role if no ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZroleGrant" value="ZroleGrant{$END$}" description="Grants or removes one or more roles from a user using prefixed operations where + adds and - removes a role." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZroleID" value="ZroleID{$END$}" description="Returns the command author's top role ID, or searches for and returns the ID of a guild role matching the given name." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZroleMemberCount" value="ZroleMemberCount{$END$}" description="Returns the number of members who have the given role, defaulting to the author's highest role." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZroleMembers" value="ZroleMembers{$END$}" description="Returns a space-separated list of user IDs for all members who have the given role, defaulting to the author's highest role." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZroleName" value="ZroleName{$END$}" description="Returns the name of a role by its ID, defaulting to the author's top role if no ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZroleNames" value="ZroleNames{$END$}" description="Returns all role names in the guild sorted by position from highest to lowest, joined by the given separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrolePerms" value="ZrolePerms{$END$}" description="Returns the permission names granted to a role joined by the given separator, defaulting to the author's top role if no ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrolePosition" value="ZrolePosition{$END$}" description="Returns the hierarchy position of a role, defaulting to the author's top role if no ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zround" value="Zround{$END$}" description="Rounds a number to the specified number of decimal places, defaulting to zero decimal places." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrulesChannelID" value="ZrulesChannelID{$END$}" description="Returns the ID of the rules channel in the guild, or an empty string if none is configured." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zsecond" value="Zsecond{$END$}" description="Returns the current second using the active timezone." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsendEmbed" value="ZsendEmbed{$END$}" description="Sends the embed at the specified slot index to a Discord channel, optionally returning the sent message ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsendMessage" value="ZsendMessage{$END$}" description="Sends a message to the specified channel (or the current channel if omitted), and optionally returns the sent message's ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsendWebhook" value="ZsendWebhook{$END$}" description="Sends the embed at the specified slot index via a Discord webhook URL, optionally returning the message ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverChannels" value="ZserverChannels{$END$}" description="Returns a separator-joined list of channel IDs for the specified server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverCooldown" value="ZserverCooldown{$END$}" description="Applies a server-wide cooldown that prevents anyone in the server from running the command until the duration expires." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverCount" value="ZserverCount{$END$}" description="Returns the number of guilds the bot is currently in." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverDescription" value="ZserverDescription{$END$}" description="Returns the description of the guild, or an empty string if none is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverEmojis" value="ZserverEmojis{$END$}" description="Returns the custom emojis of the guild as formatted emoji strings joined by the specified separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverEvents" value="ZserverEvents{$END$}" description="Returns a space-separated list of all scheduled event IDs in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverIcon" value="ZserverIcon{$END$}" description="Returns the icon URL of the guild, or an empty string if no icon is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverInvite" value="ZserverInvite{$END$}" description="Returns the URL of the first available invite for the guild, or an empty string if none exist." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverLockdown" value="ZserverLockdown{$END$}" description="Enables or disables guild raid protection (incident actions) with an optional duration." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverModify" value="ZserverModify{$END$}" description="Edits guild settings such as name, icon, banner, splash, description, and verification level." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverName" value="ZserverName{$END$}" description="Returns the name of the guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverNames" value="ZserverNames{$END$}" description="Returns a list of the names of all guilds the bot is in, optionally limited to a count and joined by the separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverOwner" value="ZserverOwner{$END$}" description="Returns the user ID of the guild owner." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverRoles" value="ZserverRoles{$END$}" description="Returns a separator-joined list of role IDs for the specified server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverStickers" value="ZserverStickers{$END$}" description="Returns a space-separated list of all sticker IDs in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverVerificationLevel" value="ZserverVerificationLevel{$END$}" description="Returns the verification level of the current guild as a string such as none, low, medium, high, or very_high." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsetChannelVar" value="ZsetChannelVar{$END$}" description="Sets the value of a channel-scoped variable, defaulting to the current channel if not specified." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsetPostTags" value="ZsetPostTags{$END$}" description="Replaces all applied tags on a forum post thread with the specified tag IDs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsetServerVar" value="ZsetServerVar{$END$}" description="Sets the value of a server-scoped variable, defaulting to the current server if not specified." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsetUserRoles" value="ZsetUserRoles{$END$}" description="Replaces all roles of the specified user with exactly the provided list of role IDs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsetUserVar" value="ZsetUserVar{$END$}" description="Sets the value of a user-scoped variable, defaulting to the current user and server if not specified." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsetVar" value="ZsetVar{$END$}" description="Sets the value of a global bot-wide variable by name." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zsha256" value="Zsha256{$END$}" description="Returns the SHA-256 hash of the input text as a hex string." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zskus" value="Zskus{$END$}" description="Returns the bot application's SKUs as a JSON array." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZslashCommandsCount" value="ZslashCommandsCount{$END$}" description="Returns the number of slash-type commands loaded from the commands directory." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZslashID" value="ZslashID{$END$}" description="Returns the Discord application command ID for the specified slash command name, or for the currently executing slash command if no name is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZslowMode" value="ZslowMode{$END$}" description="Sets the slowmode rate limit on a channel to the specified duration (0 or 0s disables it)." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zsort" value="Zsort{$END$}" description="Sorts a variadic list of numbers in ascending or descending order and returns up to a specified count joined by a separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsoundboardCreate" value="ZsoundboardCreate{$END$}" description="Uploads a new sound to the server soundboard from a file URL." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsoundboardDefaultSounds" value="ZsoundboardDefaultSounds{$END$}" description="Lists Discord's default soundboard sounds." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsoundboardDelete" value="ZsoundboardDelete{$END$}" description="Deletes a sound from the server soundboard." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsoundboardEdit" value="ZsoundboardEdit{$END$}" description="Edits a soundboard sound's name, volume, or emoji." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsoundboardPlay" value="ZsoundboardPlay{$END$}" description="Plays a soundboard sound in a voice channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsoundboardSound" value="ZsoundboardSound{$END$}" description="Gets details of a specific soundboard sound." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsoundboardSounds" value="ZsoundboardSounds{$END$}" description="Lists all soundboard sounds in the server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsplitText" value="ZsplitText{$END$}" description="Returns a single element from the stored split text by 1-based index, or use &lt; for the first or &gt; for the last element." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zsqrt" value="Zsqrt{$END$}" description="Returns the square root of the given non-negative number." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstageCreate" value="ZstageCreate{$END$}" description="Creates a new stage instance in the specified stage channel with the given topic." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstageDelete" value="ZstageDelete{$END$}" description="Ends and deletes the stage instance associated with the specified stage channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstageEdit" value="ZstageEdit{$END$}" description="Edits the topic of an existing stage instance in the specified stage channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstageTopic" value="ZstageTopic{$END$}" description="Returns the current topic of the stage instance in the specified stage channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstartsWith" value="ZstartsWith{$END$}" description="Returns true if the text begins with the specified prefix." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstartThread" value="ZstartThread{$END$}" description="Creates a new thread in the specified channel, optionally attaching it to an existing message, and returns the thread ID if requested." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstickerCount" value="ZstickerCount{$END$}" description="Returns the total number of stickers in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstickerCreate" value="ZstickerCreate{$END$}" description="Creates a new guild sticker from a file URL." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstickerDescription" value="ZstickerDescription{$END$}" description="Returns the description of a guild sticker by its sticker ID, or an empty string if no description is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstickerEdit" value="ZstickerEdit{$END$}" description="Edits a guild sticker's metadata. Use !unchanged for fields to skip." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstickerEmoji" value="ZstickerEmoji{$END$}" description="Returns the related emoji tag for a guild sticker as a string." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstickerExists" value="ZstickerExists{$END$}" description="Returns true if a sticker with the given ID exists in the current server, or false otherwise." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstickerID" value="ZstickerID{$END$}" description="Returns the ID of a guild sticker matching the given name, or an empty string if not found." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZstickerName" value="ZstickerName{$END$}" description="Returns the name of a guild sticker by its sticker ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zstop" value="Zstop{$END$}" description="Halts execution silently without producing any output or error message." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zsub" value="Zsub{$END$}" description="Subtracts each subsequent number from the first value and returns the result." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zsubstring" value="Zsubstring{$END$}" description="Returns a portion of the text starting at a 1-based character position, optionally limited to a specified length." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zsum" value="Zsum{$END$}" description="Returns the sum of all provided numbers." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsuppressErrors" value="ZsuppressErrors{$END$}" description="Activates error suppression for the current execution, optionally showing a custom message or a specific embed slot instead of the real error." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsyncPerms" value="ZsyncPerms{$END$}" description="Syncs a channel's permissions with its parent category." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsystemChannelID" value="ZsystemChannelID{$END$}" description="Returns the ID of the system messages channel in the current guild, or an empty string if none is configured." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZtextSplit" value="ZtextSplit{$END$}" description="Splits a string by a separator and stores the resulting elements for use with other split functions." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZthreadAddMember" value="ZthreadAddMember{$END$}" description="Adds a user to the specified thread by their user ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZthreadArchive" value="ZthreadArchive{$END$}" description="Archives a thread by its ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZthreadArchived" value="ZthreadArchived{$END$}" description="Returns true if the thread is archived." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZthreadList" value="ZthreadList{$END$}" description="Lists threads in a channel. active: true/false. private: true=private archived, false=public archived." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZthreadLocked" value="ZthreadLocked{$END$}" description="Returns true if the thread is locked." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZthreadMessageCount" value="ZthreadMessageCount{$END$}" description="Returns the number of messages in the specified thread." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZthreadMetadata" value="ZthreadMetadata{$END$}" description="Returns JSON metadata for a thread including owner, creation date, and flags." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZthreadParentID" value="ZthreadParentID{$END$}" description="Returns the parent channel ID of the thread, or empty string." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZthreadPin" value="ZthreadPin{$END$}" description="Pins a thread to the top of its parent channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZthreadRemoveMember" value="ZthreadRemoveMember{$END$}" description="Removes a user from the specified thread by their user ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZthreadUnarchive" value="ZthreadUnarchive{$END$}" description="Unarchives a thread by its ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZthreadUserCount" value="ZthreadUserCount{$END$}" description="Returns the total number of members currently in the specified thread." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zthumbnail" value="Zthumbnail{$END$}" description="Sets the thumbnail image URL on the specified embed slot." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Ztime" value="Ztime{$END$}" description="Sets the active timezone for all subsequent date/time functions, or returns the current timezone name when called with no argument." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZtimeDiff" value="ZtimeDiff{$END$}" description="Returns the absolute difference between two Unix timestamps in the specified unit such as seconds, minutes, hours, or days." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Ztimeout" value="Ztimeout{$END$}" description="Applies a communication timeout to a user for the specified duration, up to a maximum of 28 days." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Ztimestamp" value="Ztimestamp{$END$}" description="Enables the current UTC timestamp display on the specified embed slot." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Ztitle" value="Ztitle{$END$}" description="Sets the title text on the specified embed slot." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Ztitlecase" value="Ztitlecase{$END$}" description="Converts the first letter of each word to uppercase and all remaining letters to lowercase." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZtitleURL" value="ZtitleURL{$END$}" description="Sets a hyperlink URL on the embed's title, requiring a title to already be set on that slot." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZtrimContent" value="ZtrimContent{$END$}" description="Collapses multiple consecutive spaces into a single space and trims leading and trailing whitespace." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZtrimSpace" value="ZtrimSpace{$END$}" description="Removes leading and trailing whitespace from the text." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZtryRun" value="ZtryRun{$END$}" description="Evaluates the code block and falls back to the fallback block if any error occurs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zunban" value="Zunban{$END$}" description="Removes the ban for the specified user from the guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zundeafen" value="Zundeafen{$END$}" description="Removes the server deafen from the specified user so they can hear audio in voice channels again." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zunmute" value="Zunmute{$END$}" description="Removes the server mute from the specified user in all voice channels." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZunpinMessage" value="ZunpinMessage{$END$}" description="Unpins the specified message in a channel, defaulting to the current channel if no channel ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuntimeOut" value="ZuntimeOut{$END$}" description="Removes the active communication timeout from a user, restoring their ability to send messages." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zuppercase" value="Zuppercase{$END$}" description="Converts all characters in the text to uppercase." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zuptime" value="Zuptime{$END$}" description="Returns the bot's uptime since startup, formatted as a human-readable string of days, hours, minutes, and seconds." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zurl" value="Zurl{$END$}" description="Encodes or decodes a string using URL percent-encoding based on the specified mode." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuseChannel" value="ZuseChannel{$END$}" description="Redirects all bot output for the current command execution to the specified channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserAvatar" value="ZuserAvatar{$END$}" description="Returns the avatar URL of the command author, or of the specified user if a user ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserBadge" value="ZuserBadge{$END$}" description="Returns the public profile badges of the command author or specified user as a separated list." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserBanner" value="ZuserBanner{$END$}" description="Returns the banner URL of the command author or specified user, or an empty string if no banner is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserBannerColor" value="ZuserBannerColor{$END$}" description="Returns the banner accent color of the command author or specified user as a hex string, or an empty string if none is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserExists" value="ZuserExists{$END$}" description="Returns true if the given user ID resolves to a valid Discord user, or false otherwise." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserID" value="ZuserID{$END$}" description="Returns the command author's user ID, or searches for and returns the user ID of a guild member matching the given name." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserJoined" value="ZuserJoined{$END$}" description="Returns the date when the command author or specified user joined the current guild, formatted according to the optional format string." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zusername" value="Zusername{$END$}" description="Returns the username of the command author, or of the specified user if a user ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserPerms" value="ZuserPerms{$END$}" description="Returns the guild permissions held by the command author or specified user, up to the given amount, joined by the separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserReacted" value="ZuserReacted{$END$}" description="Returns true if the specified user reacted to a message with the given emoji, or false otherwise." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserRoles" value="ZuserRoles{$END$}" description="Returns a list of the specified user's roles joined by the given separator, with output format controlled by returnType." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserSelfDeafened" value="ZuserSelfDeafened{$END$}" description="Returns true if the specified user has deafened themselves in voice, defaulting to the author." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserSelfMuted" value="ZuserSelfMuted{$END$}" description="Returns true if the specified user has muted themselves in voice, defaulting to the author." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserServerAvatar" value="ZuserServerAvatar{$END$}" description="Returns the guild-specific avatar URL of the command author or specified user, falling back to their global avatar or default avatar if none is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserServerDeafened" value="ZuserServerDeafened{$END$}" description="Returns true if the specified user has been server-deafened by a moderator, defaulting to the author." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserServerMuted" value="ZuserServerMuted{$END$}" description="Returns true if the specified user has been server-muted by a moderator, defaulting to the author." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserStatus" value="ZuserStatus{$END$}" description="Returns the online status of the command author or specified user, or their custom status text if customStatus is true." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserStreaming" value="ZuserStreaming{$END$}" description="Returns true if the specified user is currently streaming in a voice channel, defaulting to the author." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZuserVoiceChannel" value="ZuserVoiceChannel{$END$}" description="Returns the ID of the voice channel the specified user is in, or an empty string if they are not in voice." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zvar" value="Zvar{$END$}" description="Gets or sets a temporary in-memory variable that persists only for the duration of the current command execution." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvarExistError" value="ZvarExistError{$END$}" description="Halts execution with a custom error message if the specified global variable does not exist." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvarExists" value="ZvarExists{$END$}" description="Returns true if a global variable with the given name exists, otherwise returns false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceBitrate" value="ZvoiceBitrate{$END$}" description="Returns the bitrate in kbps of the specified voice channel, defaulting to the author's current voice channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceEmpty" value="ZvoiceEmpty{$END$}" description="Returns true if the specified voice channel has zero members; defaults to the author's current voice channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceFull" value="ZvoiceFull{$END$}" description="Returns true if the specified voice channel's member count equals its user limit; defaults to the author's current voice channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceKick" value="ZvoiceKick{$END$}" description="Disconnects the specified user from their current voice channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceMemberCount" value="ZvoiceMemberCount{$END$}" description="Returns the number of users currently in the specified voice channel, defaulting to the author's current voice channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceMembers" value="ZvoiceMembers{$END$}" description="Returns a space-separated list of user IDs currently in the specified voice channel, defaulting to the author's current voice channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceMove" value="ZvoiceMove{$END$}" description="Moves a user from their current voice channel to the specified target voice channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceNew" value="ZvoiceNew{$END$}" description="Returns the new voice channel ID from the onVoiceStateUpdate event context (the channel the user moved to)." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceOld" value="ZvoiceOld{$END$}" description="Returns the previous voice channel ID from the onVoiceStateUpdate event context (the channel the user was in before)." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceRequestToSpeak" value="ZvoiceRequestToSpeak{$END$}" description="Requests to speak in a stage channel, or cancels the request if cancel=true." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceStatus" value="ZvoiceStatus{$END$}" description="Gets or sets the status of a voice channel. Returns the current status if no status arg is given." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceSuppress" value="ZvoiceSuppress{$END$}" description="Suppress or unsuppress a user in a stage channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZvoiceUserLimit" value="ZvoiceUserLimit{$END$}" description="Returns the maximum number of users allowed in a voice or stage channel, or 0 if there is no limit." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZwebhookCreate" value="ZwebhookCreate{$END$}" description="Creates a webhook in the specified channel and returns its full URL." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZwebhookDelete" value="ZwebhookDelete{$END$}" description="Deletes a webhook identified by its full Discord webhook URL." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZwelcomeScreen" value="ZwelcomeScreen{$END$}" description="Returns the guild's welcome screen as a JSON object." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zyear" value="Zyear{$END$}" description="Returns the current four-digit year using the active timezone." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
