@@ -1915,6 +1915,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZspliceText" value="ZspliceText{$END$}" description="Modifies a string by removing a specified number of characters starting at a 1-based position and inserting a replacement string in their place." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZsplitText" value="ZsplitText{$END$}" description="Returns a single element from the stored split text by 1-based index, or use &lt; for the first or &gt; for the last element." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -2171,6 +2176,11 @@
     </context>
   </template>
   <template name="ZuntimeOut" value="ZuntimeOut{$END$}" description="Removes the active communication timeout from a user, restoring their ability to send messages." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zupdate" value="Zupdate{$END$}" description="Signals that the interaction response should update the original message instead of sending a new reply. Only valid inside interaction handlers (buttons, select menus)." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>

@@ -381,6 +381,7 @@ ZsoundboardEdit - soundboard
 ZsoundboardPlay - soundboard
 ZsoundboardSound - soundboard
 ZsoundboardSounds - soundboard
+ZspliceText - string
 ZsplitText - textsplit
 Zsqrt - math
 ZstageCreate - stage
@@ -434,6 +435,7 @@ Zunmute - moderation
 ZunpinMessage - message
 ZuntimeOut - moderation
 Zuppercase - string
+Zupdate - components
 Zuptime - bot
 Zurl - string
 ZuseChannel - message

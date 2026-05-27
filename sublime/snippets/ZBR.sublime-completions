@@ -1534,6 +1534,10 @@
       "contents": "ZsoundboardSounds{}"
     },
     {
+      "trigger": "ZspliceText\tModifies a string by removing a specified number of characters starting at a 1-based position and inserting a replacement string in their place.",
+      "contents": "ZspliceText{${1:text};${2:start};${3:length};${4:replacement}}"
+    },
+    {
       "trigger": "ZsplitText\tReturns a single element from the stored split text by 1-based index, or use < for the first or > for the last element.",
       "contents": "ZsplitText{${1:index}}"
     },
@@ -1740,6 +1744,10 @@
     {
       "trigger": "ZuntimeOut\tRemoves the active communication timeout from a user, restoring their ability to send messages.",
       "contents": "ZuntimeOut{${1:userID}}"
+    },
+    {
+      "trigger": "Zupdate\tSignals that the interaction response should update the original message instead of sending a new reply. Only valid inside interaction handlers (buttons, select menus).",
+      "contents": "Zupdate{}"
     },
     {
       "trigger": "Zuppercase\tConverts all characters in the text to uppercase.",

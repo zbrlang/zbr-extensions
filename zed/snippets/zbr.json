@@ -1914,6 +1914,11 @@
     "body": "ZsoundboardSounds{}",
     "description": "Lists all soundboard sounds in the server."
   },
+  "ZspliceText": {
+    "prefix": "ZspliceText",
+    "body": "ZspliceText{${1:text};${2:start};${3:length};${4:replacement}}",
+    "description": "Modifies a string by removing a specified number of characters starting at a 1-based position and inserting a replacement string in their place."
+  },
   "ZsplitText": {
     "prefix": "ZsplitText",
     "body": "ZsplitText{${1:index}}",
@@ -2173,6 +2178,11 @@
     "prefix": "ZuntimeOut",
     "body": "ZuntimeOut{${1:userID}}",
     "description": "Removes the active communication timeout from a user, restoring their ability to send messages."
+  },
+  "Zupdate": {
+    "prefix": "Zupdate",
+    "body": "Zupdate{}",
+    "description": "Signals that the interaction response should update the original message instead of sending a new reply. Only valid inside interaction handlers (buttons, select menus)."
   },
   "Zuppercase": {
     "prefix": "Zuppercase",
