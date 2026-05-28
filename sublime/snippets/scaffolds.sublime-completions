@@ -1,0 +1,47 @@
+{
+  "scope": "source.zbr - comment",
+  "completions": [
+    {
+      "trigger": "##prefix	Scaffold a ZBR prefix command",
+      "contents": "#trigger !${1:command}
+#name ${2:Command Name}
+#type prefix
+
+ZsendMessage{${3:Hello world}}"
+    },
+    {
+      "trigger": "##slash	Scaffold a ZBR slash command",
+      "contents": "#trigger /${1:ping}
+#name ${2:Ping Command}
+#type slash
+#scope guild
+#description ${3:Slash command}
+
+ZsendMessage{${4:Pong}}"
+    },
+    {
+      "trigger": "##sub	Scaffold a ZBR sub-slash command",
+      "contents": "#trigger /admin ${1:ban}
+#name ${2:Admin Subcommand}
+#type sub-slash
+
+ZsendMessage{${3:Done}}"
+    },
+    {
+      "trigger": "##interaction	Scaffold an interaction handler",
+      "contents": "#trigger onInteraction{${1:id}}
+#name ${2:Interaction Handler}
+#type interaction
+
+ZsendMessage{${3:Handled}}"
+    },
+    {
+      "trigger": "##event	Scaffold an event handler",
+      "contents": "#trigger onMessage
+#name ${1:Message Event}
+#type event
+
+ZsendMessage{${2:Event triggered}}"
+    }
+  ]
+}

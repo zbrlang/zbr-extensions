@@ -1,0 +1,46 @@
+[ZBR_Prefix_Scaffold]
+prefix = "##prefix"
+body = "#trigger !${1:command}
+#name ${2:Command Name}
+#type prefix
+
+ZsendMessage{${3:Hello world}}"
+description = "Scaffold a ZBR prefix command"
+
+[ZBR_Slash_Scaffold]
+prefix = "##slash"
+body = "#trigger /${1:ping}
+#name ${2:Ping Command}
+#type slash
+#scope guild
+#description ${3:Slash command}
+
+ZsendMessage{${4:Pong}}"
+description = "Scaffold a ZBR slash command"
+
+[ZBR_Sub_slash_Scaffold]
+prefix = "##sub"
+body = "#trigger /admin ${1:ban}
+#name ${2:Admin Subcommand}
+#type sub-slash
+
+ZsendMessage{${3:Done}}"
+description = "Scaffold a ZBR sub-slash command"
+
+[ZBR_Interaction_Scaffold]
+prefix = "##interaction"
+body = "#trigger onInteraction{${1:id}}
+#name ${2:Interaction Handler}
+#type interaction
+
+ZsendMessage{${3:Handled}}"
+description = "Scaffold an interaction handler"
+
+[ZBR_Event_Scaffold]
+prefix = "##event"
+body = "#trigger onMessage
+#name ${1:Message Event}
+#type event
+
+ZsendMessage{${2:Event triggered}}"
+description = "Scaffold an event handler"

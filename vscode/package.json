@@ -39,9 +39,12 @@
       {
         "language": "zbr",
         "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "zbr",
+        "path": "./snippets/scaffolds.json"
       }
-    ]
-    ,
+    ],
     "configurationDefaults": {
       "[zbr]": {
         "editor.quickSuggestions": {
