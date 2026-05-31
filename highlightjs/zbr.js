@@ -17,16 +17,17 @@ export default function (hljs) {
       },
 
       {
-        match: /(on[a-zA-Z_][a-zA-Z0-9_]*)(\{)/,
-        scope: {
-          1: "tag",
-          2: "punctuation",
-        },
-        relevance: 10,
+        match: /(onInteraction)(?=\{)/,
+        scope: { 1: "tag" },
       },
 
       {
-        match: /^[ \t]*#(name|trigger|description|type|scope|option)\b/,
+        match: /on[a-zA-Z0-9_]+/,
+        scope: "tag",
+      },
+
+      {
+        match: /^#(name|trigger|description|type|scope|option)\b/,
         scope: "keyword",
         relevance: 10,
       },
