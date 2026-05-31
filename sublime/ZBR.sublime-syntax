@@ -28,22 +28,16 @@ contexts:
           pop: true
 
   headers:
-    - match: ^\s*(#)(name|trigger|description|type|scope|option)\b
+    - match: ^(#)(name|trigger|description|type|scope|option)\b
       captures:
-        1: punctuation.definition.variable.zbr
+        1: keyword.control.zbr
         2: keyword.control.zbr
 
   trigger_calls:
-    - match: (on{{function_identifier}})(\{)
-      captures:
-        1: entity.name.tag.zbr
-        2: punctuation.section.block.begin.zbr
-      push:
-        - meta_scope: meta.block.trigger.zbr
-        - match: \}
-          scope: punctuation.section.block.end.zbr
-          pop: true
-        - include: main
+    - match: \bonInteraction\b(?=\{)
+      scope: entity.name.tag.zbr
+    - match: \bon[a-zA-Z0-9_]+\b
+      scope: entity.name.tag.zbr
 
   function_calls:
     - match: (Z)({{function_identifier}})(\{)
