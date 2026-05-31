@@ -5,19 +5,16 @@
 ; Comments
 (comment) @comment
 
-; Z functions — whole "Zname" token, can't split Z from name anymore
-(function_call name: (function_name) @function)
-(function_call "{" @punctuation.bracket)
-(function_call "}" @punctuation.bracket)
+; Z functions
+(function_prefix) @keyword.control
+(function_name) @function
 
 ; Trigger functions
-(trigger_call name: (trigger_name) @tag)
-(trigger_call "{" @punctuation.bracket)
-(trigger_call "}" @punctuation.bracket)
+(trigger_name) @tag
 
-; Braced content
-(braced_content "{" @punctuation.bracket)
-(braced_content "}" @punctuation.bracket)
+; Brackets
+"{" @punctuation.bracket
+"}" @punctuation.bracket
 
 ; Separator
 (argument_separator) @keyword.control
@@ -30,3 +27,4 @@
 
 ; Content and text
 (content) @string
+(text) @string
