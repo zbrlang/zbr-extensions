@@ -9,6 +9,9 @@ const neovimOutput = path.join(root, "neovim", "snippets", "zbr.json");
 const sublimeOutput = path.join(root, "sublime", "snippets", "ZBR.sublime-completions");
 const helixOutput = path.join(root, "helix", "snippets", "zbr.toml");
 const intellijOutput = path.join(root, "intellij", "snippets", "ZBR.xml");
+const prismOutput = path.join(root, "prism", "keywords.json");
+const vimOutput = path.join(root, "vim", "syntax", "keywords.vim");
+const emacsOutput = path.join(root, "emacs", "keywords.el");
 
 function parseSyntax(syntax) {
   const open = syntax.indexOf("{");
@@ -39,6 +42,8 @@ async function main() {
   const zedSnippets = {};
 
   const sorted = [...functions].sort((a, b) => a.name.localeCompare(b.name));
+  const functionNames = sorted.map(f => f.name);
+  const headers = ["name", "trigger", "description", "type", "scope", "option"];
 
   for (const item of sorted) {
     const args = parseSyntax(item.syntax);
@@ -111,7 +116,21 @@ ${intellijTemplates.join("\n")}
 `;
   await fs.writeFile(intellijOutput, intellijXml, "utf-8");
 
+  // Generate keywords for other platforms
+  await fs.mkdir(path.dirname(prismOutput), { recursive: true });
+  await fs.mkdir(path.dirname(vimOutput), { recursive: true });
+  await fs.mkdir(path.dirname(emacsOutput), { recursive: true });
+
+  await fs.writeFile(prismOutput, JSON.stringify({ functions: functionNames, headers }, null, 2) + "\n", "utf-8");
+  
+  const vimKeywords = `syn keyword zbrHeader ${headers.join(" ")}\nsyn keyword zbrFunction ${functionNames.join(" ")}\n`;
+  await fs.writeFile(vimOutput, vimKeywords, "utf-8");
+
+  const emacsKeywords = `(defvar zbr-functions '(${functionNames.map(n => `"${n}"`).join(" ")}))\n(defvar zbr-headers '(${headers.map(h => `"${h}"`).join(" ")}))\n`;
+  await fs.writeFile(emacsOutput, emacsKeywords, "utf-8");
+
   console.log("Generated snippets:", vscodeOutput, zedOutput, neovimOutput, sublimeOutput, helixOutput, intellijOutput);
+  console.log("Generated keywords:", prismOutput, vimOutput, emacsOutput);
 }
 
 main().catch((error) => {
