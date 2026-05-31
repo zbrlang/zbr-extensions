@@ -1,6 +1,6 @@
 # ZBR Extensions
 
-The official collection of IDE extensions for **ZBR**, a scripting language for Discord bots.
+The official collection of editor and tool extensions for **ZBR**, a scripting language for Discord bots.
 
 ## Overview
 
@@ -9,16 +9,31 @@ You write commands as plain `.zbr` files using ZBR functions, no boilerplate, no
 
 This repository provides the necessary tools for developers to write ZBR commands with full editor support, including syntax highlighting, snippets, and smart completions.
 
-## Extensions
+## Supported Platforms
 
-- **[vscode/](vscode/)**: Official VS Code extension providing syntax highlighting and 400+ snippets.
-- **[zed/](zed/)**: Official Zed extension powered by a Tree-sitter grammar.
-- **[neovim/](neovim/)**: Official Neovim extension powered by a Tree-sitter grammar.
-- **[helix/](helix/)**: Official Helix extension powered by a Tree-sitter grammar.
-- **[sublime/](sublime/)**: Official Sublime Text extension providing syntax highlighting and 400+ completions.
-- **[bat/](bat/)**: Official bat extension adding ZBR syntax highlighting to the terminal.
-- **[intellij/](intellij/)**: Official JetBrains IDE extension providing syntax highlighting and 400+ live templates.
-- **[highlightjs/](highlightjs/)**: Official highlight.js extension adding ZBR syntax highlighting to the web.
+### IDEs and Text Editors
+- **[VS Code](vscode/)**: Official VS Code extension providing syntax highlighting and 400+ snippets.
+- **[Zed](zed/)**: Official Zed extension powered by a Tree-sitter grammar.
+- **[Neovim](neovim/)**: Official Neovim extension powered by a Tree-sitter grammar.
+- **[Helix](helix/)**: Official Helix extension powered by a Tree-sitter grammar.
+- **[Sublime Text](sublime/)**: Official Sublime Text extension providing syntax highlighting and 400+ completions.
+- **[JetBrains (IntelliJ)](intellij/)**: Official JetBrains IDE extension providing syntax highlighting and 400+ live templates.
+- **[Vim](vim/)**: Official Vim syntax highlighting and filetype detection.
+- **[Emacs](emacs/)**: Official `zbr-mode` major mode for Emacs.
+- **[Micro](micro/)**: Official Micro editor syntax highlighting.
+- **[Kate](kate/)**: Official Kate/KTextEditor syntax highlighting.
+
+### Web and Documentation
+- **[highlight.js](highlightjs/)**: Official highlight.js extension for web syntax highlighting.
+- **[Prism.js](prism/)**: Official Prism.js language definition for web syntax highlighting.
+- **[Monaco](monaco/)**: Official Monaco Editor language definition.
+- **[Tree-sitter WASM](tree-sitter-wasm/)**: WebAssembly build of the ZBR Tree-sitter parser.
+
+### CLI and Build Tools
+- **[bat](bat/)**: Official bat extension for terminal syntax highlighting.
+- **[Pygments](pygments/)**: Official Pygments lexer for Python-based highlighting.
+- **[Rouge](rouge/)**: Official Rouge lexer for Ruby-based highlighting.
+- **[Chroma](chroma/)**: Official Chroma lexer for Go-based highlighting.
 
 ## Installation
 
@@ -29,9 +44,12 @@ See the README in each extension folder for installation instructions:
 - [Neovim installation](neovim/README.md)
 - [Helix installation](helix/README.md)
 - [Sublime Text installation](sublime/README.md)
-- [bat installation](bat/README.md)
 - [JetBrains installation](intellij/README.md)
-- [highlight.js installation](highlightjs/README.md)
+- [Vim installation](vim/README.md)
+- [Emacs installation](emacs/README.md)
+- [Micro installation](micro/README.md)
+- [Kate installation](kate/README.md)
+- [bat installation](bat/README.md)
 
 ## Project Structure
 
@@ -42,8 +60,18 @@ See the README in each extension folder for installation instructions:
 - `sublime/`: Sublime Text extension, Sublime syntax, completions, language config.
 - `bat/`: bat extension, Sublime syntax for terminal highlighting.
 - `intellij/`: JetBrains IDE extension, TextMate grammar, live templates.
-- `highlightjs/`: highlight.js language definition for web highlighting.
+- `vim/`: Vim syntax and filetype detection.
+- `emacs/`: Emacs major mode.
+- `micro/`: Micro syntax definition.
+- `kate/`: Kate syntax definition.
+- `highlightjs/`: highlight.js language definition.
+- `prism/`: Prism.js language definition.
+- `monaco/`: Monaco Editor language definition.
+- `pygments/`: Pygments lexer.
+- `rouge/`: Rouge lexer.
+- `chroma/`: Chroma lexer.
 - `tree-sitter/`: Tree-sitter grammar source for ZBR.
+- `tree-sitter-wasm/`: Tree-sitter WASM build for web.
 
 ## License
 
