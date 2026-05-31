@@ -6,21 +6,15 @@
 (header value: (_) @string)
 
 ; Z functions
-(function_call name: (function_name) @function)
-(function_call "{" @punctuation.bracket)
-(function_call "}" @punctuation.bracket)
-
-; Standalone Z
-(bare_z) @keyword
+(function_prefix) @keyword
+(function_name) @function
 
 ; Trigger functions
-(trigger_call name: (trigger_name) @tag)
-(trigger_call "{" @punctuation.bracket)
-(trigger_call "}" @punctuation.bracket)
+(trigger_name) @tag
 
-; Braced content blocks
-(braced_content "{" @punctuation.bracket)
-(braced_content "}" @punctuation.bracket)
+; Brackets
+"{" @punctuation.bracket
+"}" @punctuation.bracket
 
 ; Argument separator
 (argument_separator) @keyword.control
