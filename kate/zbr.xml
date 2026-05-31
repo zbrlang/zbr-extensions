@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "syntax.dtd">
+<language name="ZBR" version="1" kateversion="5.0" section="Scripts" extensions="*.zbr" author="ZBR Team" license="All Rights Reserved">
+  <highlighting>
+    <contexts>
+      <context name="Normal" attribute="Normal Text" lineEndContext="#stay">
+        <Detect2Chars attribute="Comment" context="Comment" char="/" char1="/"/>
+        <RegExpr attribute="Header" context="#stay" String="^#(name|trigger|description|type|scope|option)\b"/>
+        <RegExpr attribute="Trigger" context="#stay" String="\bonInteraction\b(?=\{)"/>
+        <RegExpr attribute="Trigger" context="#stay" String="\bon[a-zA-Z0-9_]+\b"/>
+        <RegExpr attribute="Function" context="#stay" String="\bZ[a-zA-Z0-9_]+\b(?=\{)"/>
+        <RegExpr attribute="Operator" context="#stay" String="==|!=|&gt;=|&lt;=|&gt;|&lt;|&amp;&amp;|\|\|"/>
+        <RegExpr attribute="Escape" context="#stay" String="\\[{};\\]"/>
+        <AnyChar attribute="Symbol" context="#stay" String="{};"/>
+      </context>
+      <context name="Comment" attribute="Comment" lineEndContext="#pop">
+      </context>
+    </contexts>
+    <itemDatas>
+      <itemData name="Normal Text" defStyleNum="dsNormal"/>
+      <itemData name="Comment" defStyleNum="dsComment"/>
+      <itemData name="Header" defStyleNum="dsKeyword"/>
+      <itemData name="Trigger" defStyleNum="dsBuiltIn"/>
+      <itemData name="Function" defStyleNum="dsFunction"/>
+      <itemData name="Operator" defStyleNum="dsOperator"/>
+      <itemData name="Escape" defStyleNum="dsSpecialChar"/>
+      <itemData name="Symbol" defStyleNum="dsKeyword"/>
+    </itemDatas>
+  </highlighting>
+  <general>
+    <comments>
+      <comment name="singleLine" start="//"/>
+    </comments>
+  </general>
+</language>
