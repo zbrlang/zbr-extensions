@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tree-sitter ZBR Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/web-tree-sitter/tree-sitter.js"></script>
+</head>
+<body>
+    <h1>Tree-sitter ZBR Demo</h1>
+    <textarea id="input" rows="10" cols="50">
+#name MyBot
+onInteraction{
+    Zreply{Hello World!}
+}
+    </textarea>
+    <pre id="output"></pre>
+
+    <script>
+        async function run() {
+            await TreeSitter.init();
+            const parser = new TreeSitter();
+            const ZBR = await TreeSitter.Language.load('tree-sitter-zbr.wasm');
+            parser.setLanguage(ZBR);
+
+            const input = document.getElementById('input');
+            const output = document.getElementById('output');
+
+            function update() {
+                const tree = parser.parse(input.value);
+                output.textContent = tree.rootNode.toString();
+            }
+
+            input.addEventListener('input', update);
+            update();
+        }
+
+        run();
+    </script>
+</body>
+</html>
