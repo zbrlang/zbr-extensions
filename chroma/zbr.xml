@@ -1,0 +1,82 @@
+<lexer>
+  <config>
+    <name>ZBR</name>
+    <alias>zbr</alias>
+    <filename>*.zbr</filename>
+    <mime_type>text/x-zbr</mime_type>
+  </config>
+  <rules>
+    <state name="root">
+      <rule pattern="^#(name|trigger|description|type|scope|option)\b">
+        <token type="KeywordReserved"/>
+      </rule>
+      <rule pattern="//.*$">
+        <token type="CommentSingle"/>
+      </rule>
+      <rule pattern="\b(Z)([a-zA-Z0-9_]+)\b(?=\{)">
+        <token type="NameBuiltin"/>
+        <token type="NameFunction"/>
+      </rule>
+      <rule pattern="\bonInteraction\b(?=\{)">
+        <token type="NameTag"/>
+      </rule>
+      <rule pattern="\bon[a-zA-Z0-9_]+\b">
+        <token type="NameTag"/>
+      </rule>
+      <rule pattern="==|!=|&gt;=|&lt;=|&gt;|&lt;|(&amp;&amp;)|(\|\|)">
+        <token type="Operator"/>
+      </rule>
+      <rule pattern=";">
+        <token type="Punctuation"/>
+      </rule>
+      <rule pattern="\\[{};\\]">
+        <token type="StringEscape"/>
+      </rule>
+      <rule pattern="\{">
+        <token type="Punctuation"/>
+        <push state="content"/>
+      </rule>
+      <rule pattern="\}">
+        <token type="Punctuation"/>
+      </rule>
+      <rule pattern=".">
+        <token type="Text"/>
+      </rule>
+    </state>
+    <state name="content">
+      <rule pattern="//.*$">
+        <token type="CommentSingle"/>
+      </rule>
+      <rule pattern="\b(Z)([a-zA-Z0-9_]+)\b(?=\{)">
+        <token type="NameBuiltin"/>
+        <token type="NameFunction"/>
+      </rule>
+      <rule pattern="\bonInteraction\b(?=\{)">
+        <token type="NameTag"/>
+      </rule>
+      <rule pattern="\bon[a-zA-Z0-9_]+\b">
+        <token type="NameTag"/>
+      </rule>
+      <rule pattern="==|!=|&gt;=|&lt;=|&gt;|&lt;|(&amp;&amp;)|(\|\|)">
+        <token type="Operator"/>
+      </rule>
+      <rule pattern=";">
+        <token type="Punctuation"/>
+      </rule>
+      <rule pattern="\\[{};\\]">
+        <token type="StringEscape"/>
+      </rule>
+      <rule pattern="\{">
+        <token type="Punctuation"/>
+        <push state="content"/>
+      </rule>
+      <rule pattern="\}">
+        <token type="Punctuation"/>
+        <pop/>
+      </rule>
+      <rule pattern=".">
+        <token type="Text"/>
+      </rule>
+    </state>
+  </rules>
+</lexer>
