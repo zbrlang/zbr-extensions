@@ -70,6 +70,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="Zalias" value="Zalias{$END$}" description="Registers an alias that substitutes and evaluates the stored AST node when called. Aliases are local to the command execution." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZallMembersCount" value="ZallMembersCount{$END$}" description="Returns the total combined member count across all guilds the bot is currently in." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />

@@ -69,6 +69,11 @@
     "body": "ZafkTimeout{${1:guildID}}",
     "description": "Returns the AFK timeout in seconds configured for the guild."
   },
+  "Zalias": {
+    "prefix": "Zalias",
+    "body": "Zalias{${1:expression};${2:alias_name}}",
+    "description": "Registers an alias that substitutes and evaluates the stored AST node when called. Aliases are local to the command execution."
+  },
   "ZallMembersCount": {
     "prefix": "ZallMembersCount",
     "body": "ZallMembersCount{}",
