@@ -46,10 +46,27 @@
     "functions": {
       "patterns": [
         {
+          "name": "keyword.other.zbr",
+          "match": "\\b(Z)(afkChannelID|afkTimeout|allMembersCount|allowRoleMentions|allowUserMentions|appEmojis|auditCount|auditEntries|auditEntryAction|auditEntryChanges|auditEntryID|auditEntryReason|auditEntryTarget|auditEntryUser|auditLatest|automodRules|boostCount|boostLevel|botCommands|botID|botOwnerID|botTyping|categoryCount|changeCooldownTime|channelCount|channelCreated|channelExists|channelID|channelInvites|channelName|channelNames|channelPosition|channelTopic|channelType|channelWebhooks|commandName|commandsCount|commandTrigger|creationDate|customID|date|day|defer|displayName|dmChannelID|emoteCount|entitlements|ephemeral|error|eval|eventCount|executionTime|getAttachments|getCooldown|getMentionableSelectUserCount|getMentionableSelectUserIDs|getRoleSelectRoleCount|getRoleSelectRoleIDs|getSlowmode|getTextSplitIndex|getTextSplitLength|getTimestamp|getUserSelectUserCount|getUserSelectUserIDs|guildBanner|guildExists|guildID|highestRole|hour|httpResult|httpStatus|isAdmin|isBooster|isBot|isHoisted|isInVoice|isMentionable|isMentioned|isModerator|isNSFW|isSlash|isTimedOut|isUserDMEnabled|joinSplitText|jsonClear|jsonPretty|jsonStringify|lastMessageID|lastPinTimestamp|listVar|loopIndex|loopValue|lowestRole|membersCount|message|messageID|minute|month|onlyAdmin|onlyNSFW|parentID|ping|pinList|pollSend|randomCategoryID|randomChannelID|randomGuildID|randomMention|randomRoleID|randomUser|randomUserID|removeAllComponents|removeButtons|repliedMessageID|reply|roleColor|roleCount|roleExists|roleID|roleMemberCount|roleMembers|roleName|roleNames|rolePerms|rolePosition|rulesChannelID|second|serverChannels|serverCount|serverDescription|serverEmojis|serverEvents|serverIcon|serverInvite|serverModify|serverName|serverNames|serverOwner|serverRoles|serverStickers|serverVerificationLevel|skus|slashCommandsCount|slashID|soundboardDefaultSounds|soundboardSounds|stickerCount|stop|suppressErrors|systemChannelID|textSplit|threadArchived|threadLocked|threadParentID|time|timestamp|untimeOut|update|uptime|userAvatar|userBadge|userBanner|userBannerColor|userExists|userID|userJoined|username|userPerms|userRoles|userSelfDeafened|userSelfMuted|userServerAvatar|userServerDeafened|userServerMuted|userStatus|userStreaming|userVoiceChannel|voiceBitrate|voiceEmpty|voiceFull|voiceMemberCount|voiceMembers|voiceNew|voiceOld|voiceUserLimit|welcomeScreen|year)\\b",
+          "captures": {
+            "1": {
+              "name": "keyword.other.zbr"
+            },
+            "2": {
+              "name": "entity.name.function.zbr"
+            }
+          }
+        },
+        {
+          "name": "keyword.other.zbr",
           "match": "\\b(Z)([a-zA-Z0-9_]+)\\b(?=\\{)",
           "captures": {
-            "1": { "name": "keyword.other.zbr" },
-            "2": { "name": "entity.name.function.zbr" }
+            "1": {
+              "name": "keyword.other.zbr"
+            },
+            "2": {
+              "name": "entity.name.function.zbr"
+            }
           }
         }
       ]
@@ -96,11 +113,15 @@
     "braces": {
       "begin": "(?<!\\\\)\\{",
       "beginCaptures": {
-        "0": { "name": "meta.brace.curly.zbr" }
+        "0": {
+          "name": "meta.brace.curly.zbr"
+        }
       },
       "end": "(?<!\\\\)\\}",
       "endCaptures": {
-        "0": { "name": "meta.brace.curly.zbr" }
+        "0": {
+          "name": "meta.brace.curly.zbr"
+        }
       },
       "patterns": [
         {

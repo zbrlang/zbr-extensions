@@ -58,8 +58,8 @@
       "contents": "ZafkTimeout{${1:guildID}}"
     },
     {
-      "trigger": "Zalias\tRegisters an alias that substitutes and evaluates the stored AST node when called. Aliases are local to the command execution.",
-      "contents": "Zalias{${1:expression};${2:alias_name}}"
+      "trigger": "Zalias\tCreates a runtime alias for a ZBR function. The alias can be called using Z+alias_name+{} syntax.",
+      "contents": "Zalias{${1:function};${2:alias_name}}"
     },
     {
       "trigger": "ZallMembersCount\tReturns the total combined member count across all guilds the bot is currently in.",

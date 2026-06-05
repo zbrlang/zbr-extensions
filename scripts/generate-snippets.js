@@ -50,11 +50,34 @@ async function main() {
     const placeholders = makePlaceholders(args);
     const bodyText = `${item.name}{${placeholders.join(";")}}`;
 
-    vscodeSnippets[item.name] = {
-      prefix: item.name,
-      body: [bodyText],
-      description: item.description ?? "",
-    };
+    const isAbsolutelyZeroArgs = item.arguments.length === 0;
+    const isAllOptional = item.arguments.length > 0 && item.arguments.every(arg => arg.required === false);
+    const hasRequiredArgs = item.arguments.some(arg => arg.required === true);
+
+    if (isAbsolutelyZeroArgs) {
+      vscodeSnippets[item.name] = {
+        prefix: item.name,
+        body: [item.name],
+        description: item.description ?? "",
+      };
+    } else if (isAllOptional) {
+      vscodeSnippets[item.name] = {
+        prefix: item.name,
+        body: [bodyText],
+        description: item.description ?? "",
+      };
+      vscodeSnippets[`${item.name}-bracketless`] = {
+        prefix: item.name,
+        body: [item.name],
+        description: item.description ?? "",
+      };
+    } else if (hasRequiredArgs) {
+      vscodeSnippets[item.name] = {
+        prefix: item.name,
+        body: [bodyText],
+        description: item.description ?? "",
+      };
+    }
 
     zedSnippets[item.name] = {
       prefix: item.name,
@@ -129,7 +152,55 @@ ${intellijTemplates.join("\n")}
   const emacsKeywords = `(defvar zbr-functions '(${functionNames.map(n => `"${n}"`).join(" ")}))\n(defvar zbr-headers '(${headers.map(h => `"${h}"`).join(" ")}))\n`;
   await fs.writeFile(emacsOutput, emacsKeywords, "utf-8");
 
-  console.log("Generated snippets:", vscodeOutput, zedOutput, neovimOutput, sublimeOutput, helixOutput, intellijOutput);
+  // Automate Syntax Highlighting Regex
+  const bracketlessEligible = sorted
+    .filter(item => item.arguments.length === 0 || item.arguments.every(arg => arg.required === false))
+    .map(item => item.name.replace(/^Z/, ""));
+  
+  const regex = bracketlessEligible.join("|");
+  const regexNoZ = `(${regex})`;
+
+  // 1. VS Code (tmLanguage.json)
+  const tmLanguagePath = path.join(root, "vscode", "syntaxes", "zbr.tmLanguage.json");
+  const tmLanguageRaw = await fs.readFile(tmLanguagePath, "utf-8");
+  const tmLanguage = JSON.parse(tmLanguageRaw);
+  if (tmLanguage.repository && tmLanguage.repository.functions && tmLanguage.repository.functions.patterns[0]) {
+    tmLanguage.repository.functions.patterns[0].match = `\\b(Z)(${regex})\\b`;
+  }
+  await fs.writeFile(tmLanguagePath, JSON.stringify(tmLanguage, null, 2) + "\n", "utf-8");
+
+  // 2. Vim (vim/syntax/zbr.vim)
+  const vimPath = path.join(root, "vim", "syntax", "zbr.vim");
+  let vimContent = await fs.readFile(vimPath, "utf-8");
+  const vimRegex = `syn match zbrFunctionBrace "\\\\<Z\\\\(${regex}\\\\)\\\\>"`;
+  vimContent = vimContent.replace(/syn match zbrFunctionBrace "Z[a-zA-Z_][a-zA-Z0-9_]*{.*"/, vimRegex); // Approximate replacement
+  await fs.writeFile(vimPath, vimContent, "utf-8");
+
+  // 3. Sublime (sublime/ZBR.sublime-syntax)
+  const sublimePath = path.join(root, "sublime", "ZBR.sublime-syntax");
+  let sublimeContent = await fs.readFile(sublimePath, "utf-8");
+  sublimeContent = sublimeContent.replace(/match: \(Z\)\{\{function_identifier\}\}/, `match: (Z)(${regexNoZ})`);
+  await fs.writeFile(sublimePath, sublimeContent, "utf-8");
+
+  // 4. Kate (kate/zbr.xml)
+  const katePath = path.join(root, "kate", "zbr.xml");
+  let kateContent = await fs.readFile(katePath, "utf-8");
+  kateContent = kateContent.replace(/<item>Z\[a-zA-Z0-9_\]+<\/item>/, `<item>Z(${regexNoZ})</item>`);
+  await fs.writeFile(katePath, kateContent, "utf-8");
+
+  // 5. HighlightJS (highlightjs/zbr.js)
+  const prismPath = path.join(root, "highlightjs", "zbr.js");
+  let prismContent = await fs.readFile(prismPath, "utf-8");
+  prismContent = prismContent.replace(/Z[a-zA-Z0-9_]+/, `Z(${regexNoZ})`);
+  await fs.writeFile(prismPath, prismContent, "utf-8");
+
+  // 6. Tree-sitter (tree-sitter/grammar.js)
+  const treeSitterPath = path.join(root, "tree-sitter", "grammar.js");
+  let treeSitterContent = await fs.readFile(treeSitterPath, "utf-8");
+  treeSitterContent = treeSitterContent.replace(/seq\(\$\.function_identifier, \$.braces\)/, 'choice(seq($.function_identifier, $.braces), $.function_identifier)');
+  await fs.writeFile(treeSitterPath, treeSitterContent, "utf-8");
+
+  console.log("Generated snippets & updated syntaxes:", vscodeOutput, zedOutput, neovimOutput, sublimeOutput, helixOutput, intellijOutput);
   console.log("Generated keywords:", prismOutput, vimOutput, emacsOutput);
 }
 

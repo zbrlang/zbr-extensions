@@ -70,7 +70,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="Zalias" value="Zalias{$END$}" description="Registers an alias that substitutes and evaluates the stored AST node when called. Aliases are local to the command execution." toReformat="false" toShortenFQNames="true">
+  <template name="Zalias" value="Zalias{$END$}" description="Creates a runtime alias for a ZBR function. The alias can be called using Z+alias_name+{} syntax." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>

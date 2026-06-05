@@ -70,8 +70,8 @@ description = "Returns the AFK timeout in seconds configured for the guild."
 
 [Zalias]
 prefix = "Zalias"
-body = "Zalias{${1:expression};${2:alias_name}}"
-description = "Registers an alias that substitutes and evaluates the stored AST node when called. Aliases are local to the command execution."
+body = "Zalias{${1:function};${2:alias_name}}"
+description = "Creates a runtime alias for a ZBR function. The alias can be called using Z+alias_name+{} syntax."
 
 [ZallMembersCount]
 prefix = "ZallMembersCount"
