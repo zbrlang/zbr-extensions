@@ -200,8 +200,33 @@ ${intellijTemplates.join("\n")}
   treeSitterContent = treeSitterContent.replace(/seq\(\$\.function_identifier, \$.braces\)/, 'choice(seq($.function_identifier, $.braces), $.function_identifier)');
   await fs.writeFile(treeSitterPath, treeSitterContent, "utf-8");
 
+  // 7. ZBR-webapp (src/lib/zbr-monaco.ts)
+  const zbrMonacoPath = path.resolve(root, "..", "zbr-webapp", "src", "lib", "zbr-monaco.ts");
+  let zbrMonacoContent = await fs.readFile(zbrMonacoPath, "utf-8");
+  const startMarker = "// [BRACKETLESS-START]";
+  const endMarker = "// [BRACKETLESS-END]";
+  const bracketlessRule = `      [/\\b(Z)(${regex})\\b(?!\\{)/, ['keyword.other.zbr', 'entity.name.function.zbr']],`;
+  
+  const escapedStartMarker = startMarker.replace(/[\[\]]/g, '\\$&');
+  const escapedEndMarker = endMarker.replace(/[\[\]]/g, '\\$&');
+  const markerRegex = new RegExp(`${escapedStartMarker}[\\s\\S]*?${escapedEndMarker}`);
+  const newMarkerBlock = `${startMarker}\n${bracketlessRule}\n      ${endMarker}`;
+
+  if (markerRegex.test(zbrMonacoContent)) {
+    zbrMonacoContent = zbrMonacoContent.replace(markerRegex, newMarkerBlock);
+  } else {
+    // Find the existing braced rule and insert markers + rule before it
+    const bracedRuleRegex = /\[\/\\b\(Z\)\(\[a-zA-Z0-9_\]\+\)\\b\(\?=\\\{\)\/, \['keyword.other.zbr', 'entity.name.function.zbr'\]\],/;
+    zbrMonacoContent = zbrMonacoContent.replace(
+      bracedRuleRegex,
+      `${newMarkerBlock}\n      $&`
+    );
+  }
+  await fs.writeFile(zbrMonacoPath, zbrMonacoContent, "utf-8");
+  console.log("Updated ZBR-webapp syntax highlighting.");
+
   console.log("Generated snippets & updated syntaxes:", vscodeOutput, zedOutput, neovimOutput, sublimeOutput, helixOutput, intellijOutput);
-  console.log("Generated keywords:", prismOutput, vimOutput, emacsOutput);
+  console.log("Generated keywords:", prismOutput, vimOutput, emacsOutput, zbrMonacoPath);
 }
 
 main().catch((error) => {
