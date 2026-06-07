@@ -284,6 +284,11 @@
     "body": "ZbotTyping{}",
     "description": "Broadcasts a typing indicator in the current channel."
   },
+  "ZbulkBan": {
+    "prefix": "ZbulkBan",
+    "body": "ZbulkBan{${1:userIDs};${2:deleteDays};${3:reason}}",
+    "description": "Bans multiple users in one call. Returns the count of successfully banned users."
+  },
   "ZbyteCount": {
     "prefix": "ZbyteCount",
     "body": "ZbyteCount{${1:text}}",
@@ -358,6 +363,11 @@
     "prefix": "ZchannelNames",
     "body": "ZchannelNames{${1:separator};${2:guildID}}",
     "description": "Returns a sorted list of all channel names in the guild joined by the specified separator."
+  },
+  "ZchannelOverwrites": {
+    "prefix": "ZchannelOverwrites",
+    "body": "ZchannelOverwrites{${1:channelID}}",
+    "description": "Returns the full permission overwrite list on a channel as a JSON array."
   },
   "ZchannelPosition": {
     "prefix": "ZchannelPosition",
@@ -459,6 +469,11 @@
     "body": "ZcreateInvite{${1:channelID};${2:maxUses};${3:maxAge}}",
     "description": "Creates an invite for the specified channel and returns its code."
   },
+  "ZcreateInviteWithRoles": {
+    "prefix": "ZcreateInviteWithRoles",
+    "body": "ZcreateInviteWithRoles{${1:channelID};${2:roleIDs};${3:maxAgeDays}}",
+    "description": "Creates an invite that auto-assigns the given roles when someone joins through it."
+  },
   "ZcreatePost": {
     "prefix": "ZcreatePost",
     "body": "ZcreatePost{${1:channelID};${2:title};${3:content};${4:tagIDs}}",
@@ -469,6 +484,11 @@
     "body": "ZcreateRole{${1:name};${2:color};${3:hoisted};${4:mentionable}}",
     "description": "Creates a new role in the guild with the specified name and optional color, hoist, and mentionable settings."
   },
+  "ZcreateServerTemplate": {
+    "prefix": "ZcreateServerTemplate",
+    "body": "ZcreateServerTemplate{${1:name};${2:description}}",
+    "description": "Creates a new server template from the current guild's structure. Returns the template code."
+  },
   "ZcreationDate": {
     "prefix": "ZcreationDate",
     "body": "ZcreationDate{${1:id};${2:format}}",
@@ -478,6 +498,11 @@
     "prefix": "ZcropText",
     "body": "ZcropText{${1:text};${2:maxChars};${3:ending}}",
     "description": "Crops text to a maximum number of characters and appends an ending string if the text was truncated."
+  },
+  "ZcurrentShard": {
+    "prefix": "ZcurrentShard",
+    "body": "ZcurrentShard{}",
+    "description": "Returns the shard ID the current guild is on."
   },
   "ZcustomEmoji": {
     "prefix": "ZcustomEmoji",
@@ -549,10 +574,20 @@
     "body": "ZdeleteRole{${1:roleID}}",
     "description": "Permanently deletes the specified role from the guild."
   },
+  "ZdeleteServerTemplate": {
+    "prefix": "ZdeleteServerTemplate",
+    "body": "ZdeleteServerTemplate{${1:code}}",
+    "description": "Deletes a server template from the guild by its code."
+  },
   "ZdeleteSticker": {
     "prefix": "ZdeleteSticker",
     "body": "ZdeleteSticker{${1:stickerID}}",
     "description": "Deletes a guild sticker from the current server by its sticker ID."
+  },
+  "ZdeleteWebhookMessage": {
+    "prefix": "ZdeleteWebhookMessage",
+    "body": "ZdeleteWebhookMessage{${1:webhookID};${2:webhookToken};${3:messageID}}",
+    "description": "Deletes a message sent by a webhook via its token."
   },
   "Zdescription": {
     "prefix": "Zdescription",
@@ -629,10 +664,20 @@
     "body": "ZeditThread{${1:threadID};${2:name};${3:archived};${4:archiveDuration};${5:locked};${6:slowmode}}",
     "description": "Edits one or more properties of an existing thread such as name, archived state, archive duration, lock status, and slowmode."
   },
+  "ZeditWebhookMessage": {
+    "prefix": "ZeditWebhookMessage",
+    "body": "ZeditWebhookMessage{${1:webhookID};${2:webhookToken};${3:messageID};${4:content}}",
+    "description": "Edits a message sent by a webhook using the webhook token."
+  },
   "ZeditWelcomeScreen": {
     "prefix": "ZeditWelcomeScreen",
     "body": "ZeditWelcomeScreen{${1:guildID};${2:enabled};${3:description};${4:welcomeChannelsJSON}}",
     "description": "Edits the guild's welcome screen settings."
+  },
+  "ZeffectivePerms": {
+    "prefix": "ZeffectivePerms",
+    "body": "ZeffectivePerms{${1:userID};${2:channelID}}",
+    "description": "Computes the final permission bitfield for a user in a channel after all role and channel overwrites are applied."
   },
   "ZemojiExists": {
     "prefix": "ZemojiExists",
@@ -789,6 +834,11 @@
     "body": "ZforumTags{${1:channelID}}",
     "description": "Returns a space-separated list of available tag names in a forum channel."
   },
+  "ZforwardMessage": {
+    "prefix": "ZforwardMessage",
+    "body": "ZforwardMessage{${1:sourceMessageID};${2:targetChannelID}}",
+    "description": "Forwards a message to another channel using Discord's native message forward feature."
+  },
   "ZfromTimestamp": {
     "prefix": "ZfromTimestamp",
     "body": "ZfromTimestamp{${1:unix};${2:format}}",
@@ -909,6 +959,11 @@
     "body": "ZgetVar{${1:name}}",
     "description": "Returns the value of a global bot-wide variable by name."
   },
+  "ZgetWebhookMessage": {
+    "prefix": "ZgetWebhookMessage",
+    "body": "ZgetWebhookMessage{${1:webhookID};${2:webhookToken};${3:messageID}}",
+    "description": "Fetches the content of a previously sent webhook message by ID using its token."
+  },
   "ZglobalCooldown": {
     "prefix": "ZglobalCooldown",
     "body": "ZglobalCooldown{${1:duration};${2:errorMessage}}",
@@ -928,6 +983,11 @@
     "prefix": "ZguildID",
     "body": "ZguildID{}",
     "description": "Returns the ID of the current guild."
+  },
+  "ZhasPerm": {
+    "prefix": "ZhasPerm",
+    "body": "ZhasPerm{${1:userID};${2:channelID};${3:permissionName}}",
+    "description": "Checks if a user has a specific permission in a channel (includes channel overwrites)."
   },
   "ZhasRole": {
     "prefix": "ZhasRole",
@@ -1111,8 +1171,8 @@
   },
   "ZisTimedOut": {
     "prefix": "ZisTimedOut",
-    "body": "ZisTimedOut{${1:userID}}",
-    "description": "Returns true if the specified user currently has an active communication timeout."
+    "body": "ZisTimedOut{${1:userID};${2:returnTimestamp}}",
+    "description": "Returns true if the specified user currently has an active communication timeout. If returnTimestamp is true, returns the expiry timestamp as a Unix string instead of a boolean."
   },
   "ZisUserDMEnabled": {
     "prefix": "ZisUserDMEnabled",
@@ -1279,10 +1339,25 @@
     "body": "Zmd5{${1:text}}",
     "description": "Returns the MD5 hash of the input text in hexadecimal."
   },
+  "ZmemberFlags": {
+    "prefix": "ZmemberFlags",
+    "body": "ZmemberFlags{${1:userID};${2:flagName}}",
+    "description": "Returns true or false whether a guild member has the specified flag set. Supported flags: BYPASSES_VERIFICATION, DID_REJOIN, COMPLETED_ONBOARDING, STARTED_ONBOARDING."
+  },
+  "ZmemberPending": {
+    "prefix": "ZmemberPending",
+    "body": "ZmemberPending{${1:userID}}",
+    "description": "Returns true or false whether a guild member has not yet completed membership screening."
+  },
   "ZmembersCount": {
     "prefix": "ZmembersCount",
     "body": "ZmembersCount{${1:status}}",
     "description": "Returns the total number of members in the guild, or the count filtered by presence status."
+  },
+  "ZmemberSearch": {
+    "prefix": "ZmemberSearch",
+    "body": "ZmemberSearch{${1:query};${2:limit}}",
+    "description": "Searches guild members by username or nickname query string. Returns a comma-separated list of user IDs."
   },
   "Zmentioned": {
     "prefix": "Zmentioned",
@@ -1294,6 +1369,11 @@
     "body": "Zmessage{${1:index}}",
     "description": "Returns the full message content after the command trigger, or the Nth space-separated word when an index is provided."
   },
+  "ZmessageFlags": {
+    "prefix": "ZmessageFlags",
+    "body": "ZmessageFlags{${1:messageID};${2:flagName}}",
+    "description": "Returns true or false whether a message has the specified flag set. Supported flags: SUPPRESS_EMBEDS, EPHEMERAL, HAS_THREAD, LOADING, SUPPRESS_NOTIFICATIONS."
+  },
   "ZmessageID": {
     "prefix": "ZmessageID",
     "body": "ZmessageID{}",
@@ -1303,6 +1383,11 @@
     "prefix": "ZmessageLink",
     "body": "ZmessageLink{${1:messageID};${2:channelID}}",
     "description": "Builds and returns a Discord jump URL for the specified message, using the current channel if no channel ID is provided."
+  },
+  "ZmessageSnapshot": {
+    "prefix": "ZmessageSnapshot",
+    "body": "ZmessageSnapshot{${1:messageID};${2:fieldName}}",
+    "description": "Accesses snapshot data inside a forwarded message. Fields: content, author, attachments, embeds."
   },
   "Zmin": {
     "prefix": "Zmin",
@@ -1368,6 +1453,26 @@
     "prefix": "ZnumberSeparator",
     "body": "ZnumberSeparator{${1:number};${2:separator}}",
     "description": "Formats a number string by inserting thousands separators, defaulting to a comma."
+  },
+  "ZonboardingDefaultChannels": {
+    "prefix": "ZonboardingDefaultChannels",
+    "body": "ZonboardingDefaultChannels{}",
+    "description": "Returns a comma-separated list of channel IDs members are auto-opted into via onboarding."
+  },
+  "ZonboardingEnabled": {
+    "prefix": "ZonboardingEnabled",
+    "body": "ZonboardingEnabled{}",
+    "description": "Returns true or false whether onboarding is enabled on the guild."
+  },
+  "ZonboardingMode": {
+    "prefix": "ZonboardingMode",
+    "body": "ZonboardingMode{}",
+    "description": "Returns the onboarding mode of the guild: ONBOARDING_DEFAULT or ONBOARDING_ADVANCED."
+  },
+  "ZonboardingPrompts": {
+    "prefix": "ZonboardingPrompts",
+    "body": "ZonboardingPrompts{}",
+    "description": "Returns the guild's onboarding prompts as a pretty-printed JSON string."
   },
   "ZonlyAdmin": {
     "prefix": "ZonlyAdmin",
@@ -1458,6 +1563,11 @@
     "prefix": "ZparentID",
     "body": "ZparentID{${1:channelID}}",
     "description": "Returns the ID of the parent category of the given channel, or an empty string if the channel has no parent."
+  },
+  "ZpermNames": {
+    "prefix": "ZpermNames",
+    "body": "ZpermNames{${1:bitfield}}",
+    "description": "Converts a permission bitfield integer to a comma-separated list of human-readable permission names."
   },
   "Zping": {
     "prefix": "Zping",
@@ -1819,6 +1929,11 @@
     "body": "ZserverStickers{}",
     "description": "Returns a space-separated list of all sticker IDs in the current server."
   },
+  "ZserverTemplates": {
+    "prefix": "ZserverTemplates",
+    "body": "ZserverTemplates{}",
+    "description": "Returns a JSON array of all templates on the current guild, including code, name, and description."
+  },
   "ZserverVerificationLevel": {
     "prefix": "ZserverVerificationLevel",
     "body": "ZserverVerificationLevel{}",
@@ -1879,6 +1994,16 @@
     "body": "ZslowMode{${1:channelID};${2:duration}}",
     "description": "Sets the slowmode rate limit on a channel to the specified duration (0 or 0s disables it)."
   },
+  "ZsnowflakeAge": {
+    "prefix": "ZsnowflakeAge",
+    "body": "ZsnowflakeAge{${1:snowflakeID}}",
+    "description": "Returns a human-readable age from any snowflake like '3 days ago'."
+  },
+  "ZsnowflakeTimestamp": {
+    "prefix": "ZsnowflakeTimestamp",
+    "body": "ZsnowflakeTimestamp{${1:snowflakeID}}",
+    "description": "Extracts the Unix timestamp from any Discord snowflake ID."
+  },
   "Zsort": {
     "prefix": "Zsort",
     "body": "Zsort{${1:number};${2:};${3:direction};${4:return_amount};${5:separator}}",
@@ -1934,6 +2059,11 @@
     "body": "Zsqrt{${1:number}}",
     "description": "Returns the square root of the given non-negative number."
   },
+  "ZstageAudience": {
+    "prefix": "ZstageAudience",
+    "body": "ZstageAudience{${1:channelID}}",
+    "description": "Returns a comma-separated list of user IDs who are in the audience of a stage channel."
+  },
   "ZstageCreate": {
     "prefix": "ZstageCreate",
     "body": "ZstageCreate{${1:channelID};${2:topic}}",
@@ -1948,6 +2078,11 @@
     "prefix": "ZstageEdit",
     "body": "ZstageEdit{${1:channelID};${2:topic}}",
     "description": "Edits the topic of an existing stage instance in the specified stage channel."
+  },
+  "ZstageSpeakers": {
+    "prefix": "ZstageSpeakers",
+    "body": "ZstageSpeakers{${1:channelID}}",
+    "description": "Returns a comma-separated list of user IDs who are currently speaking in a stage channel."
   },
   "ZstageTopic": {
     "prefix": "ZstageTopic",
@@ -2024,6 +2159,11 @@
     "body": "Zsum{${1:number};${2:}}",
     "description": "Returns the sum of all provided numbers."
   },
+  "ZsuppressEmbeds": {
+    "prefix": "ZsuppressEmbeds",
+    "body": "ZsuppressEmbeds{${1:messageID};${2:suppress}}",
+    "description": "Suppresses or un-suppresses link embeds on an existing message."
+  },
   "ZsuppressErrors": {
     "prefix": "ZsuppressErrors",
     "body": "ZsuppressErrors{${1:errorText};${2:embedIndex}}",
@@ -2034,10 +2174,20 @@
     "body": "ZsyncPerms{${1:channelID}}",
     "description": "Syncs a channel's permissions with its parent category."
   },
+  "ZsyncServerTemplate": {
+    "prefix": "ZsyncServerTemplate",
+    "body": "ZsyncServerTemplate{${1:code}}",
+    "description": "Syncs an existing server template to match the current guild state."
+  },
   "ZsystemChannelID": {
     "prefix": "ZsystemChannelID",
     "body": "ZsystemChannelID{}",
     "description": "Returns the ID of the system messages channel in the current guild, or an empty string if none is configured."
+  },
+  "ZtemplateName": {
+    "prefix": "ZtemplateName",
+    "body": "ZtemplateName{${1:code}}",
+    "description": "Returns the display name of a server template by its code."
   },
   "ZtextSplit": {
     "prefix": "ZtextSplit",
@@ -2143,6 +2293,11 @@
     "prefix": "ZtitleURL",
     "body": "ZtitleURL{${1:url};${2:index}}",
     "description": "Sets a hyperlink URL on the embed's title, requiring a title to already be set on that slot."
+  },
+  "ZtotalShards": {
+    "prefix": "ZtotalShards",
+    "body": "ZtotalShards{}",
+    "description": "Returns the total number of shards the bot is running."
   },
   "ZtrimContent": {
     "prefix": "ZtrimContent",
@@ -2363,6 +2518,16 @@
     "prefix": "ZvoiceOld",
     "body": "ZvoiceOld{}",
     "description": "Returns the previous voice channel ID from the onVoiceStateUpdate event context (the channel the user was in before)."
+  },
+  "ZvoiceQuality": {
+    "prefix": "ZvoiceQuality",
+    "body": "ZvoiceQuality{${1:channelID}}",
+    "description": "Returns the video quality mode of a voice channel (AUTO or FULL)."
+  },
+  "ZvoiceRegion": {
+    "prefix": "ZvoiceRegion",
+    "body": "ZvoiceRegion{${1:channelID}}",
+    "description": "Returns the voice region of a voice channel (e.g., 'us-west', 'automatic')."
   },
   "ZvoiceRequestToSpeak": {
     "prefix": "ZvoiceRequestToSpeak",
