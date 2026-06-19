@@ -1,3 +1,8 @@
+[Zabbreviate]
+prefix = "Zabbreviate"
+body = "Zabbreviate{${1:arg1}}"
+description = "Executes the Zabbreviate function."
+
 [Zabs]
 prefix = "Zabs"
 body = "Zabs{${1:value}}"
@@ -228,6 +233,16 @@ prefix = "Zbase64Encode"
 body = "Zbase64Encode{${1:text}}"
 description = "Encodes text to base64."
 
+[ZbaseConvert]
+prefix = "ZbaseConvert"
+body = "ZbaseConvert{${1:arg1};${2:arg2};${3:arg3}}"
+description = "Executes the ZbaseConvert function."
+
+[ZbitWise]
+prefix = "ZbitWise"
+body = "ZbitWise{${1:arg1};${2:arg2};${3:arg3}}"
+description = "Executes the ZbitWise function."
+
 [ZblackListIDs]
 prefix = "ZblackListIDs"
 body = "ZblackListIDs{${1:userID};${2:};${3:errorMessage}}"
@@ -298,6 +313,11 @@ prefix = "Zcalculate"
 body = "Zcalculate{${1:expression}}"
 description = "Evaluates a mathematical expression supporting +, -, *, /, %, and ** operators with parentheses and correct operator precedence."
 
+[ZcamelCase]
+prefix = "ZcamelCase"
+body = "ZcamelCase{${1:arg1}}"
+description = "Executes the ZcamelCase function."
+
 [ZcategoryChannels]
 prefix = "ZcategoryChannels"
 body = "ZcategoryChannels{${1:categoryID};${2:separator};${3:returnType}}"
@@ -317,6 +337,11 @@ description = "Returns the snowflake ID of a category channel in the current gui
 prefix = "Zceil"
 body = "Zceil{${1:number}}"
 description = "Returns the smallest integer greater than or equal to the given number."
+
+[Zcensor]
+prefix = "Zcensor"
+body = "Zcensor{${1:arg1};${2:arg2};${3:arg3}}"
+description = "Executes the Zcensor function."
 
 [ZchangeCooldownTime]
 prefix = "ZchangeCooldownTime"
@@ -388,6 +413,11 @@ prefix = "ZchannelWebhooks"
 body = "ZchannelWebhooks{${1:channelID}}"
 description = "Returns a space-separated list of webhook URLs configured for the given channel."
 
+[ZcharCode]
+prefix = "ZcharCode"
+body = "ZcharCode{${1:arg1}}"
+description = "Executes the ZcharCode function."
+
 [ZcharCount]
 prefix = "ZcharCount"
 body = "ZcharCount{${1:text}}"
@@ -408,6 +438,16 @@ prefix = "ZcheckUserPerms"
 body = "ZcheckUserPerms{${1:userID};${2:permission};${3:}}"
 description = "Returns true if the specified user has all of the given guild permissions."
 
+[Zclamp]
+prefix = "Zclamp"
+body = "Zclamp{${1:arg1};${2:arg2};${3:arg3}}"
+description = "Executes the Zclamp function."
+
+[Zclean]
+prefix = "Zclean"
+body = "Zclean{${1:arg1}}"
+description = "Executes the Zclean function."
+
 [Zclear]
 prefix = "Zclear"
 body = "Zclear{${1:amount};${2:userID};${3:removePinned}}"
@@ -422,6 +462,16 @@ description = "Removes a specific emoji reaction from a message, or clears all r
 prefix = "Zcolor"
 body = "Zcolor{${1:hex};${2:index}}"
 description = "Sets the accent color of the specified embed slot using a hex color code."
+
+[ZcolorInvert]
+prefix = "ZcolorInvert"
+body = "ZcolorInvert{${1:arg1}}"
+description = "Executes the ZcolorInvert function."
+
+[ZcolorRandom]
+prefix = "ZcolorRandom"
+body = "ZcolorRandom{}"
+description = "Executes the ZcolorRandom function."
 
 [ZcolorRole]
 prefix = "ZcolorRole"
@@ -528,6 +578,11 @@ prefix = "Zdeafen"
 body = "Zdeafen{${1:userID}}"
 description = "Server-deafens the specified user so they cannot hear any audio in voice channels."
 
+[ZdecimalToHex]
+prefix = "ZdecimalToHex"
+body = "ZdecimalToHex{${1:arg1}}"
+description = "Executes the ZdecimalToHex function."
+
 [Zdefer]
 prefix = "Zdefer"
 body = "Zdefer{}"
@@ -592,6 +647,11 @@ description = "Deletes a message sent by a webhook via its token."
 prefix = "Zdescription"
 body = "Zdescription{${1:text};${2:index}}"
 description = "Sets the description text on the specified embed slot."
+
+[Zdice]
+prefix = "Zdice"
+body = "Zdice{${1:arg1}}"
+description = "Executes the Zdice function."
 
 [ZdisplayName]
 prefix = "ZdisplayName"
@@ -708,6 +768,11 @@ prefix = "Zentitlements"
 body = "Zentitlements{}"
 description = "Returns the bot application's entitlements as a JSON array."
 
+[Zentropy]
+prefix = "Zentropy"
+body = "Zentropy{${1:arg1}}"
+description = "Executes the Zentropy function."
+
 [Zephemeral]
 prefix = "Zephemeral"
 body = "Zephemeral{}"
@@ -768,6 +833,26 @@ prefix = "ZexecutionTime"
 body = "ZexecutionTime{}"
 description = "Returns the number of milliseconds elapsed since the current command began executing."
 
+[Zextract]
+prefix = "Zextract"
+body = "Zextract{${1:arg1};${2:arg2}}"
+description = "Executes the Zextract function."
+
+[Zfactorial]
+prefix = "Zfactorial"
+body = "Zfactorial{${1:arg1}}"
+description = "Executes the Zfactorial function."
+
+[ZfetchInvite]
+prefix = "ZfetchInvite"
+body = "ZfetchInvite{${1:arg1}}"
+description = "Executes the ZfetchInvite function."
+
+[Zfinancial]
+prefix = "Zfinancial"
+body = "Zfinancial{${1:arg1};${2:arg2};${3:arg3}}"
+description = "Executes the Zfinancial function."
+
 [Zfloor]
 prefix = "Zfloor"
 body = "Zfloor{${1:number}}"
@@ -787,6 +872,11 @@ description = "Sets the footer icon image URL on the specified embed slot, requi
 prefix = "ZforJson"
 body = "ZforJson{${1:key};${2:};${3:code}}"
 description = "Iterates over a JSON array at the given key path within the current parsed JSON object, executing the code block for each element."
+
+[ZformatBytes]
+prefix = "ZformatBytes"
+body = "ZformatBytes{${1:arg1}}"
+description = "Executes the ZformatBytes function."
 
 [ZforSplit]
 prefix = "ZforSplit"
@@ -838,10 +928,25 @@ prefix = "ZforwardMessage"
 body = "ZforwardMessage{${1:sourceMessageID};${2:targetChannelID}}"
 description = "Forwards a message to another channel using Discord's native message forward feature."
 
+[ZfromCharCode]
+prefix = "ZfromCharCode"
+body = "ZfromCharCode{${1:arg1}}"
+description = "Executes the ZfromCharCode function."
+
 [ZfromTimestamp]
 prefix = "ZfromTimestamp"
 body = "ZfromTimestamp{${1:unix};${2:format}}"
 description = "Formats a Unix timestamp into a human-readable date/time string using the active timezone and the specified format."
+
+[ZfuzzyMatch]
+prefix = "ZfuzzyMatch"
+body = "ZfuzzyMatch{${1:arg1};${2:arg2}}"
+description = "Executes the ZfuzzyMatch function."
+
+[Zgcd]
+prefix = "Zgcd"
+body = "Zgcd{${1:arg1};${2:arg2}}"
+description = "Executes the Zgcd function."
 
 [ZgetAttachments]
 prefix = "ZgetAttachments"
@@ -993,6 +1098,21 @@ prefix = "ZhasRole"
 body = "ZhasRole{${1:userID};${2:roleID}}"
 description = "Returns true if the specified user currently has the given role."
 
+[ZhexToDecimal]
+prefix = "ZhexToDecimal"
+body = "ZhexToDecimal{${1:arg1}}"
+description = "Executes the ZhexToDecimal function."
+
+[ZhexToHsl]
+prefix = "ZhexToHsl"
+body = "ZhexToHsl{${1:arg1}}"
+description = "Executes the ZhexToHsl function."
+
+[ZhexToRgb]
+prefix = "ZhexToRgb"
+body = "ZhexToRgb{${1:arg1}}"
+description = "Executes the ZhexToRgb function."
+
 [ZhighestRole]
 prefix = "ZhighestRole"
 body = "ZhighestRole{${1:userID}}"
@@ -1007,6 +1127,11 @@ description = "Returns the ID of the highest-position role in the guild that has
 prefix = "Zhour"
 body = "Zhour{}"
 description = "Returns the current hour using the active timezone."
+
+[ZhslToHex]
+prefix = "ZhslToHex"
+body = "ZhslToHex{${1:arg1};${2:arg2};${3:arg3}}"
+description = "Executes the ZhslToHex function."
 
 [ZhttpAddHeader]
 prefix = "ZhttpAddHeader"
@@ -1057,6 +1182,11 @@ description = "Returns the response body of the last HTTP request, optionally na
 prefix = "ZhttpStatus"
 body = "ZhttpStatus{}"
 description = "Returns the HTTP status code of the last HTTP request made in the current execution."
+
+[Zhypot]
+prefix = "Zhypot"
+body = "Zhypot{${1:arg1};${2:arg2}}"
+description = "Executes the Zhypot function."
 
 [Zif]
 prefix = "Zif"
@@ -1118,6 +1248,11 @@ prefix = "ZisEmojiAnimated"
 body = "ZisEmojiAnimated{${1:id}}"
 description = "Returns true if the custom emoji with the given ID is animated, or false if it is static."
 
+[ZisEven]
+prefix = "ZisEven"
+body = "ZisEven{${1:arg1}}"
+description = "Executes the ZisEven function."
+
 [ZisHoisted]
 prefix = "ZisHoisted"
 body = "ZisHoisted{${1:roleID}}"
@@ -1162,6 +1297,11 @@ description = "Returns true if the given channel is marked as NSFW, or false oth
 prefix = "ZisNumber"
 body = "ZisNumber{${1:value}}"
 description = "Returns true if the value parses as any numeric value including decimals, otherwise returns false."
+
+[ZisOdd]
+prefix = "ZisOdd"
+body = "ZisOdd{${1:arg1}}"
+description = "Executes the ZisOdd function."
 
 [ZisSlash]
 prefix = "ZisSlash"
@@ -1278,6 +1418,11 @@ prefix = "ZjsonUnset"
 body = "ZjsonUnset{${1:key};${2:}}"
 description = "Removes the key at the specified path from the working JSON object."
 
+[ZkebabCase]
+prefix = "ZkebabCase"
+body = "ZkebabCase{${1:arg1}}"
+description = "Executes the ZkebabCase function."
+
 [Zkick]
 prefix = "Zkick"
 body = "Zkick{${1:userID};${2:reason}}"
@@ -1293,10 +1438,35 @@ prefix = "ZlastPinTimestamp"
 body = "ZlastPinTimestamp{${1:channelID}}"
 description = "Returns the date of the most recently pinned message in the channel formatted as YYYY-MM-DD, or an empty string if no pins exist."
 
+[Zlcm]
+prefix = "Zlcm"
+body = "Zlcm{${1:arg1};${2:arg2}}"
+description = "Executes the Zlcm function."
+
+[Zlerp]
+prefix = "Zlerp"
+body = "Zlerp{${1:arg1};${2:arg2};${3:arg3}}"
+description = "Executes the Zlerp function."
+
 [ZlinesCount]
 prefix = "ZlinesCount"
 body = "ZlinesCount{${1:text}}"
 description = "Returns the number of lines in the text, returning zero for an empty string."
+
+[ZlistMath]
+prefix = "ZlistMath"
+body = "ZlistMath{${1:arg1};${2:arg2};${3:arg3}}"
+description = "Executes the ZlistMath function."
+
+[ZlistReverse]
+prefix = "ZlistReverse"
+body = "ZlistReverse{${1:arg1};${2:arg2}}"
+description = "Executes the ZlistReverse function."
+
+[ZlistShuffle]
+prefix = "ZlistShuffle"
+body = "ZlistShuffle{${1:arg1};${2:arg2}}"
+description = "Executes the ZlistShuffle function."
 
 [ZlistVar]
 prefix = "ZlistVar"
@@ -1548,6 +1718,11 @@ prefix = "Zoption"
 body = "Zoption{${1:key}}"
 description = "Returns the value of a named slash command option by its key."
 
+[Zpad]
+prefix = "Zpad"
+body = "Zpad{${1:arg1};${2:arg2};${3:arg3};${4:arg4}}"
+description = "Executes the Zpad function."
+
 [ZpadLeft]
 prefix = "ZpadLeft"
 body = "ZpadLeft{${1:text};${2:width};${3:char}}"
@@ -1562,6 +1737,16 @@ description = "Pads the text on the right with a repeated character until it rea
 prefix = "ZparentID"
 body = "ZparentID{${1:channelID}}"
 description = "Returns the ID of the parent category of the given channel, or an empty string if the channel has no parent."
+
+[ZpascalCase]
+prefix = "ZpascalCase"
+body = "ZpascalCase{${1:arg1}}"
+description = "Executes the ZpascalCase function."
+
+[Zpercent]
+prefix = "Zpercent"
+body = "Zpercent{${1:arg1};${2:arg2};${3:arg3}}"
+description = "Executes the Zpercent function."
 
 [ZpermNames]
 prefix = "ZpermNames"
@@ -1643,6 +1828,11 @@ prefix = "Zrandom"
 body = "Zrandom{${1:min};${2:max}}"
 description = "Returns a random integer between min and max (inclusive)."
 
+[ZrandomCase]
+prefix = "ZrandomCase"
+body = "ZrandomCase{${1:arg1}}"
+description = "Executes the ZrandomCase function."
+
 [ZrandomCategoryID]
 prefix = "ZrandomCategoryID"
 body = "ZrandomCategoryID{}"
@@ -1698,6 +1888,11 @@ prefix = "ZregexReplace"
 body = "ZregexReplace{${1:text};${2:pattern};${3:replacement}}"
 description = "Replaces all substrings in the text that match the regular expression pattern with the specified replacement."
 
+[ZrelativeTime]
+prefix = "ZrelativeTime"
+body = "ZrelativeTime{${1:arg1}}"
+description = "Executes the ZrelativeTime function."
+
 [ZremoveAllComponents]
 prefix = "ZremoveAllComponents"
 body = "ZremoveAllComponents{${1:messageID}}"
@@ -1733,6 +1928,11 @@ prefix = "Zrepeat"
 body = "Zrepeat{${1:N};${2:code}}"
 description = "Executes the given code block N times and returns each non-empty output joined by newlines."
 
+[ZrepeatText]
+prefix = "ZrepeatText"
+body = "ZrepeatText{${1:arg1};${2:arg2}}"
+description = "Executes the ZrepeatText function."
+
 [ZreplaceText]
 prefix = "ZreplaceText"
 body = "ZreplaceText{${1:text};${2:sample};${3:new};${4:amount}}"
@@ -1767,6 +1967,16 @@ description = "Deletes the given server variable across every server."
 prefix = "ZresetUserVar"
 body = "ZresetUserVar{${1:name}}"
 description = "Deletes the given user variable for every user in the current server."
+
+[ZreverseText]
+prefix = "ZreverseText"
+body = "ZreverseText{${1:arg1}}"
+description = "Executes the ZreverseText function."
+
+[ZrgbToHex]
+prefix = "ZrgbToHex"
+body = "ZrgbToHex{${1:arg1};${2:arg2};${3:arg3}}"
+description = "Executes the ZrgbToHex function."
 
 [ZroleColor]
 prefix = "ZroleColor"
@@ -1822,6 +2032,16 @@ description = "Returns the permission names granted to a role joined by the give
 prefix = "ZrolePosition"
 body = "ZrolePosition{${1:roleID}}"
 description = "Returns the hierarchy position of a role, defaulting to the author's top role if no ID is provided."
+
+[Zroman]
+prefix = "Zroman"
+body = "Zroman{${1:arg1}}"
+description = "Executes the Zroman function."
+
+[Zroot]
+prefix = "Zroot"
+body = "Zroot{${1:arg1};${2:arg2}}"
+description = "Executes the Zroot function."
 
 [Zround]
 prefix = "Zround"
@@ -1992,6 +2212,11 @@ description = "Returns the Discord application command ID for the specified slas
 prefix = "ZslowMode"
 body = "ZslowMode{${1:channelID};${2:duration}}"
 description = "Sets the slowmode rate limit on a channel to the specified duration (0 or 0s disables it)."
+
+[ZsnakeCase]
+prefix = "ZsnakeCase"
+body = "ZsnakeCase{${1:arg1}}"
+description = "Executes the ZsnakeCase function."
 
 [ZsnowflakeAge]
 prefix = "ZsnowflakeAge"
@@ -2268,6 +2493,11 @@ prefix = "ZtimeDiff"
 body = "ZtimeDiff{${1:timestamp1};${2:timestamp2};${3:unit}}"
 description = "Returns the absolute difference between two Unix timestamps in the specified unit such as seconds, minutes, hours, or days."
 
+[ZtimeFormat]
+prefix = "ZtimeFormat"
+body = "ZtimeFormat{${1:arg1};${2:arg2};${3:arg3}}"
+description = "Executes the ZtimeFormat function."
+
 [Ztimeout]
 prefix = "Ztimeout"
 body = "Ztimeout{${1:userID};${2:duration}}"
@@ -2308,10 +2538,20 @@ prefix = "ZtrimSpace"
 body = "ZtrimSpace{${1:text}}"
 description = "Removes leading and trailing whitespace from the text."
 
+[Ztruncate]
+prefix = "Ztruncate"
+body = "Ztruncate{${1:arg1};${2:arg2}}"
+description = "Executes the Ztruncate function."
+
 [ZtryRun]
 prefix = "ZtryRun"
 body = "ZtryRun{${1:code};${2:fallback}}"
 description = "Evaluates the code block and falls back to the fallback block if any error occurs."
+
+[Ztype]
+prefix = "Ztype"
+body = "Ztype{${1:arg1}}"
+description = "Executes the Ztype function."
 
 [Zunban]
 prefix = "Zunban"
@@ -2398,6 +2638,11 @@ prefix = "ZuserJoined"
 body = "ZuserJoined{${1:userID};${2:format}}"
 description = "Returns the date when the command author or specified user joined the current guild, formatted according to the optional format string."
 
+[ZuserLocale]
+prefix = "ZuserLocale"
+body = "ZuserLocale{${1:arg1}}"
+description = "Executes the ZuserLocale function."
+
 [Zusername]
 prefix = "Zusername"
 body = "Zusername{${1:userID}}"
@@ -2457,6 +2702,16 @@ description = "Returns true if the specified user is currently streaming in a vo
 prefix = "ZuserVoiceChannel"
 body = "ZuserVoiceChannel{${1:userID}}"
 description = "Returns the ID of the voice channel the specified user is in, or an empty string if they are not in voice."
+
+[Zuuid]
+prefix = "Zuuid"
+body = "Zuuid{}"
+description = "Executes the Zuuid function."
+
+[Zvalidate]
+prefix = "Zvalidate"
+body = "Zvalidate{${1:arg1};${2:arg2}}"
+description = "Executes the Zvalidate function."
 
 [Zvar]
 prefix = "Zvar"
@@ -2558,10 +2813,20 @@ prefix = "ZwebhookDelete"
 body = "ZwebhookDelete{${1:webhookURL}}"
 description = "Deletes a webhook identified by its full Discord webhook URL."
 
+[ZweightedRandom]
+prefix = "ZweightedRandom"
+body = "ZweightedRandom{${1:arg1};${2:arg2}}"
+description = "Executes the ZweightedRandom function."
+
 [ZwelcomeScreen]
 prefix = "ZwelcomeScreen"
 body = "ZwelcomeScreen{${1:guildID}}"
 description = "Returns the guild's welcome screen as a JSON object."
+
+[ZwordCount]
+prefix = "ZwordCount"
+body = "ZwordCount{${1:arg1}}"
+description = "Executes the ZwordCount function."
 
 [Zyear]
 prefix = "Zyear"

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="ZBR">
+  <template name="Zabbreviate" value="Zabbreviate{$END$}" description="Executes the Zabbreviate function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="Zabs" value="Zabs{$END$}" description="Returns the absolute value of the given number." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -230,6 +235,16 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZbaseConvert" value="ZbaseConvert{$END$}" description="Executes the ZbaseConvert function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZbitWise" value="ZbitWise{$END$}" description="Executes the ZbitWise function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZblackListIDs" value="ZblackListIDs{$END$}" description="Halts command execution if the triggering user's ID matches any of the provided user IDs." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -300,6 +315,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZcamelCase" value="ZcamelCase{$END$}" description="Executes the ZcamelCase function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZcategoryChannels" value="ZcategoryChannels{$END$}" description="Returns the channels inside a category sorted by position, formatted as names, IDs, mentions, or a count, joined by the specified separator." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -316,6 +336,11 @@
     </context>
   </template>
   <template name="Zceil" value="Zceil{$END$}" description="Returns the smallest integer greater than or equal to the given number." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zcensor" value="Zcensor{$END$}" description="Executes the Zcensor function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -390,6 +415,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZcharCode" value="ZcharCode{$END$}" description="Executes the ZcharCode function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZcharCount" value="ZcharCount{$END$}" description="Returns the number of Unicode characters in the text." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -410,6 +440,16 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="Zclamp" value="Zclamp{$END$}" description="Executes the Zclamp function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zclean" value="Zclean{$END$}" description="Executes the Zclean function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="Zclear" value="Zclear{$END$}" description="Bulk-deletes up to 100 recent messages in the current channel, with an optional user filter and configurable handling of pinned messages." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -421,6 +461,16 @@
     </context>
   </template>
   <template name="Zcolor" value="Zcolor{$END$}" description="Sets the accent color of the specified embed slot using a hex color code." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcolorInvert" value="ZcolorInvert{$END$}" description="Executes the ZcolorInvert function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZcolorRandom" value="ZcolorRandom{$END$}" description="Executes the ZcolorRandom function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -530,6 +580,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZdecimalToHex" value="ZdecimalToHex{$END$}" description="Executes the ZdecimalToHex function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="Zdefer" value="Zdefer{$END$}" description="Defers the interaction response, showing a thinking indicator and extending the response window to 15 minutes." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -591,6 +646,11 @@
     </context>
   </template>
   <template name="Zdescription" value="Zdescription{$END$}" description="Sets the description text on the specified embed slot." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zdice" value="Zdice{$END$}" description="Executes the Zdice function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -710,6 +770,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="Zentropy" value="Zentropy{$END$}" description="Executes the Zentropy function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="Zephemeral" value="Zephemeral{$END$}" description="Marks the current slash command response as ephemeral so it is only visible to the invoking user." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -770,6 +835,26 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="Zextract" value="Zextract{$END$}" description="Executes the Zextract function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zfactorial" value="Zfactorial{$END$}" description="Executes the Zfactorial function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZfetchInvite" value="ZfetchInvite{$END$}" description="Executes the ZfetchInvite function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zfinancial" value="Zfinancial{$END$}" description="Executes the Zfinancial function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="Zfloor" value="Zfloor{$END$}" description="Returns the largest integer less than or equal to the given number." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -786,6 +871,11 @@
     </context>
   </template>
   <template name="ZforJson" value="ZforJson{$END$}" description="Iterates over a JSON array at the given key path within the current parsed JSON object, executing the code block for each element." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZformatBytes" value="ZformatBytes{$END$}" description="Executes the ZformatBytes function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -840,7 +930,22 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZfromCharCode" value="ZfromCharCode{$END$}" description="Executes the ZfromCharCode function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZfromTimestamp" value="ZfromTimestamp{$END$}" description="Formats a Unix timestamp into a human-readable date/time string using the active timezone and the specified format." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZfuzzyMatch" value="ZfuzzyMatch{$END$}" description="Executes the ZfuzzyMatch function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zgcd" value="Zgcd{$END$}" description="Executes the Zgcd function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -995,6 +1100,21 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZhexToDecimal" value="ZhexToDecimal{$END$}" description="Executes the ZhexToDecimal function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhexToHsl" value="ZhexToHsl{$END$}" description="Executes the ZhexToHsl function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhexToRgb" value="ZhexToRgb{$END$}" description="Executes the ZhexToRgb function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZhighestRole" value="ZhighestRole{$END$}" description="Returns the ID of the highest-position role held by the specified user, defaulting to the author." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1006,6 +1126,11 @@
     </context>
   </template>
   <template name="Zhour" value="Zhour{$END$}" description="Returns the current hour using the active timezone." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhslToHex" value="ZhslToHex{$END$}" description="Executes the ZhslToHex function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -1056,6 +1181,11 @@
     </context>
   </template>
   <template name="ZhttpStatus" value="ZhttpStatus{$END$}" description="Returns the HTTP status code of the last HTTP request made in the current execution." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zhypot" value="Zhypot{$END$}" description="Executes the Zhypot function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -1120,6 +1250,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZisEven" value="ZisEven{$END$}" description="Executes the ZisEven function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZisHoisted" value="ZisHoisted{$END$}" description="Returns true if the given role is displayed separately in the member list, defaulting to the author's top role if no ID is provided." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1161,6 +1296,11 @@
     </context>
   </template>
   <template name="ZisNumber" value="ZisNumber{$END$}" description="Returns true if the value parses as any numeric value including decimals, otherwise returns false." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZisOdd" value="ZisOdd{$END$}" description="Executes the ZisOdd function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -1280,6 +1420,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZkebabCase" value="ZkebabCase{$END$}" description="Executes the ZkebabCase function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="Zkick" value="Zkick{$END$}" description="Kicks a user from the guild with an optional reason." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1295,7 +1440,32 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="Zlcm" value="Zlcm{$END$}" description="Executes the Zlcm function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zlerp" value="Zlerp{$END$}" description="Executes the Zlerp function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZlinesCount" value="ZlinesCount{$END$}" description="Returns the number of lines in the text, returning zero for an empty string." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZlistMath" value="ZlistMath{$END$}" description="Executes the ZlistMath function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZlistReverse" value="ZlistReverse{$END$}" description="Executes the ZlistReverse function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZlistShuffle" value="ZlistShuffle{$END$}" description="Executes the ZlistShuffle function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -1550,6 +1720,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="Zpad" value="Zpad{$END$}" description="Executes the Zpad function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZpadLeft" value="ZpadLeft{$END$}" description="Pads the text on the left with a repeated character until it reaches the specified width, defaulting to a space." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1561,6 +1736,16 @@
     </context>
   </template>
   <template name="ZparentID" value="ZparentID{$END$}" description="Returns the ID of the parent category of the given channel, or an empty string if the channel has no parent." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpascalCase" value="ZpascalCase{$END$}" description="Executes the ZpascalCase function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zpercent" value="Zpercent{$END$}" description="Executes the Zpercent function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -1645,6 +1830,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZrandomCase" value="ZrandomCase{$END$}" description="Executes the ZrandomCase function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZrandomCategoryID" value="ZrandomCategoryID{$END$}" description="Returns the ID of a randomly selected category channel in the current server." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1700,6 +1890,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZrelativeTime" value="ZrelativeTime{$END$}" description="Executes the ZrelativeTime function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZremoveAllComponents" value="ZremoveAllComponents{$END$}" description="Removes all components from a message, defaulting to the triggering message." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1735,6 +1930,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZrepeatText" value="ZrepeatText{$END$}" description="Executes the ZrepeatText function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZreplaceText" value="ZreplaceText{$END$}" description="Replaces occurrences of a sample substring in text with a new string, with an optional limit on the number of replacements." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1766,6 +1966,16 @@
     </context>
   </template>
   <template name="ZresetUserVar" value="ZresetUserVar{$END$}" description="Deletes the given user variable for every user in the current server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZreverseText" value="ZreverseText{$END$}" description="Executes the ZreverseText function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZrgbToHex" value="ZrgbToHex{$END$}" description="Executes the ZrgbToHex function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -1821,6 +2031,16 @@
     </context>
   </template>
   <template name="ZrolePosition" value="ZrolePosition{$END$}" description="Returns the hierarchy position of a role, defaulting to the author's top role if no ID is provided." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zroman" value="Zroman{$END$}" description="Executes the Zroman function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zroot" value="Zroot{$END$}" description="Executes the Zroot function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -1991,6 +2211,11 @@
     </context>
   </template>
   <template name="ZslowMode" value="ZslowMode{$END$}" description="Sets the slowmode rate limit on a channel to the specified duration (0 or 0s disables it)." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZsnakeCase" value="ZsnakeCase{$END$}" description="Executes the ZsnakeCase function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -2270,6 +2495,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZtimeFormat" value="ZtimeFormat{$END$}" description="Executes the ZtimeFormat function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="Ztimeout" value="Ztimeout{$END$}" description="Applies a communication timeout to a user for the specified duration, up to a maximum of 28 days." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -2310,7 +2540,17 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="Ztruncate" value="Ztruncate{$END$}" description="Executes the Ztruncate function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZtryRun" value="ZtryRun{$END$}" description="Evaluates the code block and falls back to the fallback block if any error occurs." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Ztype" value="Ztype{$END$}" description="Executes the Ztype function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -2400,6 +2640,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZuserLocale" value="ZuserLocale{$END$}" description="Executes the ZuserLocale function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="Zusername" value="Zusername{$END$}" description="Returns the username of the command author, or of the specified user if a user ID is provided." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -2456,6 +2701,16 @@
     </context>
   </template>
   <template name="ZuserVoiceChannel" value="ZuserVoiceChannel{$END$}" description="Returns the ID of the voice channel the specified user is in, or an empty string if they are not in voice." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zuuid" value="Zuuid{$END$}" description="Executes the Zuuid function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="Zvalidate" value="Zvalidate{$END$}" description="Executes the Zvalidate function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -2560,7 +2815,17 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZweightedRandom" value="ZweightedRandom{$END$}" description="Executes the ZweightedRandom function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZwelcomeScreen" value="ZwelcomeScreen{$END$}" description="Returns the guild's welcome screen as a JSON object." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZwordCount" value="ZwordCount{$END$}" description="Executes the ZwordCount function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>

@@ -1,4 +1,11 @@
 {
+  "Zabbreviate": {
+    "prefix": "Zabbreviate",
+    "body": [
+      "Zabbreviate{${1:arg1}}"
+    ],
+    "description": "Executes the Zabbreviate function."
+  },
   "Zabs": {
     "prefix": "Zabs",
     "body": [
@@ -405,6 +412,20 @@
     ],
     "description": "Encodes text to base64."
   },
+  "ZbaseConvert": {
+    "prefix": "ZbaseConvert",
+    "body": [
+      "ZbaseConvert{${1:arg1};${2:arg2};${3:arg3}}"
+    ],
+    "description": "Executes the ZbaseConvert function."
+  },
+  "ZbitWise": {
+    "prefix": "ZbitWise",
+    "body": [
+      "ZbitWise{${1:arg1};${2:arg2};${3:arg3}}"
+    ],
+    "description": "Executes the ZbitWise function."
+  },
   "ZblackListIDs": {
     "prefix": "ZblackListIDs",
     "body": [
@@ -517,6 +538,13 @@
     ],
     "description": "Evaluates a mathematical expression supporting +, -, *, /, %, and ** operators with parentheses and correct operator precedence."
   },
+  "ZcamelCase": {
+    "prefix": "ZcamelCase",
+    "body": [
+      "ZcamelCase{${1:arg1}}"
+    ],
+    "description": "Executes the ZcamelCase function."
+  },
   "ZcategoryChannels": {
     "prefix": "ZcategoryChannels",
     "body": [
@@ -551,6 +579,13 @@
       "Zceil{${1:number}}"
     ],
     "description": "Returns the smallest integer greater than or equal to the given number."
+  },
+  "Zcensor": {
+    "prefix": "Zcensor",
+    "body": [
+      "Zcensor{${1:arg1};${2:arg2};${3:arg3}}"
+    ],
+    "description": "Executes the Zcensor function."
   },
   "ZchangeCooldownTime": {
     "prefix": "ZchangeCooldownTime",
@@ -727,6 +762,13 @@
     ],
     "description": "Returns a space-separated list of webhook URLs configured for the given channel."
   },
+  "ZcharCode": {
+    "prefix": "ZcharCode",
+    "body": [
+      "ZcharCode{${1:arg1}}"
+    ],
+    "description": "Executes the ZcharCode function."
+  },
   "ZcharCount": {
     "prefix": "ZcharCount",
     "body": [
@@ -755,6 +797,20 @@
     ],
     "description": "Returns true if the specified user has all of the given guild permissions."
   },
+  "Zclamp": {
+    "prefix": "Zclamp",
+    "body": [
+      "Zclamp{${1:arg1};${2:arg2};${3:arg3}}"
+    ],
+    "description": "Executes the Zclamp function."
+  },
+  "Zclean": {
+    "prefix": "Zclean",
+    "body": [
+      "Zclean{${1:arg1}}"
+    ],
+    "description": "Executes the Zclean function."
+  },
   "Zclear": {
     "prefix": "Zclear",
     "body": [
@@ -775,6 +831,20 @@
       "Zcolor{${1:hex};${2:index}}"
     ],
     "description": "Sets the accent color of the specified embed slot using a hex color code."
+  },
+  "ZcolorInvert": {
+    "prefix": "ZcolorInvert",
+    "body": [
+      "ZcolorInvert{${1:arg1}}"
+    ],
+    "description": "Executes the ZcolorInvert function."
+  },
+  "ZcolorRandom": {
+    "prefix": "ZcolorRandom",
+    "body": [
+      "ZcolorRandom"
+    ],
+    "description": "Executes the ZcolorRandom function."
   },
   "ZcolorRole": {
     "prefix": "ZcolorRole",
@@ -930,6 +1000,13 @@
     ],
     "description": "Server-deafens the specified user so they cannot hear any audio in voice channels."
   },
+  "ZdecimalToHex": {
+    "prefix": "ZdecimalToHex",
+    "body": [
+      "ZdecimalToHex{${1:arg1}}"
+    ],
+    "description": "Executes the ZdecimalToHex function."
+  },
   "Zdefer": {
     "prefix": "Zdefer",
     "body": [
@@ -1020,6 +1097,13 @@
       "Zdescription{${1:text};${2:index}}"
     ],
     "description": "Sets the description text on the specified embed slot."
+  },
+  "Zdice": {
+    "prefix": "Zdice",
+    "body": [
+      "Zdice{${1:arg1}}"
+    ],
+    "description": "Executes the Zdice function."
   },
   "ZdisplayName": {
     "prefix": "ZdisplayName",
@@ -1196,6 +1280,13 @@
     ],
     "description": "Returns the bot application's entitlements as a JSON array."
   },
+  "Zentropy": {
+    "prefix": "Zentropy",
+    "body": [
+      "Zentropy{${1:arg1}}"
+    ],
+    "description": "Executes the Zentropy function."
+  },
   "Zephemeral": {
     "prefix": "Zephemeral",
     "body": [
@@ -1294,6 +1385,34 @@
     ],
     "description": "Returns the number of milliseconds elapsed since the current command began executing."
   },
+  "Zextract": {
+    "prefix": "Zextract",
+    "body": [
+      "Zextract{${1:arg1};${2:arg2}}"
+    ],
+    "description": "Executes the Zextract function."
+  },
+  "Zfactorial": {
+    "prefix": "Zfactorial",
+    "body": [
+      "Zfactorial{${1:arg1}}"
+    ],
+    "description": "Executes the Zfactorial function."
+  },
+  "ZfetchInvite": {
+    "prefix": "ZfetchInvite",
+    "body": [
+      "ZfetchInvite{${1:arg1}}"
+    ],
+    "description": "Executes the ZfetchInvite function."
+  },
+  "Zfinancial": {
+    "prefix": "Zfinancial",
+    "body": [
+      "Zfinancial{${1:arg1};${2:arg2};${3:arg3}}"
+    ],
+    "description": "Executes the Zfinancial function."
+  },
   "Zfloor": {
     "prefix": "Zfloor",
     "body": [
@@ -1321,6 +1440,13 @@
       "ZforJson{${1:key};${2:};${3:code}}"
     ],
     "description": "Iterates over a JSON array at the given key path within the current parsed JSON object, executing the code block for each element."
+  },
+  "ZformatBytes": {
+    "prefix": "ZformatBytes",
+    "body": [
+      "ZformatBytes{${1:arg1}}"
+    ],
+    "description": "Executes the ZformatBytes function."
   },
   "ZforSplit": {
     "prefix": "ZforSplit",
@@ -1392,12 +1518,33 @@
     ],
     "description": "Forwards a message to another channel using Discord's native message forward feature."
   },
+  "ZfromCharCode": {
+    "prefix": "ZfromCharCode",
+    "body": [
+      "ZfromCharCode{${1:arg1}}"
+    ],
+    "description": "Executes the ZfromCharCode function."
+  },
   "ZfromTimestamp": {
     "prefix": "ZfromTimestamp",
     "body": [
       "ZfromTimestamp{${1:unix};${2:format}}"
     ],
     "description": "Formats a Unix timestamp into a human-readable date/time string using the active timezone and the specified format."
+  },
+  "ZfuzzyMatch": {
+    "prefix": "ZfuzzyMatch",
+    "body": [
+      "ZfuzzyMatch{${1:arg1};${2:arg2}}"
+    ],
+    "description": "Executes the ZfuzzyMatch function."
+  },
+  "Zgcd": {
+    "prefix": "Zgcd",
+    "body": [
+      "Zgcd{${1:arg1};${2:arg2}}"
+    ],
+    "description": "Executes the Zgcd function."
   },
   "ZgetAttachments": {
     "prefix": "ZgetAttachments",
@@ -1679,6 +1826,27 @@
     ],
     "description": "Returns true if the specified user currently has the given role."
   },
+  "ZhexToDecimal": {
+    "prefix": "ZhexToDecimal",
+    "body": [
+      "ZhexToDecimal{${1:arg1}}"
+    ],
+    "description": "Executes the ZhexToDecimal function."
+  },
+  "ZhexToHsl": {
+    "prefix": "ZhexToHsl",
+    "body": [
+      "ZhexToHsl{${1:arg1}}"
+    ],
+    "description": "Executes the ZhexToHsl function."
+  },
+  "ZhexToRgb": {
+    "prefix": "ZhexToRgb",
+    "body": [
+      "ZhexToRgb{${1:arg1}}"
+    ],
+    "description": "Executes the ZhexToRgb function."
+  },
   "ZhighestRole": {
     "prefix": "ZhighestRole",
     "body": [
@@ -1706,6 +1874,13 @@
       "Zhour"
     ],
     "description": "Returns the current hour using the active timezone."
+  },
+  "ZhslToHex": {
+    "prefix": "ZhslToHex",
+    "body": [
+      "ZhslToHex{${1:arg1};${2:arg2};${3:arg3}}"
+    ],
+    "description": "Executes the ZhslToHex function."
   },
   "ZhttpAddHeader": {
     "prefix": "ZhttpAddHeader",
@@ -1783,6 +1958,13 @@
       "ZhttpStatus"
     ],
     "description": "Returns the HTTP status code of the last HTTP request made in the current execution."
+  },
+  "Zhypot": {
+    "prefix": "Zhypot",
+    "body": [
+      "Zhypot{${1:arg1};${2:arg2}}"
+    ],
+    "description": "Executes the Zhypot function."
   },
   "Zif": {
     "prefix": "Zif",
@@ -1889,6 +2071,13 @@
     ],
     "description": "Returns true if the custom emoji with the given ID is animated, or false if it is static."
   },
+  "ZisEven": {
+    "prefix": "ZisEven",
+    "body": [
+      "ZisEven{${1:arg1}}"
+    ],
+    "description": "Executes the ZisEven function."
+  },
   "ZisHoisted": {
     "prefix": "ZisHoisted",
     "body": [
@@ -1993,6 +2182,13 @@
       "ZisNumber{${1:value}}"
     ],
     "description": "Returns true if the value parses as any numeric value including decimals, otherwise returns false."
+  },
+  "ZisOdd": {
+    "prefix": "ZisOdd",
+    "body": [
+      "ZisOdd{${1:arg1}}"
+    ],
+    "description": "Executes the ZisOdd function."
   },
   "ZisSlash": {
     "prefix": "ZisSlash",
@@ -2183,6 +2379,13 @@
     ],
     "description": "Removes the key at the specified path from the working JSON object."
   },
+  "ZkebabCase": {
+    "prefix": "ZkebabCase",
+    "body": [
+      "ZkebabCase{${1:arg1}}"
+    ],
+    "description": "Executes the ZkebabCase function."
+  },
   "Zkick": {
     "prefix": "Zkick",
     "body": [
@@ -2218,12 +2421,47 @@
     ],
     "description": "Returns the date of the most recently pinned message in the channel formatted as YYYY-MM-DD, or an empty string if no pins exist."
   },
+  "Zlcm": {
+    "prefix": "Zlcm",
+    "body": [
+      "Zlcm{${1:arg1};${2:arg2}}"
+    ],
+    "description": "Executes the Zlcm function."
+  },
+  "Zlerp": {
+    "prefix": "Zlerp",
+    "body": [
+      "Zlerp{${1:arg1};${2:arg2};${3:arg3}}"
+    ],
+    "description": "Executes the Zlerp function."
+  },
   "ZlinesCount": {
     "prefix": "ZlinesCount",
     "body": [
       "ZlinesCount{${1:text}}"
     ],
     "description": "Returns the number of lines in the text, returning zero for an empty string."
+  },
+  "ZlistMath": {
+    "prefix": "ZlistMath",
+    "body": [
+      "ZlistMath{${1:arg1};${2:arg2};${3:arg3}}"
+    ],
+    "description": "Executes the ZlistMath function."
+  },
+  "ZlistReverse": {
+    "prefix": "ZlistReverse",
+    "body": [
+      "ZlistReverse{${1:arg1};${2:arg2}}"
+    ],
+    "description": "Executes the ZlistReverse function."
+  },
+  "ZlistShuffle": {
+    "prefix": "ZlistShuffle",
+    "body": [
+      "ZlistShuffle{${1:arg1};${2:arg2}}"
+    ],
+    "description": "Executes the ZlistShuffle function."
   },
   "ZlistVar": {
     "prefix": "ZlistVar",
@@ -2624,6 +2862,13 @@
     ],
     "description": "Returns the value of a named slash command option by its key."
   },
+  "Zpad": {
+    "prefix": "Zpad",
+    "body": [
+      "Zpad{${1:arg1};${2:arg2};${3:arg3};${4:arg4}}"
+    ],
+    "description": "Executes the Zpad function."
+  },
   "ZpadLeft": {
     "prefix": "ZpadLeft",
     "body": [
@@ -2651,6 +2896,20 @@
       "ZparentID"
     ],
     "description": "Returns the ID of the parent category of the given channel, or an empty string if the channel has no parent."
+  },
+  "ZpascalCase": {
+    "prefix": "ZpascalCase",
+    "body": [
+      "ZpascalCase{${1:arg1}}"
+    ],
+    "description": "Executes the ZpascalCase function."
+  },
+  "Zpercent": {
+    "prefix": "Zpercent",
+    "body": [
+      "Zpercent{${1:arg1};${2:arg2};${3:arg3}}"
+    ],
+    "description": "Executes the Zpercent function."
   },
   "ZpermNames": {
     "prefix": "ZpermNames",
@@ -2778,6 +3037,13 @@
     ],
     "description": "Returns a random integer between min and max (inclusive)."
   },
+  "ZrandomCase": {
+    "prefix": "ZrandomCase",
+    "body": [
+      "ZrandomCase{${1:arg1}}"
+    ],
+    "description": "Executes the ZrandomCase function."
+  },
   "ZrandomCategoryID": {
     "prefix": "ZrandomCategoryID",
     "body": [
@@ -2855,6 +3121,13 @@
     ],
     "description": "Replaces all substrings in the text that match the regular expression pattern with the specified replacement."
   },
+  "ZrelativeTime": {
+    "prefix": "ZrelativeTime",
+    "body": [
+      "ZrelativeTime{${1:arg1}}"
+    ],
+    "description": "Executes the ZrelativeTime function."
+  },
   "ZremoveAllComponents": {
     "prefix": "ZremoveAllComponents",
     "body": [
@@ -2918,6 +3191,13 @@
     ],
     "description": "Executes the given code block N times and returns each non-empty output joined by newlines."
   },
+  "ZrepeatText": {
+    "prefix": "ZrepeatText",
+    "body": [
+      "ZrepeatText{${1:arg1};${2:arg2}}"
+    ],
+    "description": "Executes the ZrepeatText function."
+  },
   "ZreplaceText": {
     "prefix": "ZreplaceText",
     "body": [
@@ -2973,6 +3253,20 @@
       "ZresetUserVar{${1:name}}"
     ],
     "description": "Deletes the given user variable for every user in the current server."
+  },
+  "ZreverseText": {
+    "prefix": "ZreverseText",
+    "body": [
+      "ZreverseText{${1:arg1}}"
+    ],
+    "description": "Executes the ZreverseText function."
+  },
+  "ZrgbToHex": {
+    "prefix": "ZrgbToHex",
+    "body": [
+      "ZrgbToHex{${1:arg1};${2:arg2};${3:arg3}}"
+    ],
+    "description": "Executes the ZrgbToHex function."
   },
   "ZroleColor": {
     "prefix": "ZroleColor",
@@ -3113,6 +3407,20 @@
       "ZrolePosition"
     ],
     "description": "Returns the hierarchy position of a role, defaulting to the author's top role if no ID is provided."
+  },
+  "Zroman": {
+    "prefix": "Zroman",
+    "body": [
+      "Zroman{${1:arg1}}"
+    ],
+    "description": "Executes the Zroman function."
+  },
+  "Zroot": {
+    "prefix": "Zroot",
+    "body": [
+      "Zroot{${1:arg1};${2:arg2}}"
+    ],
+    "description": "Executes the Zroot function."
   },
   "Zround": {
     "prefix": "Zround",
@@ -3435,6 +3743,13 @@
       "ZslowMode{${1:channelID};${2:duration}}"
     ],
     "description": "Sets the slowmode rate limit on a channel to the specified duration (0 or 0s disables it)."
+  },
+  "ZsnakeCase": {
+    "prefix": "ZsnakeCase",
+    "body": [
+      "ZsnakeCase{${1:arg1}}"
+    ],
+    "description": "Executes the ZsnakeCase function."
   },
   "ZsnowflakeAge": {
     "prefix": "ZsnowflakeAge",
@@ -3863,6 +4178,13 @@
     ],
     "description": "Returns the absolute difference between two Unix timestamps in the specified unit such as seconds, minutes, hours, or days."
   },
+  "ZtimeFormat": {
+    "prefix": "ZtimeFormat",
+    "body": [
+      "ZtimeFormat{${1:arg1};${2:arg2};${3:arg3}}"
+    ],
+    "description": "Executes the ZtimeFormat function."
+  },
   "Ztimeout": {
     "prefix": "Ztimeout",
     "body": [
@@ -3926,12 +4248,26 @@
     ],
     "description": "Removes leading and trailing whitespace from the text."
   },
+  "Ztruncate": {
+    "prefix": "Ztruncate",
+    "body": [
+      "Ztruncate{${1:arg1};${2:arg2}}"
+    ],
+    "description": "Executes the Ztruncate function."
+  },
   "ZtryRun": {
     "prefix": "ZtryRun",
     "body": [
       "ZtryRun{${1:code};${2:fallback}}"
     ],
     "description": "Evaluates the code block and falls back to the fallback block if any error occurs."
+  },
+  "Ztype": {
+    "prefix": "Ztype",
+    "body": [
+      "Ztype{${1:arg1}}"
+    ],
+    "description": "Executes the Ztype function."
   },
   "Zunban": {
     "prefix": "Zunban",
@@ -4108,6 +4444,20 @@
     ],
     "description": "Returns the date when the command author or specified user joined the current guild, formatted according to the optional format string."
   },
+  "ZuserLocale": {
+    "prefix": "ZuserLocale",
+    "body": [
+      "ZuserLocale{${1:arg1}}"
+    ],
+    "description": "Executes the ZuserLocale function."
+  },
+  "ZuserLocale-bracketless": {
+    "prefix": "ZuserLocale",
+    "body": [
+      "ZuserLocale"
+    ],
+    "description": "Executes the ZuserLocale function."
+  },
   "Zusername": {
     "prefix": "Zusername",
     "body": [
@@ -4268,6 +4618,20 @@
       "ZuserVoiceChannel"
     ],
     "description": "Returns the ID of the voice channel the specified user is in, or an empty string if they are not in voice."
+  },
+  "Zuuid": {
+    "prefix": "Zuuid",
+    "body": [
+      "Zuuid"
+    ],
+    "description": "Executes the Zuuid function."
+  },
+  "Zvalidate": {
+    "prefix": "Zvalidate",
+    "body": [
+      "Zvalidate{${1:arg1};${2:arg2}}"
+    ],
+    "description": "Executes the Zvalidate function."
   },
   "Zvar": {
     "prefix": "Zvar",
@@ -4451,6 +4815,13 @@
     ],
     "description": "Deletes a webhook identified by its full Discord webhook URL."
   },
+  "ZweightedRandom": {
+    "prefix": "ZweightedRandom",
+    "body": [
+      "ZweightedRandom{${1:arg1};${2:arg2}}"
+    ],
+    "description": "Executes the ZweightedRandom function."
+  },
   "ZwelcomeScreen": {
     "prefix": "ZwelcomeScreen",
     "body": [
@@ -4464,6 +4835,13 @@
       "ZwelcomeScreen"
     ],
     "description": "Returns the guild's welcome screen as a JSON object."
+  },
+  "ZwordCount": {
+    "prefix": "ZwordCount",
+    "body": [
+      "ZwordCount{${1:arg1}}"
+    ],
+    "description": "Executes the ZwordCount function."
   },
   "Zyear": {
     "prefix": "Zyear",

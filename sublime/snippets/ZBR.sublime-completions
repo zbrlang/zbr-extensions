@@ -2,6 +2,10 @@
   "scope": "source.zbr - comment",
   "completions": [
     {
+      "trigger": "Zabbreviate\tExecutes the Zabbreviate function.",
+      "contents": "Zabbreviate{${1:arg1}}"
+    },
+    {
       "trigger": "Zabs\tReturns the absolute value of the given number.",
       "contents": "Zabs{${1:value}}"
     },
@@ -186,6 +190,14 @@
       "contents": "Zbase64Encode{${1:text}}"
     },
     {
+      "trigger": "ZbaseConvert\tExecutes the ZbaseConvert function.",
+      "contents": "ZbaseConvert{${1:arg1};${2:arg2};${3:arg3}}"
+    },
+    {
+      "trigger": "ZbitWise\tExecutes the ZbitWise function.",
+      "contents": "ZbitWise{${1:arg1};${2:arg2};${3:arg3}}"
+    },
+    {
       "trigger": "ZblackListIDs\tHalts command execution if the triggering user's ID matches any of the provided user IDs.",
       "contents": "ZblackListIDs{${1:userID};${2:};${3:errorMessage}}"
     },
@@ -242,6 +254,10 @@
       "contents": "Zcalculate{${1:expression}}"
     },
     {
+      "trigger": "ZcamelCase\tExecutes the ZcamelCase function.",
+      "contents": "ZcamelCase{${1:arg1}}"
+    },
+    {
       "trigger": "ZcategoryChannels\tReturns the channels inside a category sorted by position, formatted as names, IDs, mentions, or a count, joined by the specified separator.",
       "contents": "ZcategoryChannels{${1:categoryID};${2:separator};${3:returnType}}"
     },
@@ -256,6 +272,10 @@
     {
       "trigger": "Zceil\tReturns the smallest integer greater than or equal to the given number.",
       "contents": "Zceil{${1:number}}"
+    },
+    {
+      "trigger": "Zcensor\tExecutes the Zcensor function.",
+      "contents": "Zcensor{${1:arg1};${2:arg2};${3:arg3}}"
     },
     {
       "trigger": "ZchangeCooldownTime\tOverrides the label words used when formatting remaining cooldown times.",
@@ -314,6 +334,10 @@
       "contents": "ZchannelWebhooks{${1:channelID}}"
     },
     {
+      "trigger": "ZcharCode\tExecutes the ZcharCode function.",
+      "contents": "ZcharCode{${1:arg1}}"
+    },
+    {
       "trigger": "ZcharCount\tReturns the number of Unicode characters in the text.",
       "contents": "ZcharCount{${1:text}}"
     },
@@ -330,6 +354,14 @@
       "contents": "ZcheckUserPerms{${1:userID};${2:permission};${3:}}"
     },
     {
+      "trigger": "Zclamp\tExecutes the Zclamp function.",
+      "contents": "Zclamp{${1:arg1};${2:arg2};${3:arg3}}"
+    },
+    {
+      "trigger": "Zclean\tExecutes the Zclean function.",
+      "contents": "Zclean{${1:arg1}}"
+    },
+    {
       "trigger": "Zclear\tBulk-deletes up to 100 recent messages in the current channel, with an optional user filter and configurable handling of pinned messages.",
       "contents": "Zclear{${1:amount};${2:userID};${3:removePinned}}"
     },
@@ -340,6 +372,14 @@
     {
       "trigger": "Zcolor\tSets the accent color of the specified embed slot using a hex color code.",
       "contents": "Zcolor{${1:hex};${2:index}}"
+    },
+    {
+      "trigger": "ZcolorInvert\tExecutes the ZcolorInvert function.",
+      "contents": "ZcolorInvert{${1:arg1}}"
+    },
+    {
+      "trigger": "ZcolorRandom\tExecutes the ZcolorRandom function.",
+      "contents": "ZcolorRandom{}"
     },
     {
       "trigger": "ZcolorRole\tSets the color of an existing role to the specified hex color code.",
@@ -426,6 +466,10 @@
       "contents": "Zdeafen{${1:userID}}"
     },
     {
+      "trigger": "ZdecimalToHex\tExecutes the ZdecimalToHex function.",
+      "contents": "ZdecimalToHex{${1:arg1}}"
+    },
+    {
       "trigger": "Zdefer\tDefers the interaction response, showing a thinking indicator and extending the response window to 15 minutes.",
       "contents": "Zdefer{}"
     },
@@ -476,6 +520,10 @@
     {
       "trigger": "Zdescription\tSets the description text on the specified embed slot.",
       "contents": "Zdescription{${1:text};${2:index}}"
+    },
+    {
+      "trigger": "Zdice\tExecutes the Zdice function.",
+      "contents": "Zdice{${1:arg1}}"
     },
     {
       "trigger": "ZdisplayName\tReturns the display name of the command author or specified user; use server for the guild nickname or global for the Discord global name.",
@@ -570,6 +618,10 @@
       "contents": "Zentitlements{}"
     },
     {
+      "trigger": "Zentropy\tExecutes the Zentropy function.",
+      "contents": "Zentropy{${1:arg1}}"
+    },
+    {
       "trigger": "Zephemeral\tMarks the current slash command response as ephemeral so it is only visible to the invoking user.",
       "contents": "Zephemeral{}"
     },
@@ -618,6 +670,22 @@
       "contents": "ZexecutionTime{}"
     },
     {
+      "trigger": "Zextract\tExecutes the Zextract function.",
+      "contents": "Zextract{${1:arg1};${2:arg2}}"
+    },
+    {
+      "trigger": "Zfactorial\tExecutes the Zfactorial function.",
+      "contents": "Zfactorial{${1:arg1}}"
+    },
+    {
+      "trigger": "ZfetchInvite\tExecutes the ZfetchInvite function.",
+      "contents": "ZfetchInvite{${1:arg1}}"
+    },
+    {
+      "trigger": "Zfinancial\tExecutes the Zfinancial function.",
+      "contents": "Zfinancial{${1:arg1};${2:arg2};${3:arg3}}"
+    },
+    {
       "trigger": "Zfloor\tReturns the largest integer less than or equal to the given number.",
       "contents": "Zfloor{${1:number}}"
     },
@@ -632,6 +700,10 @@
     {
       "trigger": "ZforJson\tIterates over a JSON array at the given key path within the current parsed JSON object, executing the code block for each element.",
       "contents": "ZforJson{${1:key};${2:};${3:code}}"
+    },
+    {
+      "trigger": "ZformatBytes\tExecutes the ZformatBytes function.",
+      "contents": "ZformatBytes{${1:arg1}}"
     },
     {
       "trigger": "ZforSplit\tIterates over the elements produced by a prior ZtextSplit call, executing the code block for each element with ZloopIndex and ZloopValue populated.",
@@ -674,8 +746,20 @@
       "contents": "ZforwardMessage{${1:sourceMessageID};${2:targetChannelID}}"
     },
     {
+      "trigger": "ZfromCharCode\tExecutes the ZfromCharCode function.",
+      "contents": "ZfromCharCode{${1:arg1}}"
+    },
+    {
       "trigger": "ZfromTimestamp\tFormats a Unix timestamp into a human-readable date/time string using the active timezone and the specified format.",
       "contents": "ZfromTimestamp{${1:unix};${2:format}}"
+    },
+    {
+      "trigger": "ZfuzzyMatch\tExecutes the ZfuzzyMatch function.",
+      "contents": "ZfuzzyMatch{${1:arg1};${2:arg2}}"
+    },
+    {
+      "trigger": "Zgcd\tExecutes the Zgcd function.",
+      "contents": "Zgcd{${1:arg1};${2:arg2}}"
     },
     {
       "trigger": "ZgetAttachments\tReturns attachment URLs from the triggering message joined by newlines, or the single URL at the specified 1-based index.",
@@ -798,6 +882,18 @@
       "contents": "ZhasRole{${1:userID};${2:roleID}}"
     },
     {
+      "trigger": "ZhexToDecimal\tExecutes the ZhexToDecimal function.",
+      "contents": "ZhexToDecimal{${1:arg1}}"
+    },
+    {
+      "trigger": "ZhexToHsl\tExecutes the ZhexToHsl function.",
+      "contents": "ZhexToHsl{${1:arg1}}"
+    },
+    {
+      "trigger": "ZhexToRgb\tExecutes the ZhexToRgb function.",
+      "contents": "ZhexToRgb{${1:arg1}}"
+    },
+    {
       "trigger": "ZhighestRole\tReturns the ID of the highest-position role held by the specified user, defaulting to the author.",
       "contents": "ZhighestRole{${1:userID}}"
     },
@@ -808,6 +904,10 @@
     {
       "trigger": "Zhour\tReturns the current hour using the active timezone.",
       "contents": "Zhour{}"
+    },
+    {
+      "trigger": "ZhslToHex\tExecutes the ZhslToHex function.",
+      "contents": "ZhslToHex{${1:arg1};${2:arg2};${3:arg3}}"
     },
     {
       "trigger": "ZhttpAddHeader\tAdds a custom HTTP header by name and value that will be sent with all subsequent HTTP requests in the current execution.",
@@ -848,6 +948,10 @@
     {
       "trigger": "ZhttpStatus\tReturns the HTTP status code of the last HTTP request made in the current execution.",
       "contents": "ZhttpStatus{}"
+    },
+    {
+      "trigger": "Zhypot\tExecutes the Zhypot function.",
+      "contents": "Zhypot{${1:arg1};${2:arg2}}"
     },
     {
       "trigger": "Zif\tEvaluates a condition and returns the then-branch value if true, or the optional else-branch value if false.",
@@ -898,6 +1002,10 @@
       "contents": "ZisEmojiAnimated{${1:id}}"
     },
     {
+      "trigger": "ZisEven\tExecutes the ZisEven function.",
+      "contents": "ZisEven{${1:arg1}}"
+    },
+    {
       "trigger": "ZisHoisted\tReturns true if the given role is displayed separately in the member list, defaulting to the author's top role if no ID is provided.",
       "contents": "ZisHoisted{${1:roleID}}"
     },
@@ -932,6 +1040,10 @@
     {
       "trigger": "ZisNumber\tReturns true if the value parses as any numeric value including decimals, otherwise returns false.",
       "contents": "ZisNumber{${1:value}}"
+    },
+    {
+      "trigger": "ZisOdd\tExecutes the ZisOdd function.",
+      "contents": "ZisOdd{${1:arg1}}"
     },
     {
       "trigger": "ZisSlash\tReturns true if the current command was triggered as a slash command, otherwise returns false.",
@@ -1026,6 +1138,10 @@
       "contents": "ZjsonUnset{${1:key};${2:}}"
     },
     {
+      "trigger": "ZkebabCase\tExecutes the ZkebabCase function.",
+      "contents": "ZkebabCase{${1:arg1}}"
+    },
+    {
       "trigger": "Zkick\tKicks a user from the guild with an optional reason.",
       "contents": "Zkick{${1:userID};${2:reason}}"
     },
@@ -1038,8 +1154,28 @@
       "contents": "ZlastPinTimestamp{${1:channelID}}"
     },
     {
+      "trigger": "Zlcm\tExecutes the Zlcm function.",
+      "contents": "Zlcm{${1:arg1};${2:arg2}}"
+    },
+    {
+      "trigger": "Zlerp\tExecutes the Zlerp function.",
+      "contents": "Zlerp{${1:arg1};${2:arg2};${3:arg3}}"
+    },
+    {
       "trigger": "ZlinesCount\tReturns the number of lines in the text, returning zero for an empty string.",
       "contents": "ZlinesCount{${1:text}}"
+    },
+    {
+      "trigger": "ZlistMath\tExecutes the ZlistMath function.",
+      "contents": "ZlistMath{${1:arg1};${2:arg2};${3:arg3}}"
+    },
+    {
+      "trigger": "ZlistReverse\tExecutes the ZlistReverse function.",
+      "contents": "ZlistReverse{${1:arg1};${2:arg2}}"
+    },
+    {
+      "trigger": "ZlistShuffle\tExecutes the ZlistShuffle function.",
+      "contents": "ZlistShuffle{${1:arg1};${2:arg2}}"
     },
     {
       "trigger": "ZlistVar\tReturns all global variable names joined by the given separator.",
@@ -1242,6 +1378,10 @@
       "contents": "Zoption{${1:key}}"
     },
     {
+      "trigger": "Zpad\tExecutes the Zpad function.",
+      "contents": "Zpad{${1:arg1};${2:arg2};${3:arg3};${4:arg4}}"
+    },
+    {
       "trigger": "ZpadLeft\tPads the text on the left with a repeated character until it reaches the specified width, defaulting to a space.",
       "contents": "ZpadLeft{${1:text};${2:width};${3:char}}"
     },
@@ -1252,6 +1392,14 @@
     {
       "trigger": "ZparentID\tReturns the ID of the parent category of the given channel, or an empty string if the channel has no parent.",
       "contents": "ZparentID{${1:channelID}}"
+    },
+    {
+      "trigger": "ZpascalCase\tExecutes the ZpascalCase function.",
+      "contents": "ZpascalCase{${1:arg1}}"
+    },
+    {
+      "trigger": "Zpercent\tExecutes the Zpercent function.",
+      "contents": "Zpercent{${1:arg1};${2:arg2};${3:arg3}}"
     },
     {
       "trigger": "ZpermNames\tConverts a permission bitfield integer to a comma-separated list of human-readable permission names.",
@@ -1318,6 +1466,10 @@
       "contents": "Zrandom{${1:min};${2:max}}"
     },
     {
+      "trigger": "ZrandomCase\tExecutes the ZrandomCase function.",
+      "contents": "ZrandomCase{${1:arg1}}"
+    },
+    {
       "trigger": "ZrandomCategoryID\tReturns the ID of a randomly selected category channel in the current server.",
       "contents": "ZrandomCategoryID{}"
     },
@@ -1362,6 +1514,10 @@
       "contents": "ZregexReplace{${1:text};${2:pattern};${3:replacement}}"
     },
     {
+      "trigger": "ZrelativeTime\tExecutes the ZrelativeTime function.",
+      "contents": "ZrelativeTime{${1:arg1}}"
+    },
+    {
       "trigger": "ZremoveAllComponents\tRemoves all components from a message, defaulting to the triggering message.",
       "contents": "ZremoveAllComponents{${1:messageID}}"
     },
@@ -1390,6 +1546,10 @@
       "contents": "Zrepeat{${1:N};${2:code}}"
     },
     {
+      "trigger": "ZrepeatText\tExecutes the ZrepeatText function.",
+      "contents": "ZrepeatText{${1:arg1};${2:arg2}}"
+    },
+    {
       "trigger": "ZreplaceText\tReplaces occurrences of a sample substring in text with a new string, with an optional limit on the number of replacements.",
       "contents": "ZreplaceText{${1:text};${2:sample};${3:new};${4:amount}}"
     },
@@ -1416,6 +1576,14 @@
     {
       "trigger": "ZresetUserVar\tDeletes the given user variable for every user in the current server.",
       "contents": "ZresetUserVar{${1:name}}"
+    },
+    {
+      "trigger": "ZreverseText\tExecutes the ZreverseText function.",
+      "contents": "ZreverseText{${1:arg1}}"
+    },
+    {
+      "trigger": "ZrgbToHex\tExecutes the ZrgbToHex function.",
+      "contents": "ZrgbToHex{${1:arg1};${2:arg2};${3:arg3}}"
     },
     {
       "trigger": "ZroleColor\tReturns the hex color code of a role, defaulting to the author's top role if no ID is provided.",
@@ -1460,6 +1628,14 @@
     {
       "trigger": "ZrolePosition\tReturns the hierarchy position of a role, defaulting to the author's top role if no ID is provided.",
       "contents": "ZrolePosition{${1:roleID}}"
+    },
+    {
+      "trigger": "Zroman\tExecutes the Zroman function.",
+      "contents": "Zroman{${1:arg1}}"
+    },
+    {
+      "trigger": "Zroot\tExecutes the Zroot function.",
+      "contents": "Zroot{${1:arg1};${2:arg2}}"
     },
     {
       "trigger": "Zround\tRounds a number to the specified number of decimal places, defaulting to zero decimal places.",
@@ -1596,6 +1772,10 @@
     {
       "trigger": "ZslowMode\tSets the slowmode rate limit on a channel to the specified duration (0 or 0s disables it).",
       "contents": "ZslowMode{${1:channelID};${2:duration}}"
+    },
+    {
+      "trigger": "ZsnakeCase\tExecutes the ZsnakeCase function.",
+      "contents": "ZsnakeCase{${1:arg1}}"
     },
     {
       "trigger": "ZsnowflakeAge\tReturns a human-readable age from any snowflake like '3 days ago'.",
@@ -1818,6 +1998,10 @@
       "contents": "ZtimeDiff{${1:timestamp1};${2:timestamp2};${3:unit}}"
     },
     {
+      "trigger": "ZtimeFormat\tExecutes the ZtimeFormat function.",
+      "contents": "ZtimeFormat{${1:arg1};${2:arg2};${3:arg3}}"
+    },
+    {
       "trigger": "Ztimeout\tApplies a communication timeout to a user for the specified duration, up to a maximum of 28 days.",
       "contents": "Ztimeout{${1:userID};${2:duration}}"
     },
@@ -1850,8 +2034,16 @@
       "contents": "ZtrimSpace{${1:text}}"
     },
     {
+      "trigger": "Ztruncate\tExecutes the Ztruncate function.",
+      "contents": "Ztruncate{${1:arg1};${2:arg2}}"
+    },
+    {
       "trigger": "ZtryRun\tEvaluates the code block and falls back to the fallback block if any error occurs.",
       "contents": "ZtryRun{${1:code};${2:fallback}}"
+    },
+    {
+      "trigger": "Ztype\tExecutes the Ztype function.",
+      "contents": "Ztype{${1:arg1}}"
     },
     {
       "trigger": "Zunban\tRemoves the ban for the specified user from the guild.",
@@ -1922,6 +2114,10 @@
       "contents": "ZuserJoined{${1:userID};${2:format}}"
     },
     {
+      "trigger": "ZuserLocale\tExecutes the ZuserLocale function.",
+      "contents": "ZuserLocale{${1:arg1}}"
+    },
+    {
       "trigger": "Zusername\tReturns the username of the command author, or of the specified user if a user ID is provided.",
       "contents": "Zusername{${1:userID}}"
     },
@@ -1968,6 +2164,14 @@
     {
       "trigger": "ZuserVoiceChannel\tReturns the ID of the voice channel the specified user is in, or an empty string if they are not in voice.",
       "contents": "ZuserVoiceChannel{${1:userID}}"
+    },
+    {
+      "trigger": "Zuuid\tExecutes the Zuuid function.",
+      "contents": "Zuuid{}"
+    },
+    {
+      "trigger": "Zvalidate\tExecutes the Zvalidate function.",
+      "contents": "Zvalidate{${1:arg1};${2:arg2}}"
     },
     {
       "trigger": "Zvar\tGets or sets a temporary in-memory variable that persists only for the duration of the current command execution.",
@@ -2050,8 +2254,16 @@
       "contents": "ZwebhookDelete{${1:webhookURL}}"
     },
     {
+      "trigger": "ZweightedRandom\tExecutes the ZweightedRandom function.",
+      "contents": "ZweightedRandom{${1:arg1};${2:arg2}}"
+    },
+    {
       "trigger": "ZwelcomeScreen\tReturns the guild's welcome screen as a JSON object.",
       "contents": "ZwelcomeScreen{${1:guildID}}"
+    },
+    {
+      "trigger": "ZwordCount\tExecutes the ZwordCount function.",
+      "contents": "ZwordCount{${1:arg1}}"
     },
     {
       "trigger": "Zyear\tReturns the current four-digit year using the active timezone.",
