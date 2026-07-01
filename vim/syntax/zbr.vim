@@ -20,7 +20,8 @@ syn match zbrBrace "[{}]"
 syn match zbrTriggerName "\<onInteraction\>\ze{"
 syn match zbrTriggerName "\<on[a-zA-Z0-9_]\+\>"
 
-syn region zbrFunctionBlock start="Z[a-zA-Z_][a-zA-Z0-9_]*{" end="}" contains=zbrFunction,zbrBrace,TOP
+syn match zbrFunctionPrefix "\<Z\ze[a-zA-Z_][a-zA-Z0-9_]*{"
+syn region zbrFunctionBlock start="Z[a-zA-Z_][a-zA-Z0-9_]*{" end="}" contains=zbrFunction,zbrFunctionPrefix,zbrBrace,TOP
 
 hi def link zbrComment Comment
 hi def link zbrHeader Keyword
@@ -28,6 +29,7 @@ hi def link zbrOperator Operator
 hi def link zbrEscape Special
 hi def link zbrSeparator Delimiter
 hi def link zbrTriggerName Tag
+hi def link zbrFunctionPrefix Keyword
 hi def link zbrFunction Function
 hi def link zbrTriggerBrace Delimiter
 hi def link zbrFunctionBrace Delimiter
