@@ -554,6 +554,10 @@
       "contents": "ZeditChannelPerms{${1:channelID};${2:userOrRoleID};${3:permission};${4:}}"
     },
     {
+      "trigger": "ZeditEmbed\tEdits the embed at the specified slot index into an existing message in the specified channel.",
+      "contents": "ZeditEmbed{${1:channelID};${2:messageID};${3:index}}"
+    },
+    {
       "trigger": "ZeditEvent\tEdits one or more fields of an existing scheduled event by its ID.",
       "contents": "ZeditEvent{${1:eventID};${2:name};${3:description};${4:startTime}}"
     },
@@ -926,6 +930,14 @@
       "contents": "ZhttpGetHeader{${1:name}}"
     },
     {
+      "trigger": "ZhttpHead\tSends an HTTP HEAD request to the specified URL and stores the response for access via ZhttpStatus and ZhttpResult.",
+      "contents": "ZhttpHead{${1:url}}"
+    },
+    {
+      "trigger": "ZhttpOptions\tSends an HTTP OPTIONS request to the specified URL and stores the response for access via ZhttpStatus and ZhttpResult.",
+      "contents": "ZhttpOptions{${1:url}}"
+    },
+    {
       "trigger": "ZhttpPatch\tSends an HTTP PATCH request to the specified URL with an optional request body and stores the response.",
       "contents": "ZhttpPatch{${1:url};${2:body}}"
     },
@@ -1116,6 +1128,10 @@
     {
       "trigger": "ZjsonJoinArray\tJoins all elements of the array at the specified key path into a single string using the provided separator.",
       "contents": "ZjsonJoinArray{${1:key};${2:};${3:separator}}"
+    },
+    {
+      "trigger": "ZjsonMerge\tDeep-merges a JSON string into the value at the specified key path in the working JSON object. Objects are merged recursively; scalars and arrays overwrite.",
+      "contents": "ZjsonMerge{${1:target};${2:sourceJson}}"
     },
     {
       "trigger": "ZjsonParse\tParses a JSON string and stores it as the working JSON object for the current execution.",
@@ -1678,6 +1694,10 @@
       "contents": "ZserverDescription{${1:guildID}}"
     },
     {
+      "trigger": "ZserverDiscoverySplash\tReturns the discovery splash URL of the guild, or an empty string if none is set.",
+      "contents": "ZserverDiscoverySplash{${1:guildID}}"
+    },
+    {
       "trigger": "ZserverEmojis\tReturns the custom emojis of the guild as formatted emoji strings joined by the specified separator.",
       "contents": "ZserverEmojis{${1:guildID};${2:separator}}"
     },
@@ -1716,6 +1736,10 @@
     {
       "trigger": "ZserverRoles\tReturns a separator-joined list of role IDs for the specified server.",
       "contents": "ZserverRoles{${1:separator};${2:guildID}}"
+    },
+    {
+      "trigger": "ZserverSplash\tReturns the splash URL of the guild, or an empty string if no splash is set.",
+      "contents": "ZserverSplash{${1:guildID}}"
     },
     {
       "trigger": "ZserverStickers\tReturns a space-separated list of all sticker IDs in the current server.",

@@ -690,6 +690,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZeditEmbed" value="ZeditEmbed{$END$}" description="Edits the embed at the specified slot index into an existing message in the specified channel." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZeditEvent" value="ZeditEvent{$END$}" description="Edits one or more fields of an existing scheduled event by its ID." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1155,6 +1160,16 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZhttpHead" value="ZhttpHead{$END$}" description="Sends an HTTP HEAD request to the specified URL and stores the response for access via ZhttpStatus and ZhttpResult." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZhttpOptions" value="ZhttpOptions{$END$}" description="Sends an HTTP OPTIONS request to the specified URL and stores the response for access via ZhttpStatus and ZhttpResult." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZhttpPatch" value="ZhttpPatch{$END$}" description="Sends an HTTP PATCH request to the specified URL with an optional request body and stores the response." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1391,6 +1406,11 @@
     </context>
   </template>
   <template name="ZjsonJoinArray" value="ZjsonJoinArray{$END$}" description="Joins all elements of the array at the specified key path into a single string using the provided separator." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZjsonMerge" value="ZjsonMerge{$END$}" description="Deep-merges a JSON string into the value at the specified key path in the working JSON object. Objects are merged recursively; scalars and arrays overwrite." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -2095,6 +2115,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZserverDiscoverySplash" value="ZserverDiscoverySplash{$END$}" description="Returns the discovery splash URL of the guild, or an empty string if none is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZserverEmojis" value="ZserverEmojis{$END$}" description="Returns the custom emojis of the guild as formatted emoji strings joined by the specified separator." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -2141,6 +2166,11 @@
     </context>
   </template>
   <template name="ZserverRoles" value="ZserverRoles{$END$}" description="Returns a separator-joined list of role IDs for the specified server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZserverSplash" value="ZserverSplash{$END$}" description="Returns the splash URL of the guild, or an empty string if no splash is set." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>

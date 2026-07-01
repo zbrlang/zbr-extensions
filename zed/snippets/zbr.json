@@ -689,6 +689,11 @@
     "body": "ZeditChannelPerms{${1:channelID};${2:userOrRoleID};${3:permission};${4:}}",
     "description": "Edits permission overwrites for a user or role on a channel, using + to allow, - to deny, and / to neutralize each named permission."
   },
+  "ZeditEmbed": {
+    "prefix": "ZeditEmbed",
+    "body": "ZeditEmbed{${1:channelID};${2:messageID};${3:index}}",
+    "description": "Edits the embed at the specified slot index into an existing message in the specified channel."
+  },
   "ZeditEvent": {
     "prefix": "ZeditEvent",
     "body": "ZeditEvent{${1:eventID};${2:name};${3:description};${4:startTime}}",
@@ -1154,6 +1159,16 @@
     "body": "ZhttpGetHeader{${1:name}}",
     "description": "Returns the value of a custom HTTP header previously registered via ZhttpAddHeader, or an empty string if it does not exist."
   },
+  "ZhttpHead": {
+    "prefix": "ZhttpHead",
+    "body": "ZhttpHead{${1:url}}",
+    "description": "Sends an HTTP HEAD request to the specified URL and stores the response for access via ZhttpStatus and ZhttpResult."
+  },
+  "ZhttpOptions": {
+    "prefix": "ZhttpOptions",
+    "body": "ZhttpOptions{${1:url}}",
+    "description": "Sends an HTTP OPTIONS request to the specified URL and stores the response for access via ZhttpStatus and ZhttpResult."
+  },
   "ZhttpPatch": {
     "prefix": "ZhttpPatch",
     "body": "ZhttpPatch{${1:url};${2:body}}",
@@ -1393,6 +1408,11 @@
     "prefix": "ZjsonJoinArray",
     "body": "ZjsonJoinArray{${1:key};${2:};${3:separator}}",
     "description": "Joins all elements of the array at the specified key path into a single string using the provided separator."
+  },
+  "ZjsonMerge": {
+    "prefix": "ZjsonMerge",
+    "body": "ZjsonMerge{${1:target};${2:sourceJson}}",
+    "description": "Deep-merges a JSON string into the value at the specified key path in the working JSON object. Objects are merged recursively; scalars and arrays overwrite."
   },
   "ZjsonParse": {
     "prefix": "ZjsonParse",
@@ -2094,6 +2114,11 @@
     "body": "ZserverDescription{${1:guildID}}",
     "description": "Returns the description of the guild, or an empty string if none is set."
   },
+  "ZserverDiscoverySplash": {
+    "prefix": "ZserverDiscoverySplash",
+    "body": "ZserverDiscoverySplash{${1:guildID}}",
+    "description": "Returns the discovery splash URL of the guild, or an empty string if none is set."
+  },
   "ZserverEmojis": {
     "prefix": "ZserverEmojis",
     "body": "ZserverEmojis{${1:guildID};${2:separator}}",
@@ -2143,6 +2168,11 @@
     "prefix": "ZserverRoles",
     "body": "ZserverRoles{${1:separator};${2:guildID}}",
     "description": "Returns a separator-joined list of role IDs for the specified server."
+  },
+  "ZserverSplash": {
+    "prefix": "ZserverSplash",
+    "body": "ZserverSplash{${1:guildID}}",
+    "description": "Returns the splash URL of the guild, or an empty string if no splash is set."
   },
   "ZserverStickers": {
     "prefix": "ZserverStickers",
