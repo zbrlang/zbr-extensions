@@ -258,6 +258,10 @@
       "contents": "ZcamelCase{${1:arg1}}"
     },
     {
+      "trigger": "ZcapsDetect\tReturns true if the ratio of uppercase letters in the message meets or exceeds the threshold. Best used inside an onMessage event.",
+      "contents": "ZcapsDetect{${1:message};${2:threshold}}"
+    },
+    {
       "trigger": "ZcategoryChannels\tReturns the channels inside a category sorted by position, formatted as names, IDs, mentions, or a count, joined by the specified separator.",
       "contents": "ZcategoryChannels{${1:categoryID};${2:separator};${3:returnType}}"
     },
@@ -542,6 +546,10 @@
       "contents": "ZdmChannelID{${1:userID}}"
     },
     {
+      "trigger": "ZduplicateDetect\tReturns true if the current message is similar to a recent message in the channel, using Levenshtein distance. Best used inside an onMessage event.",
+      "contents": "ZduplicateDetect{${1:similarityThreshold}}"
+    },
+    {
       "trigger": "Zduration\tConverts a duration string (e.g. 1h, 30m, 5d) into seconds.",
       "contents": "Zduration{${1:duration}}"
     },
@@ -604,6 +612,10 @@
     {
       "trigger": "ZemojiName\tReturns the name of a custom emoji in the current server looked up by its ID.",
       "contents": "ZemojiName{${1:id}}"
+    },
+    {
+      "trigger": "ZemojiSpamDetect\tReturns true if the number of emojis in the message meets or exceeds the threshold. Best used inside an onMessage event.",
+      "contents": "ZemojiSpamDetect{${1:message};${2:threshold}}"
     },
     {
       "trigger": "ZemoteCount\tReturns the total number of custom emojis in the current server.",
@@ -1182,6 +1194,10 @@
       "contents": "ZlinesCount{${1:text}}"
     },
     {
+      "trigger": "ZlinkSpamDetect\tReturns true if the user has sent more messages containing URLs than the allowed limit within the time window. Best used inside an onMessage event.",
+      "contents": "ZlinkSpamDetect{${1:userID};${2:maxLinks};${3:windowSeconds}}"
+    },
+    {
       "trigger": "ZlistMath\tExecutes the ZlistMath function.",
       "contents": "ZlistMath{${1:arg1};${2:arg2};${3:arg3}}"
     },
@@ -1246,6 +1262,10 @@
       "contents": "Zmentioned{${1:index};${2:fallbackToAuthor}}"
     },
     {
+      "trigger": "ZmentionSpamDetect\tReturns true if the number of mentions (@user, @role, @everyone, @here) in the current message meets or exceeds the threshold. Best used inside an onMessage event.",
+      "contents": "ZmentionSpamDetect{${1:threshold}}"
+    },
+    {
       "trigger": "Zmessage\tReturns the full message content after the command trigger, or the Nth space-separated word when an index is provided.",
       "contents": "Zmessage{${1:index}}"
     },
@@ -1300,6 +1320,10 @@
     {
       "trigger": "Zmute\tServer-mutes the specified user in all voice channels.",
       "contents": "Zmute{${1:userID}}"
+    },
+    {
+      "trigger": "ZnewAccountDetect\tReturns true if the account age of the specified user is less than the minimum age in days, calculated from their Discord snowflake ID. Best used inside an onMemberJoin event.",
+      "contents": "ZnewAccountDetect{${1:userID};${2:minAgeDays}}"
     },
     {
       "trigger": "ZnewModal\tCreates a modal dialog to collect text input from the user.",
@@ -1476,6 +1500,10 @@
     {
       "trigger": "ZpublishMessage\tCrossposts a message from an announcement channel to all subscribed channels.",
       "contents": "ZpublishMessage{${1:channelID};${2:messageID}}"
+    },
+    {
+      "trigger": "ZraidDetect\tReturns true if the number of member joins in the guild within the time window meets or exceeds the threshold. Best used inside an onMemberJoin event.",
+      "contents": "ZraidDetect{${1:joinCount};${2:windowSeconds}}"
     },
     {
       "trigger": "Zrandom\tReturns a random integer between min and max (inclusive).",
@@ -1840,6 +1868,10 @@
     {
       "trigger": "ZsoundboardSounds\tLists all soundboard sounds in the server.",
       "contents": "ZsoundboardSounds{}"
+    },
+    {
+      "trigger": "ZspamDetect\tReturns true if the user has exceeded the message count threshold within the time window. Best used inside an onMessage event.",
+      "contents": "ZspamDetect{${1:userID};${2:threshold};${3:windowSeconds}}"
     },
     {
       "trigger": "ZspliceText\tModifies a string by removing a specified number of characters starting at a 1-based position and inserting a replacement string in their place.",

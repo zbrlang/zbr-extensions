@@ -545,6 +545,20 @@
     ],
     "description": "Executes the ZcamelCase function."
   },
+  "ZcapsDetect": {
+    "prefix": "ZcapsDetect",
+    "body": [
+      "ZcapsDetect{${1:message};${2:threshold}}"
+    ],
+    "description": "Returns true if the ratio of uppercase letters in the message meets or exceeds the threshold. Best used inside an onMessage event."
+  },
+  "ZcapsDetect-bracketless": {
+    "prefix": "ZcapsDetect",
+    "body": [
+      "ZcapsDetect"
+    ],
+    "description": "Returns true if the ratio of uppercase letters in the message meets or exceeds the threshold. Best used inside an onMessage event."
+  },
   "ZcategoryChannels": {
     "prefix": "ZcategoryChannels",
     "body": [
@@ -1147,6 +1161,20 @@
     ],
     "description": "Returns the ID of the DM channel between the bot and a user, creating it if it does not yet exist."
   },
+  "ZduplicateDetect": {
+    "prefix": "ZduplicateDetect",
+    "body": [
+      "ZduplicateDetect{${1:similarityThreshold}}"
+    ],
+    "description": "Returns true if the current message is similar to a recent message in the channel, using Levenshtein distance. Best used inside an onMessage event."
+  },
+  "ZduplicateDetect-bracketless": {
+    "prefix": "ZduplicateDetect",
+    "body": [
+      "ZduplicateDetect"
+    ],
+    "description": "Returns true if the current message is similar to a recent message in the channel, using Levenshtein distance. Best used inside an onMessage event."
+  },
   "Zduration": {
     "prefix": "Zduration",
     "body": [
@@ -1258,6 +1286,20 @@
       "ZemojiName{${1:id}}"
     ],
     "description": "Returns the name of a custom emoji in the current server looked up by its ID."
+  },
+  "ZemojiSpamDetect": {
+    "prefix": "ZemojiSpamDetect",
+    "body": [
+      "ZemojiSpamDetect{${1:message};${2:threshold}}"
+    ],
+    "description": "Returns true if the number of emojis in the message meets or exceeds the threshold. Best used inside an onMessage event."
+  },
+  "ZemojiSpamDetect-bracketless": {
+    "prefix": "ZemojiSpamDetect",
+    "body": [
+      "ZemojiSpamDetect"
+    ],
+    "description": "Returns true if the number of emojis in the message meets or exceeds the threshold. Best used inside an onMessage event."
   },
   "ZemoteCount": {
     "prefix": "ZemoteCount",
@@ -2470,6 +2512,13 @@
     ],
     "description": "Returns the number of lines in the text, returning zero for an empty string."
   },
+  "ZlinkSpamDetect": {
+    "prefix": "ZlinkSpamDetect",
+    "body": [
+      "ZlinkSpamDetect{${1:userID};${2:maxLinks};${3:windowSeconds}}"
+    ],
+    "description": "Returns true if the user has sent more messages containing URLs than the allowed limit within the time window. Best used inside an onMessage event."
+  },
   "ZlistMath": {
     "prefix": "ZlistMath",
     "body": [
@@ -2610,6 +2659,20 @@
     ],
     "description": "Returns the user ID of the Nth mentioned user in the triggering message, optionally falling back to the author ID."
   },
+  "ZmentionSpamDetect": {
+    "prefix": "ZmentionSpamDetect",
+    "body": [
+      "ZmentionSpamDetect{${1:threshold}}"
+    ],
+    "description": "Returns true if the number of mentions (@user, @role, @everyone, @here) in the current message meets or exceeds the threshold. Best used inside an onMessage event."
+  },
+  "ZmentionSpamDetect-bracketless": {
+    "prefix": "ZmentionSpamDetect",
+    "body": [
+      "ZmentionSpamDetect"
+    ],
+    "description": "Returns true if the number of mentions (@user, @role, @everyone, @here) in the current message meets or exceeds the threshold. Best used inside an onMessage event."
+  },
   "Zmessage": {
     "prefix": "Zmessage",
     "body": [
@@ -2714,6 +2777,13 @@
       "Zmute{${1:userID}}"
     ],
     "description": "Server-mutes the specified user in all voice channels."
+  },
+  "ZnewAccountDetect": {
+    "prefix": "ZnewAccountDetect",
+    "body": [
+      "ZnewAccountDetect{${1:userID};${2:minAgeDays}}"
+    ],
+    "description": "Returns true if the account age of the specified user is less than the minimum age in days, calculated from their Discord snowflake ID. Best used inside an onMemberJoin event."
   },
   "ZnewModal": {
     "prefix": "ZnewModal",
@@ -3057,6 +3127,13 @@
       "ZpublishMessage{${1:channelID};${2:messageID}}"
     ],
     "description": "Crossposts a message from an announcement channel to all subscribed channels."
+  },
+  "ZraidDetect": {
+    "prefix": "ZraidDetect",
+    "body": [
+      "ZraidDetect{${1:joinCount};${2:windowSeconds}}"
+    ],
+    "description": "Returns true if the number of member joins in the guild within the time window meets or exceeds the threshold. Best used inside an onMemberJoin event."
   },
   "Zrandom": {
     "prefix": "Zrandom",
@@ -3876,6 +3953,13 @@
       "ZsoundboardSounds"
     ],
     "description": "Lists all soundboard sounds in the server."
+  },
+  "ZspamDetect": {
+    "prefix": "ZspamDetect",
+    "body": [
+      "ZspamDetect{${1:userID};${2:threshold};${3:windowSeconds}}"
+    ],
+    "description": "Returns true if the user has exceeded the message count threshold within the time window. Best used inside an onMessage event."
   },
   "ZspliceText": {
     "prefix": "ZspliceText",

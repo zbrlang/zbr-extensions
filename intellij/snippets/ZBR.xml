@@ -320,6 +320,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZcapsDetect" value="ZcapsDetect{$END$}" description="Returns true if the ratio of uppercase letters in the message meets or exceeds the threshold. Best used inside an onMessage event." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZcategoryChannels" value="ZcategoryChannels{$END$}" description="Returns the channels inside a category sorted by position, formatted as names, IDs, mentions, or a count, joined by the specified separator." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -675,6 +680,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZduplicateDetect" value="ZduplicateDetect{$END$}" description="Returns true if the current message is similar to a recent message in the channel, using Levenshtein distance. Best used inside an onMessage event." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="Zduration" value="Zduration{$END$}" description="Converts a duration string (e.g. 1h, 30m, 5d) into seconds." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -751,6 +761,11 @@
     </context>
   </template>
   <template name="ZemojiName" value="ZemojiName{$END$}" description="Returns the name of a custom emoji in the current server looked up by its ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZemojiSpamDetect" value="ZemojiSpamDetect{$END$}" description="Returns true if the number of emojis in the message meets or exceeds the threshold. Best used inside an onMessage event." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -1475,6 +1490,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZlinkSpamDetect" value="ZlinkSpamDetect{$END$}" description="Returns true if the user has sent more messages containing URLs than the allowed limit within the time window. Best used inside an onMessage event." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZlistMath" value="ZlistMath{$END$}" description="Executes the ZlistMath function." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1555,6 +1575,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZmentionSpamDetect" value="ZmentionSpamDetect{$END$}" description="Returns true if the number of mentions (@user, @role, @everyone, @here) in the current message meets or exceeds the threshold. Best used inside an onMessage event." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="Zmessage" value="Zmessage{$END$}" description="Returns the full message content after the command trigger, or the Nth space-separated word when an index is provided." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1621,6 +1646,11 @@
     </context>
   </template>
   <template name="Zmute" value="Zmute{$END$}" description="Server-mutes the specified user in all voice channels." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZnewAccountDetect" value="ZnewAccountDetect{$END$}" description="Returns true if the account age of the specified user is less than the minimum age in days, calculated from their Discord snowflake ID. Best used inside an onMemberJoin event." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -1841,6 +1871,11 @@
     </context>
   </template>
   <template name="ZpublishMessage" value="ZpublishMessage{$END$}" description="Crossposts a message from an announcement channel to all subscribed channels." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZraidDetect" value="ZraidDetect{$END$}" description="Returns true if the number of member joins in the guild within the time window meets or exceeds the threshold. Best used inside an onMemberJoin event." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -2296,6 +2331,11 @@
     </context>
   </template>
   <template name="ZsoundboardSounds" value="ZsoundboardSounds{$END$}" description="Lists all soundboard sounds in the server." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZspamDetect" value="ZspamDetect{$END$}" description="Returns true if the user has exceeded the message count threshold within the time window. Best used inside an onMessage event." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
