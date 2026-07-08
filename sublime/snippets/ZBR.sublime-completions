@@ -62,6 +62,38 @@
       "contents": "ZafkTimeout{${1:guildID}}"
     },
     {
+      "trigger": "Zai\tSends a prompt to the AI and returns the response text. Supports Gemini API keys (AIza... or AQ...).",
+      "contents": "Zai{${1:apiKey};${2:prompt};${3:model};${4:maxTokens};${5:temperature}}"
+    },
+    {
+      "trigger": "ZaiClassify\tClassifies content into one category from a comma-separated list. Returns the best matching category.",
+      "contents": "ZaiClassify{${1:apiKey};${2:content};${3:categories};${4:model}}"
+    },
+    {
+      "trigger": "ZaiClassifyCtx\tClassifies the current Discord context into one category from a comma-separated list. Returns the best matching category.",
+      "contents": "ZaiClassifyCtx{${1:apiKey};${2:categories};${3:model}}"
+    },
+    {
+      "trigger": "ZaiCtx\tSends a prompt to the AI with Discord context automatically injected as a system message. Returns the response text.",
+      "contents": "ZaiCtx{${1:apiKey};${2:prompt};${3:model};${4:maxTokens};${5:temperature}}"
+    },
+    {
+      "trigger": "ZaiDecide\tAsks the AI a yes/no question about the provided content. Returns strictly 'true' or 'false'.",
+      "contents": "ZaiDecide{${1:apiKey};${2:content};${3:question};${4:model}}"
+    },
+    {
+      "trigger": "ZaiDecideCtx\tAsks the AI a yes/no question about the current Discord context. Returns strictly 'true' or 'false'.",
+      "contents": "ZaiDecideCtx{${1:apiKey};${2:question};${3:model}}"
+    },
+    {
+      "trigger": "ZaiExtract\tExtracts specific information from text based on the instruction. Returns 'N/A' if not found.",
+      "contents": "ZaiExtract{${1:apiKey};${2:content};${3:instruction};${4:model}}"
+    },
+    {
+      "trigger": "ZaiExtractCtx\tExtracts specific information from the current Discord context based on the instruction. Returns 'N/A' if not found.",
+      "contents": "ZaiExtractCtx{${1:apiKey};${2:instruction};${3:model}}"
+    },
+    {
       "trigger": "Zalias\tCreates a runtime alias for a ZBR function. The alias can be called using Z+alias_name+{} syntax.",
       "contents": "Zalias{${1:function};${2:alias_name}}"
     },
@@ -988,6 +1020,10 @@
     {
       "trigger": "Zimage\tSets the large image URL on the specified embed slot.",
       "contents": "Zimage{${1:url};${2:index}}"
+    },
+    {
+      "trigger": "ZimageAnalyze\tAnalyzes an image from a URL using AI vision and returns a text description based on the prompt.",
+      "contents": "ZimageAnalyze{${1:apiKey};${2:imageUrl};${3:prompt};${4:model}}"
     },
     {
       "trigger": "ZindexOf\tReturns the 1-based character position of the first occurrence of a search string in the text, or 0 if not found.",

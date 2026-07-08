@@ -75,6 +75,46 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="Zai" value="Zai{$END$}" description="Sends a prompt to the AI and returns the response text. Supports Gemini API keys (AIza... or AQ...)." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaiClassify" value="ZaiClassify{$END$}" description="Classifies content into one category from a comma-separated list. Returns the best matching category." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaiClassifyCtx" value="ZaiClassifyCtx{$END$}" description="Classifies the current Discord context into one category from a comma-separated list. Returns the best matching category." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaiCtx" value="ZaiCtx{$END$}" description="Sends a prompt to the AI with Discord context automatically injected as a system message. Returns the response text." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaiDecide" value="ZaiDecide{$END$}" description="Asks the AI a yes/no question about the provided content. Returns strictly 'true' or 'false'." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaiDecideCtx" value="ZaiDecideCtx{$END$}" description="Asks the AI a yes/no question about the current Discord context. Returns strictly 'true' or 'false'." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaiExtract" value="ZaiExtract{$END$}" description="Extracts specific information from text based on the instruction. Returns 'N/A' if not found." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZaiExtractCtx" value="ZaiExtractCtx{$END$}" description="Extracts specific information from the current Discord context based on the instruction. Returns 'N/A' if not found." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="Zalias" value="Zalias{$END$}" description="Creates a runtime alias for a ZBR function. The alias can be called using Z+alias_name+{} syntax." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1231,6 +1271,11 @@
     </context>
   </template>
   <template name="Zimage" value="Zimage{$END$}" description="Sets the large image URL on the specified embed slot." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZimageAnalyze" value="ZimageAnalyze{$END$}" description="Analyzes an image from a URL using AI vision and returns a text description based on the prompt." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>

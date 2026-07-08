@@ -73,6 +73,46 @@ prefix = "ZafkTimeout"
 body = "ZafkTimeout{${1:guildID}}"
 description = "Returns the AFK timeout in seconds configured for the guild."
 
+[Zai]
+prefix = "Zai"
+body = "Zai{${1:apiKey};${2:prompt};${3:model};${4:maxTokens};${5:temperature}}"
+description = "Sends a prompt to the AI and returns the response text. Supports Gemini API keys (AIza... or AQ...)."
+
+[ZaiClassify]
+prefix = "ZaiClassify"
+body = "ZaiClassify{${1:apiKey};${2:content};${3:categories};${4:model}}"
+description = "Classifies content into one category from a comma-separated list. Returns the best matching category."
+
+[ZaiClassifyCtx]
+prefix = "ZaiClassifyCtx"
+body = "ZaiClassifyCtx{${1:apiKey};${2:categories};${3:model}}"
+description = "Classifies the current Discord context into one category from a comma-separated list. Returns the best matching category."
+
+[ZaiCtx]
+prefix = "ZaiCtx"
+body = "ZaiCtx{${1:apiKey};${2:prompt};${3:model};${4:maxTokens};${5:temperature}}"
+description = "Sends a prompt to the AI with Discord context automatically injected as a system message. Returns the response text."
+
+[ZaiDecide]
+prefix = "ZaiDecide"
+body = "ZaiDecide{${1:apiKey};${2:content};${3:question};${4:model}}"
+description = "Asks the AI a yes/no question about the provided content. Returns strictly 'true' or 'false'."
+
+[ZaiDecideCtx]
+prefix = "ZaiDecideCtx"
+body = "ZaiDecideCtx{${1:apiKey};${2:question};${3:model}}"
+description = "Asks the AI a yes/no question about the current Discord context. Returns strictly 'true' or 'false'."
+
+[ZaiExtract]
+prefix = "ZaiExtract"
+body = "ZaiExtract{${1:apiKey};${2:content};${3:instruction};${4:model}}"
+description = "Extracts specific information from text based on the instruction. Returns 'N/A' if not found."
+
+[ZaiExtractCtx]
+prefix = "ZaiExtractCtx"
+body = "ZaiExtractCtx{${1:apiKey};${2:instruction};${3:model}}"
+description = "Extracts specific information from the current Discord context based on the instruction. Returns 'N/A' if not found."
+
 [Zalias]
 prefix = "Zalias"
 body = "Zalias{${1:function};${2:alias_name}}"
@@ -1232,6 +1272,11 @@ description = "Halts execution if the current channel matches any of the provide
 prefix = "Zimage"
 body = "Zimage{${1:url};${2:index}}"
 description = "Sets the large image URL on the specified embed slot."
+
+[ZimageAnalyze]
+prefix = "ZimageAnalyze"
+body = "ZimageAnalyze{${1:apiKey};${2:imageUrl};${3:prompt};${4:model}}"
+description = "Analyzes an image from a URL using AI vision and returns a text description based on the prompt."
 
 [ZindexOf]
 prefix = "ZindexOf"
