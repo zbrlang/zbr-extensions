@@ -858,6 +858,11 @@ prefix = "ZeventCount"
 body = "ZeventCount{}"
 description = "Returns the total number of scheduled events in the current server."
 
+[ZeventCover]
+prefix = "ZeventCover"
+body = "ZeventCover{${1:eventID};${2:imageURL}}"
+description = "Gets or sets the cover image URL for a scheduled event."
+
 [ZeventDescription]
 prefix = "ZeventDescription"
 body = "ZeventDescription{${1:eventID}}"
@@ -867,6 +872,11 @@ description = "Returns the description of a scheduled event by its event ID, or 
 prefix = "ZeventEnd"
 body = "ZeventEnd{${1:eventID}}"
 description = "Returns the end time of a scheduled event as a Unix timestamp string, or an empty string if no end time is set."
+
+[ZeventInvite]
+prefix = "ZeventInvite"
+body = "ZeventInvite{${1:eventID}}"
+description = "Returns a shareable invite URL for the scheduled event."
 
 [ZeventName]
 prefix = "ZeventName"
@@ -887,6 +897,11 @@ description = "Returns the current status of a scheduled event as one of: schedu
 prefix = "ZeventSubscribers"
 body = "ZeventSubscribers{${1:eventID}}"
 description = "Returns the number of users subscribed to a scheduled event."
+
+[ZeventUpdateStatus]
+prefix = "ZeventUpdateStatus"
+body = "ZeventUpdateStatus{${1:eventID};${2:status}}"
+description = "Updates the status of a scheduled event."
 
 [ZexecutionTime]
 prefix = "ZexecutionTime"
@@ -1738,6 +1753,16 @@ prefix = "ZonboardingPrompts"
 body = "ZonboardingPrompts{}"
 description = "Returns the guild's onboarding prompts as a pretty-printed JSON string."
 
+[ZonboardingSetEnabled]
+prefix = "ZonboardingSetEnabled"
+body = "ZonboardingSetEnabled{${1:enabled}}"
+description = "Enables or disables guild onboarding."
+
+[ZonboardingSetMode]
+prefix = "ZonboardingSetMode"
+body = "ZonboardingSetMode{${1:mode}}"
+description = "Sets the onboarding mode for the guild."
+
 [ZonlyAdmin]
 prefix = "ZonlyAdmin"
 body = "ZonlyAdmin{${1:errorMessage}}"
@@ -1873,6 +1898,11 @@ prefix = "ZpollAllowMultiselect"
 body = "ZpollAllowMultiselect{${1:true/false}}"
 description = "Allows voting for multiple answers in the poll being created."
 
+[ZpollAnswerDetails]
+prefix = "ZpollAnswerDetails"
+body = "ZpollAnswerDetails{${1:pollID};${2:answerID}}"
+description = "Returns JSON with answer text, emoji, and vote count for a specific answer in a poll."
+
 [ZpollAnswerVoters]
 prefix = "ZpollAnswerVoters"
 body = "ZpollAnswerVoters{${1:messageID};${2:answerID};${3:channelID}}"
@@ -1892,6 +1922,11 @@ description = "Starts creating a poll with the given question and duration in ho
 prefix = "ZpollEnd"
 body = "ZpollEnd{${1:messageID};${2:channelID}}"
 description = "Ends a poll early by message ID."
+
+[ZpollExpiration]
+prefix = "ZpollExpiration"
+body = "ZpollExpiration{${1:pollID};${2:endTime}}"
+description = "Gets or sets the poll's end timestamp."
 
 [ZpollGet]
 prefix = "ZpollGet"

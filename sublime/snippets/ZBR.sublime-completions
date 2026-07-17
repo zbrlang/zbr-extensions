@@ -690,12 +690,20 @@
       "contents": "ZeventCount{}"
     },
     {
+      "trigger": "ZeventCover\tGets or sets the cover image URL for a scheduled event.",
+      "contents": "ZeventCover{${1:eventID};${2:imageURL}}"
+    },
+    {
       "trigger": "ZeventDescription\tReturns the description of a scheduled event by its event ID, or an empty string if no description is set.",
       "contents": "ZeventDescription{${1:eventID}}"
     },
     {
       "trigger": "ZeventEnd\tReturns the end time of a scheduled event as a Unix timestamp string, or an empty string if no end time is set.",
       "contents": "ZeventEnd{${1:eventID}}"
+    },
+    {
+      "trigger": "ZeventInvite\tReturns a shareable invite URL for the scheduled event.",
+      "contents": "ZeventInvite{${1:eventID}}"
     },
     {
       "trigger": "ZeventName\tReturns the name of a scheduled event by its event ID.",
@@ -712,6 +720,10 @@
     {
       "trigger": "ZeventSubscribers\tReturns the number of users subscribed to a scheduled event.",
       "contents": "ZeventSubscribers{${1:eventID}}"
+    },
+    {
+      "trigger": "ZeventUpdateStatus\tUpdates the status of a scheduled event.",
+      "contents": "ZeventUpdateStatus{${1:eventID};${2:status}}"
     },
     {
       "trigger": "ZexecutionTime\tReturns the number of milliseconds elapsed since the current command began executing.",
@@ -1394,6 +1406,14 @@
       "contents": "ZonboardingPrompts{}"
     },
     {
+      "trigger": "ZonboardingSetEnabled\tEnables or disables guild onboarding.",
+      "contents": "ZonboardingSetEnabled{${1:enabled}}"
+    },
+    {
+      "trigger": "ZonboardingSetMode\tSets the onboarding mode for the guild.",
+      "contents": "ZonboardingSetMode{${1:mode}}"
+    },
+    {
       "trigger": "ZonlyAdmin\tHalts execution unless the author has the Administrator permission in the guild.",
       "contents": "ZonlyAdmin{${1:errorMessage}}"
     },
@@ -1502,6 +1522,10 @@
       "contents": "ZpollAllowMultiselect{${1:true/false}}"
     },
     {
+      "trigger": "ZpollAnswerDetails\tReturns JSON with answer text, emoji, and vote count for a specific answer in a poll.",
+      "contents": "ZpollAnswerDetails{${1:pollID};${2:answerID}}"
+    },
+    {
       "trigger": "ZpollAnswerVoters\tReturns a list of users who voted for a specific poll answer.",
       "contents": "ZpollAnswerVoters{${1:messageID};${2:answerID};${3:channelID}}"
     },
@@ -1516,6 +1540,10 @@
     {
       "trigger": "ZpollEnd\tEnds a poll early by message ID.",
       "contents": "ZpollEnd{${1:messageID};${2:channelID}}"
+    },
+    {
+      "trigger": "ZpollExpiration\tGets or sets the poll's end timestamp.",
+      "contents": "ZpollExpiration{${1:pollID};${2:endTime}}"
     },
     {
       "trigger": "ZpollGet\tGets poll details and current results for a message.",

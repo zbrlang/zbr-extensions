@@ -860,12 +860,22 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZeventCover" value="ZeventCover{$END$}" description="Gets or sets the cover image URL for a scheduled event." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZeventDescription" value="ZeventDescription{$END$}" description="Returns the description of a scheduled event by its event ID, or an empty string if no description is set." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
   </template>
   <template name="ZeventEnd" value="ZeventEnd{$END$}" description="Returns the end time of a scheduled event as a Unix timestamp string, or an empty string if no end time is set." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeventInvite" value="ZeventInvite{$END$}" description="Returns a shareable invite URL for the scheduled event." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -886,6 +896,11 @@
     </context>
   </template>
   <template name="ZeventSubscribers" value="ZeventSubscribers{$END$}" description="Returns the number of users subscribed to a scheduled event." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZeventUpdateStatus" value="ZeventUpdateStatus{$END$}" description="Updates the status of a scheduled event." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
@@ -1740,6 +1755,16 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZonboardingSetEnabled" value="ZonboardingSetEnabled{$END$}" description="Enables or disables guild onboarding." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZonboardingSetMode" value="ZonboardingSetMode{$END$}" description="Sets the onboarding mode for the guild." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZonlyAdmin" value="ZonlyAdmin{$END$}" description="Halts execution unless the author has the Administrator permission in the guild." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1875,6 +1900,11 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZpollAnswerDetails" value="ZpollAnswerDetails{$END$}" description="Returns JSON with answer text, emoji, and vote count for a specific answer in a poll." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZpollAnswerVoters" value="ZpollAnswerVoters{$END$}" description="Returns a list of users who voted for a specific poll answer." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
@@ -1891,6 +1921,11 @@
     </context>
   </template>
   <template name="ZpollEnd" value="ZpollEnd{$END$}" description="Ends a poll early by message ID." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZpollExpiration" value="ZpollExpiration{$END$}" description="Gets or sets the poll's end timestamp." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
     </context>
