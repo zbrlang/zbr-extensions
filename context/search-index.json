@@ -1032,6 +1032,12 @@
     "url": "/docs/functions/events/ZeventCount"
   },
   {
+    "name": "ZeventCover",
+    "description": "Gets or sets the cover image URL for a scheduled event.",
+    "type": "function",
+    "url": "/docs/functions/events/ZeventCover"
+  },
+  {
     "name": "ZeventDescription",
     "description": "Returns the description of a scheduled event by its event ID, or an empty string if no description is set.",
     "type": "function",
@@ -1042,6 +1048,12 @@
     "description": "Returns the end time of a scheduled event as a Unix timestamp string, or an empty string if no end time is set.",
     "type": "function",
     "url": "/docs/functions/events/ZeventEnd"
+  },
+  {
+    "name": "ZeventInvite",
+    "description": "Returns a shareable invite URL for the scheduled event.",
+    "type": "function",
+    "url": "/docs/functions/events/ZeventInvite"
   },
   {
     "name": "ZeventName",
@@ -1066,6 +1078,12 @@
     "description": "Returns the number of users subscribed to a scheduled event.",
     "type": "function",
     "url": "/docs/functions/events/ZeventSubscribers"
+  },
+  {
+    "name": "ZeventUpdateStatus",
+    "description": "Updates the status of a scheduled event.",
+    "type": "function",
+    "url": "/docs/functions/events/ZeventUpdateStatus"
   },
   {
     "name": "ZexecutionTime",
@@ -2088,6 +2106,18 @@
     "url": "/docs/functions/onboarding/ZonboardingPrompts"
   },
   {
+    "name": "ZonboardingSetEnabled",
+    "description": "Enables or disables guild onboarding.",
+    "type": "function",
+    "url": "/docs/functions/onboarding/ZonboardingSetEnabled"
+  },
+  {
+    "name": "ZonboardingSetMode",
+    "description": "Sets the onboarding mode for the guild.",
+    "type": "function",
+    "url": "/docs/functions/onboarding/ZonboardingSetMode"
+  },
+  {
     "name": "ZonlyAdmin",
     "description": "Halts execution unless the author has the Administrator permission in the guild.",
     "type": "function",
@@ -2250,6 +2280,12 @@
     "url": "/docs/functions/polls/ZpollAllowMultiselect"
   },
   {
+    "name": "ZpollAnswerDetails",
+    "description": "Returns JSON with answer text, emoji, and vote count for a specific answer in a poll.",
+    "type": "function",
+    "url": "/docs/functions/polls/ZpollAnswerDetails"
+  },
+  {
     "name": "ZpollAnswerVoters",
     "description": "Returns a list of users who voted for a specific poll answer.",
     "type": "function",
@@ -2272,6 +2308,12 @@
     "description": "Ends a poll early by message ID.",
     "type": "function",
     "url": "/docs/functions/polls/ZpollEnd"
+  },
+  {
+    "name": "ZpollExpiration",
+    "description": "Gets or sets the poll's end timestamp.",
+    "type": "function",
+    "url": "/docs/functions/polls/ZpollExpiration"
   },
   {
     "name": "ZpollGet",
@@ -2386,6 +2428,24 @@
     "description": "Replaces all substrings in the text that match the regular expression pattern with the specified replacement.",
     "type": "function",
     "url": "/docs/functions/string/ZregexReplace"
+  },
+  {
+    "name": "ZregexCapture",
+    "description": "Returns the capture group at the given index from the first match of the pattern. Index 0 is the whole match, 1 and above are capture groups. Returns an empty string when the pattern does not match.",
+    "type": "function",
+    "url": "/docs/functions/string/ZregexCapture"
+  },
+  {
+    "name": "ZregexGroups",
+    "description": "Returns every capture group of the first match of the pattern, joined by newlines. The whole match is excluded. Returns an empty string when the pattern does not match.",
+    "type": "function",
+    "url": "/docs/functions/string/ZregexGroups"
+  },
+  {
+    "name": "ZregexAll",
+    "description": "Returns every match of the pattern in the text, joined by newlines. Returns an empty string when the pattern does not match.",
+    "type": "function",
+    "url": "/docs/functions/string/ZregexAll"
   },
   {
     "name": "ZrelativeTime",
@@ -3540,6 +3600,36 @@
     "url": "/docs/functions/time/Zyear"
   },
   {
+    "name": "onAuditLogEntry",
+    "description": "Fires when an audit log entry is created in a guild. Requires the GUILD_MODERATION intent. Entry fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onAuditLogEntry"
+  },
+  {
+    "name": "onAutomodAction",
+    "description": "Fires when an auto moderation rule takes action, such as blocking a message. Requires the AUTO_MODERATION_EXECUTION intent. Action fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onAutomodAction"
+  },
+  {
+    "name": "onAutomodRuleCreate",
+    "description": "Fires when an auto moderation rule is created. Requires the AUTO_MODERATION_CONFIGURATION intent. Rule fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onAutomodRuleCreate"
+  },
+  {
+    "name": "onAutomodRuleDelete",
+    "description": "Fires when an auto moderation rule is deleted. Requires the AUTO_MODERATION_CONFIGURATION intent. Rule fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onAutomodRuleDelete"
+  },
+  {
+    "name": "onAutomodRuleUpdate",
+    "description": "Fires when an auto moderation rule is updated. Requires the AUTO_MODERATION_CONFIGURATION intent. Rule fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onAutomodRuleUpdate"
+  },
+  {
     "name": "onBanAdd",
     "description": "Fires when a user is banned from a guild.",
     "type": "trigger",
@@ -3636,6 +3726,18 @@
     "url": "/docs/triggers/events/onMessageEdit"
   },
   {
+    "name": "onPollVoteAdd",
+    "description": "Fires when a user votes on a poll. Requires the GUILD_MESSAGE_POLLS intent. Poll fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onPollVoteAdd"
+  },
+  {
+    "name": "onPollVoteRemove",
+    "description": "Fires when a user removes their vote from a poll. Requires the GUILD_MESSAGE_POLLS intent. Poll fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onPollVoteRemove"
+  },
+  {
     "name": "onReactionAdd",
     "description": "Fires when a reaction is added to a message.",
     "type": "trigger",
@@ -3664,6 +3766,42 @@
     "description": "Fires when a role is updated in a guild.",
     "type": "trigger",
     "url": "/docs/triggers/events/onRoleUpdate"
+  },
+  {
+    "name": "onStageInstanceCreate",
+    "description": "Fires when a stage instance starts. Requires the GUILDS intent. Stage fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onStageInstanceCreate"
+  },
+  {
+    "name": "onStageInstanceDelete",
+    "description": "Fires when a stage instance ends. Requires the GUILDS intent. Stage fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onStageInstanceDelete"
+  },
+  {
+    "name": "onStageInstanceUpdate",
+    "description": "Fires when a stage instance has its topic or privacy level changed. Requires the GUILDS intent. Stage fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onStageInstanceUpdate"
+  },
+  {
+    "name": "onThreadCreate",
+    "description": "Fires when a thread is created. Requires the GUILDS intent. Thread fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onThreadCreate"
+  },
+  {
+    "name": "onThreadDelete",
+    "description": "Fires when a thread is deleted. Requires the GUILDS intent. Thread fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onThreadDelete"
+  },
+  {
+    "name": "onThreadUpdate",
+    "description": "Fires when a thread is updated, such as being renamed, archived, or locked. Requires the GUILDS intent. Thread fields are read with Zoption{key}.",
+    "type": "trigger",
+    "url": "/docs/triggers/events/onThreadUpdate"
   },
   {
     "name": "onVoiceStateUpdate",

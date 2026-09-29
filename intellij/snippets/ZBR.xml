@@ -2015,6 +2015,21 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="ZregexAll" value="ZregexAll{$END$}" description="Returns every match of the pattern in the text, joined by newlines. Returns an empty string when the pattern does not match." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZregexCapture" value="ZregexCapture{$END$}" description="Returns the capture group at the given index from the first match of the pattern. Index 0 is the whole match, 1 and above are capture groups. Returns an empty string when the pattern does not match." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ZregexGroups" value="ZregexGroups{$END$}" description="Returns every capture group of the first match of the pattern, joined by newlines. The whole match is excluded. Returns an empty string when the pattern does not match." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
   <template name="ZregexMatch" value="ZregexMatch{$END$}" description="Returns true if the text matches the given regular expression pattern." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />

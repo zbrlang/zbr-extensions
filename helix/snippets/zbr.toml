@@ -2013,6 +2013,21 @@ prefix = "ZrandomUserID"
 body = "ZrandomUserID{}"
 description = "Returns the user ID of a randomly selected member in the current server."
 
+[ZregexAll]
+prefix = "ZregexAll"
+body = "ZregexAll{${1:text};${2:pattern}}"
+description = "Returns every match of the pattern in the text, joined by newlines. Returns an empty string when the pattern does not match."
+
+[ZregexCapture]
+prefix = "ZregexCapture"
+body = "ZregexCapture{${1:text};${2:pattern};${3:index}}"
+description = "Returns the capture group at the given index from the first match of the pattern. Index 0 is the whole match, 1 and above are capture groups. Returns an empty string when the pattern does not match."
+
+[ZregexGroups]
+prefix = "ZregexGroups"
+body = "ZregexGroups{${1:text};${2:pattern}}"
+description = "Returns every capture group of the first match of the pattern, joined by newlines. The whole match is excluded. Returns an empty string when the pattern does not match."
+
 [ZregexMatch]
 prefix = "ZregexMatch"
 body = "ZregexMatch{${1:text};${2:pattern}}"

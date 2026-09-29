@@ -7256,6 +7256,68 @@
     "example": "ZregexReplace{hello   world;\\s+;-}"
   },
   {
+    "name": "ZregexCapture",
+    "description": "Returns the capture group at the given index from the first match of the pattern. Index 0 is the whole match, 1 and above are capture groups. Returns an empty string when the pattern does not match.",
+    "syntax": "ZregexCapture{text;pattern;index}",
+    "variadic": false,
+    "arguments": [
+      {
+        "name": "text",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "pattern",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "index",
+        "type": "number",
+        "required": true
+      }
+    ],
+    "example": "ZregexCapture{warned by <@123> : spamming;warned by <@(\\d+)> : (.+);1}"
+  },
+  {
+    "name": "ZregexGroups",
+    "description": "Returns every capture group of the first match of the pattern, joined by newlines. The whole match is excluded. Returns an empty string when the pattern does not match.",
+    "syntax": "ZregexGroups{text;pattern}",
+    "variadic": false,
+    "arguments": [
+      {
+        "name": "text",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "pattern",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "example": "ZregexGroups{warned by <@123> : spamming;warned by <@(\\d+)> : (.+)}"
+  },
+  {
+    "name": "ZregexAll",
+    "description": "Returns every match of the pattern in the text, joined by newlines. Returns an empty string when the pattern does not match.",
+    "syntax": "ZregexAll{text;pattern}",
+    "variadic": false,
+    "arguments": [
+      {
+        "name": "text",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "pattern",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "example": "ZregexAll{order 5 then 12;\\d+}"
+  },
+  {
     "name": "ZrelativeTime",
     "description": "Executes the ZrelativeTime function.",
     "syntax": "ZrelativeTime{arg1}",

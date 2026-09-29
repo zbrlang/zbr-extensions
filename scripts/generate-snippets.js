@@ -189,10 +189,18 @@ ${intellijTemplates.join("\n")}
   await fs.writeFile(katePath, kateContent, "utf-8");
 
   // 5. HighlightJS (highlightjs/zbr.js)
-  const prismPath = path.join(root, "highlightjs", "zbr.js");
-  let prismContent = await fs.readFile(prismPath, "utf-8");
-  prismContent = prismContent.replace(/Z[a-zA-Z0-9_]+/, `Z(${regexNoZ})`);
-  await fs.writeFile(prismPath, prismContent, "utf-8");
+  const highlightJsPath = path.join(root, "highlightjs", "zbr.js");
+  let highlightJsContent = await fs.readFile(highlightJsPath, "utf-8");
+  const hlGeneric = 'match: /(Z)([a-zA-Z_][a-zA-Z0-9_]*)(\\{)/,';
+  const hlBracketless = `match: /\\b(Z)(${regex})\\b(?!\\{)/,`;
+  const hlAnchor = `{\n        ${hlGeneric}`;
+  if (highlightJsContent.includes(hlAnchor) && !highlightJsContent.includes("ZBR_BRACKETLESS")) {
+    highlightJsContent = highlightJsContent.replace(
+      hlAnchor,
+      `// ZBR_BRACKETLESS_START\n      {\n        ${hlBracketless}\n        scope: "keyword",\n        relevance: 10,\n      },\n      // ZBR_BRACKETLESS_END\n\n      {\n        ${hlGeneric}`
+    );
+  }
+  await fs.writeFile(highlightJsPath, highlightJsContent, "utf-8");
 
   // 6. Tree-sitter (tree-sitter/grammar.js)
   const treeSitterPath = path.join(root, "tree-sitter", "grammar.js");
@@ -215,7 +223,6 @@ ${intellijTemplates.join("\n")}
   if (markerRegex.test(zbrMonacoContent)) {
     zbrMonacoContent = zbrMonacoContent.replace(markerRegex, newMarkerBlock);
   } else {
-    // Find the existing braced rule and insert markers + rule before it
     const bracedRuleRegex = /\[\/\\b\(Z\)\(\[a-zA-Z0-9_\]\+\)\\b\(\?=\\\{\)\/, \['keyword.other.zbr', 'entity.name.function.zbr'\]\],/;
     zbrMonacoContent = zbrMonacoContent.replace(
       bracedRuleRegex,

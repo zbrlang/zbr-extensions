@@ -1,5 +1,70 @@
 [
   {
+    "name": "onAuditLogEntry",
+    "description": "Fires when an audit log entry is created in a guild. Requires the GUILD_MODERATION intent. Entry fields are read with Zoption{key}.",
+    "when": "Any auditable action occurs",
+    "context": {
+      "author_id": "User ID of whoever performed the action",
+      "username": "Empty",
+      "channel_id": "Channel ID if the entry targets one, otherwise empty",
+      "guild_id": "Guild ID",
+      "message": "Empty. Zoption keys: entryID, action (e.g. Member(Kick)), actionCode, targetID, reason, channelID, automodRuleName",
+      "trigger_message_id": "Audit log entry ID"
+    }
+  },
+  {
+    "name": "onAutomodAction",
+    "description": "Fires when an auto moderation rule takes action, such as blocking a message. Requires the AUTO_MODERATION_EXECUTION intent. Action fields are read with Zoption{key}.",
+    "when": "An automod rule blocks or flags content",
+    "context": {
+      "author_id": "User ID who triggered the rule",
+      "username": "Empty",
+      "channel_id": "Channel ID if the action targets one, otherwise empty",
+      "guild_id": "Guild ID",
+      "message": "Empty. Zoption keys: ruleID, action (e.g. BlockMessage), triggerType (e.g. Keyword), messageID",
+      "trigger_message_id": "Message ID if the action targets a message"
+    }
+  },
+  {
+    "name": "onAutomodRuleCreate",
+    "description": "Fires when an auto moderation rule is created. Requires the AUTO_MODERATION_CONFIGURATION intent. Rule fields are read with Zoption{key}.",
+    "when": "Automod rule is created",
+    "context": {
+      "author_id": "User ID who created the rule",
+      "username": "Empty",
+      "channel_id": "Empty",
+      "guild_id": "Guild ID",
+      "message": "Empty. Zoption keys: ruleID, name, eventType (e.g. MessageSend), trigger, enabled",
+      "trigger_message_id": "Rule ID"
+    }
+  },
+  {
+    "name": "onAutomodRuleDelete",
+    "description": "Fires when an auto moderation rule is deleted. Requires the AUTO_MODERATION_CONFIGURATION intent. Rule fields are read with Zoption{key}.",
+    "when": "Automod rule is deleted",
+    "context": {
+      "author_id": "User ID who deleted the rule",
+      "username": "Empty",
+      "channel_id": "Empty",
+      "guild_id": "Guild ID",
+      "message": "Empty. Zoption keys: ruleID, name, eventType (e.g. MessageSend), trigger, enabled",
+      "trigger_message_id": "Rule ID"
+    }
+  },
+  {
+    "name": "onAutomodRuleUpdate",
+    "description": "Fires when an auto moderation rule is updated. Requires the AUTO_MODERATION_CONFIGURATION intent. Rule fields are read with Zoption{key}.",
+    "when": "Automod rule is updated",
+    "context": {
+      "author_id": "User ID who updated the rule",
+      "username": "Empty",
+      "channel_id": "Empty",
+      "guild_id": "Guild ID",
+      "message": "Empty. Zoption keys: ruleID, name, eventType (e.g. MessageSend), trigger, enabled",
+      "trigger_message_id": "Rule ID"
+    }
+  },
+  {
     "name": "onBanAdd",
     "description": "Fires when a user is banned from a guild.",
     "when": "User is banned",
@@ -197,6 +262,32 @@
     }
   },
   {
+    "name": "onPollVoteAdd",
+    "description": "Fires when a user votes on a poll. Requires the GUILD_MESSAGE_POLLS intent. Poll fields are read with Zoption{key}.",
+    "when": "A vote is added to a poll",
+    "context": {
+      "author_id": "User ID who voted",
+      "username": "Empty",
+      "channel_id": "Channel ID of the poll",
+      "guild_id": "Guild ID (if applicable)",
+      "message": "Empty. Zoption keys: messageID, answerID",
+      "trigger_message_id": "Poll message ID"
+    }
+  },
+  {
+    "name": "onPollVoteRemove",
+    "description": "Fires when a user removes their vote from a poll. Requires the GUILD_MESSAGE_POLLS intent. Poll fields are read with Zoption{key}.",
+    "when": "A vote is removed from a poll",
+    "context": {
+      "author_id": "User ID who un-voted",
+      "username": "Empty",
+      "channel_id": "Channel ID of the poll",
+      "guild_id": "Guild ID (if applicable)",
+      "message": "Empty. Zoption keys: messageID, answerID",
+      "trigger_message_id": "Poll message ID"
+    }
+  },
+  {
     "name": "onReactionAdd",
     "description": "Fires when a reaction is added to a message.",
     "when": "Reaction is added",
@@ -259,6 +350,84 @@
       "guild_id": "Guild ID",
       "message": "Empty",
       "trigger_message_id": "Role ID"
+    }
+  },
+  {
+    "name": "onStageInstanceCreate",
+    "description": "Fires when a stage instance starts. Requires the GUILDS intent. Stage fields are read with Zoption{key}.",
+    "when": "Stage goes live",
+    "context": {
+      "author_id": "Empty",
+      "username": "Empty",
+      "channel_id": "Stage channel ID",
+      "guild_id": "Guild ID",
+      "message": "Empty. Zoption keys: topic, privacy (e.g. GuildOnly), discoverable",
+      "trigger_message_id": "Stage instance ID"
+    }
+  },
+  {
+    "name": "onStageInstanceDelete",
+    "description": "Fires when a stage instance ends. Requires the GUILDS intent. Stage fields are read with Zoption{key}.",
+    "when": "Stage ends",
+    "context": {
+      "author_id": "Empty",
+      "username": "Empty",
+      "channel_id": "Stage channel ID",
+      "guild_id": "Guild ID",
+      "message": "Empty. Zoption keys: topic, privacy (e.g. GuildOnly), discoverable",
+      "trigger_message_id": "Stage instance ID"
+    }
+  },
+  {
+    "name": "onStageInstanceUpdate",
+    "description": "Fires when a stage instance has its topic or privacy level changed. Requires the GUILDS intent. Stage fields are read with Zoption{key}.",
+    "when": "Stage details change",
+    "context": {
+      "author_id": "Empty",
+      "username": "Empty",
+      "channel_id": "Stage channel ID",
+      "guild_id": "Guild ID",
+      "message": "Empty. Zoption keys: topic, privacy (e.g. GuildOnly), discoverable",
+      "trigger_message_id": "Stage instance ID"
+    }
+  },
+  {
+    "name": "onThreadCreate",
+    "description": "Fires when a thread is created. Requires the GUILDS intent. Thread fields are read with Zoption{key}.",
+    "when": "Thread is created",
+    "context": {
+      "author_id": "Empty",
+      "username": "Empty",
+      "channel_id": "Thread ID",
+      "guild_id": "Guild ID",
+      "message": "Empty. Zoption keys: threadID, name, parentID, type (e.g. PublicThread)",
+      "trigger_message_id": "Thread ID"
+    }
+  },
+  {
+    "name": "onThreadDelete",
+    "description": "Fires when a thread is deleted. Requires the GUILDS intent. Thread fields are read with Zoption{key}.",
+    "when": "Thread is deleted",
+    "context": {
+      "author_id": "Empty",
+      "username": "Empty",
+      "channel_id": "Thread ID",
+      "guild_id": "Guild ID",
+      "message": "Empty. Zoption keys: parentID, type (e.g. PublicThread)",
+      "trigger_message_id": "Thread ID"
+    }
+  },
+  {
+    "name": "onThreadUpdate",
+    "description": "Fires when a thread is updated, such as being renamed, archived, or locked. Requires the GUILDS intent. Thread fields are read with Zoption{key}.",
+    "when": "Thread is updated",
+    "context": {
+      "author_id": "Empty",
+      "username": "Empty",
+      "channel_id": "Thread ID",
+      "guild_id": "Guild ID",
+      "message": "Empty. Zoption keys: threadID, name, parentID, type (e.g. PublicThread)",
+      "trigger_message_id": "Thread ID"
     }
   },
   {

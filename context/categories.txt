@@ -403,6 +403,9 @@ ZrandomUser - random
 ZrandomUserID - random
 ZregexMatch - string
 ZregexReplace - string
+ZregexCapture - string
+ZregexGroups - string
+ZregexAll - string
 ZrelativeTime - time
 ZremoveAllComponents - components
 ZremoveButtons - components
